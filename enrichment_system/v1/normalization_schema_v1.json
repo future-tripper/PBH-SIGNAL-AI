@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PBH Signal Normalization Schema v2",
+  "description": "Reddit test case format schema based on existing test examples",
+  "version": "2.0",
+  "type": "object",
+  "required": ["source", "platform", "post_type", "post_id", "created_utc", "body", "url", "normalized_text"],
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "Platform of origin (channel name)",
+      "enum": ["reddit"],
+      "examples": ["reddit"]
+    },
+    "platform": {
+      "type": "string",
+      "description": "Platform identifier (duplicate of source)",
+      "enum": ["reddit"],
+      "examples": ["reddit"]
+    },
+    "post_type": {
+      "type": "string",
+      "description": "Type of content",
+      "enum": ["post", "comment"],
+      "examples": ["post"]
+    },
+    "subreddit": {
+      "type": ["string", "null"],
+      "description": "Sub-channel identifier (subreddit)",
+      "examples": ["r/wls", "r/BariatricSurgery"]
+    },
+    "post_id": {
+      "type": "string",
+      "description": "Unique post/record ID from the platform",
+      "examples": ["xyz789", "abc123"]
+    },
+    "author_id": {
+      "type": ["string", "null"],
+      "description": "Author username/handle with prefix",
+      "examples": ["u_patient2023", "u/patient123"]
+    },
+    "author_type": {
+      "type": ["string", "null"],
+      "description": "Type of author",
+      "enum": ["unknown", "patient", "hcp", null],
+      "examples": ["unknown"]
+    },
+    "created_utc": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation time in UTC (ISO8601)",
+      "examples": ["2024-06-22T14:20:00Z"]
+    },
+    "lang": {
+      "type": ["string", "null"],
+      "description": "ISO 639-1 language code",
+      "examples": ["en"]
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Engagement metrics",
+      "properties": {
+        "likes": {
+          "type": ["number", "null"],
+          "description": "Like/upvote/favorite count"
+        },
+        "comments": {
+          "type": ["number", "null"],
+          "description": "Comment/reply count"
+        },
+        "shares": {
+          "type": ["number", "null"],
+          "description": "Share/repost/retweet count"
+        }
+      }
+    },
+    "title": {
+      "type": ["string", "null"],
+      "description": "Title if available (posts only)",
+      "examples": ["Weird symptoms 8 months post RNY"]
+    },
+    "body": {
+      "type": "string",
+      "description": "Main text content body",
+      "examples": ["Had my Roux-en-Y 8 months ago and doing great with weight loss! But lately I've been getting really weak..."]
+    },
+    "url": {
+      "type": "string",
+      "description": "Canonical URL to the record",
+      "format": "uri",
+      "examples": ["https://reddit.com/r/wls/comments/xyz789"]
+    },
+    "normalized_text": {
+      "type": "string",
+      "description": "Combined title+body text for processing",
+      "examples": ["Had my Roux-en-Y 8 months ago and doing great with weight loss! But lately I've been getting really weak..."]
+    }
+  },
+  "reddit_example": {
+    "source": "reddit",
+    "platform": "reddit",
+    "post_type": "post",
+    "subreddit": "r/wls",
+    "post_id": "xyz789",
+    "author_id": "u_patient2023",
+    "author_type": "unknown",
+    "created_utc": "2024-06-22T14:20:00Z",
+    "lang": "en",
+    "metrics": {
+      "likes": 8,
+      "comments": 6,
+      "shares": 2
+    },
+    "title": "Weird symptoms 8 months post RNY",
+    "body": "Had my Roux-en-Y 8 months ago and doing great with weight loss! But lately I've been getting really weak and tired about an hour after meals, especially if I eat anything sweet. My hands get shaky and I feel super anxious. Blood work shows my A1C is normal but my doctor mentioned something about reactive hypoglycemia. Anyone else deal with this? Thinking about trying that new medication I heard about.",
+    "url": "https://reddit.com/r/wls/comments/xyz789",
+    "normalized_text": "Had my Roux-en-Y 8 months ago and doing great with weight loss! But lately I've been getting really weak and tired about an hour after meals, especially if I eat anything sweet. My hands get shaky and I feel super anxious. Blood work shows my A1C is normal but my doctor mentioned something about reactive hypoglycemia. Anyone else deal with this? Thinking about trying that new medication I heard about."
+  }
+}

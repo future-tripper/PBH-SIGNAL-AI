@@ -1,0 +1,20 @@
+{
+  "source": "reddit",
+  "platform": "reddit",
+  "post_type": "post",
+  "subreddit": "r/biotech",
+  "post_id": "pharma999",
+  "author_id": "u_industry_analyst",
+  "author_type": "unknown",
+  "created_utc": "2024-08-20T11:15:00Z",
+  "lang": "en",
+  "metrics": {
+    "likes": 45,
+    "comments": 22,
+    "shares": 8
+  },
+  "title": "Amylyx's avexitide shows promise in Phase 3 PBH trials",
+  "body": "Interesting developments in the post-bariatric hypoglycemia space. Amylyx Pharmaceuticals announced positive topline results from their Phase 3 trial of avexitide for PBH management. Primary endpoint of reduction in hypoglycemic episodes was met with statistical significance. Secondary endpoints including quality of life measures also showed improvement. Market opportunity is substantial given the growing bariatric surgery population and limited treatment options. Competition from Novo Nordisk's semaglutide and Eli Lilly's tirzepatide in the broader metabolic space could impact adoption. Worth watching the regulatory pathway and potential launch timing.",
+  "url": "https://reddit.com/r/biotech/comments/pharma999",
+  "normalized_text": "Interesting developments in the post-bariatric hypoglycemia space. Amylyx Pharmaceuticals announced positive topline results from their Phase 3 trial of avexitide for PBH management. Primary endpoint of reduction in hypoglycemic episodes was met with statistical significance. Secondary endpoints including quality of life measures also showed improvement. Market opportunity is substantial given the growing bariatric surgery population and limited treatment options. Competition from Novo Nordisk's semaglutide and Eli Lilly's tirzepatide in the broader metabolic space could impact adoption. Worth watching the regulatory pathway and potential launch timing."
+}

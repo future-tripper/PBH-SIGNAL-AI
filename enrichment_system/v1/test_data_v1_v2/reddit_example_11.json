@@ -1,0 +1,20 @@
+{
+  "source": "reddit",
+  "platform": "reddit",
+  "post_type": "post",
+  "subreddit": "r/Endocrinology",
+  "post_id": "hcp123",
+  "author_id": "u_bariPCP",
+  "author_type": "unknown",
+  "created_utc": "2024-08-25T10:15:00Z",
+  "lang": "en",
+  "metrics": {
+    "likes": 28,
+    "comments": 14,
+    "shares": 2
+  },
+  "title": "My experience with PBH management strategies",
+  "body": "In my 12 years of practice, I've found that my patients with severe PBH respond better to early intervention with acarbose rather than waiting for dietary modification to fail. My patient population is mostly post-RNY, and I've noticed that my approach of starting medication at the first sign of postprandial hypoglycemia has reduced emergency visits by 40%. My colleague suggested trying avexitide for my most difficult cases, and I'm considering it. Has anyone in my situation had success with this approach? Would love to hear about your patient outcomes and treatment protocols.",
+  "url": "https://reddit.com/r/Endocrinology/comments/hcp123",
+  "normalized_text": "In my 12 years of practice, I've found that my patients with severe PBH respond better to early intervention with acarbose rather than waiting for dietary modification to fail. My patient population is mostly post-RNY, and I've noticed that my approach of starting medication at the first sign of postprandial hypoglycemia has reduced emergency visits by 40%. My colleague suggested trying avexitide for my most difficult cases, and I'm considering it. Has anyone in my situation had success with this approach? Would love to hear about your patient outcomes and treatment protocols."
+}

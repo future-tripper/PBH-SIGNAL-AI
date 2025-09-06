@@ -1,0 +1,20 @@
+{
+  "source": "reddit",
+  "platform": "reddit",
+  "post_type": "post", 
+  "subreddit": "r/medicine",
+  "post_id": "abc999",
+  "author_id": "u_surgeon_md",
+  "author_type": "unknown",
+  "created_utc": "2024-09-01T11:30:00Z",
+  "lang": "en",
+  "metrics": {
+    "likes": 25,
+    "comments": 12,
+    "shares": 1
+  },
+  "title": "Post-bariatric hypoglycemia management challenges",
+  "body": "Seeing increasing cases of severe PBH in our bariatric surgery follow-up clinic. Standard dietary counseling isn't cutting it for these patients. We've had mixed results with acarbose - works for some but GI side effects limit compliance. Diazoxide can be effective but the edema is problematic. Has anyone had experience with newer treatment options? The literature suggests some promising alternatives but limited real-world data. Would appreciate any insights from colleagues managing similar cases.",
+  "url": "https://reddit.com/r/medicine/comments/abc999",
+  "normalized_text": "Seeing increasing cases of severe PBH in our bariatric surgery follow-up clinic. Standard dietary counseling isn't cutting it for these patients. We've had mixed results with acarbose - works for some but GI side effects limit compliance. Diazoxide can be effective but the edema is problematic. Has anyone had experience with newer treatment options? The literature suggests some promising alternatives but limited real-world data. Would appreciate any insights from colleagues managing similar cases."
+}

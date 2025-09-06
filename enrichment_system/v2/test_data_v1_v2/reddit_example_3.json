@@ -1,0 +1,20 @@
+{
+  "source": "reddit",
+  "platform": "reddit",
+  "post_type": "post",
+  "subreddit": "r/loseit",
+  "post_id": "ghi789",
+  "author_id": "u_struggling",
+  "author_type": "unknown", 
+  "created_utc": "2024-07-20T14:22:00Z",
+  "lang": "en",
+  "metrics": {
+    "likes": 2,
+    "comments": 1,
+    "shares": 0
+  },
+  "title": "Weird symptoms after eating since my surgery",
+  "body": "It's been 6 months since my surgery and sometimes after eating I feel really weak and tired. Started taking semaglutide from Novo Nordisk recently too. Not sure if this is normal or something I should worry about. Anyone else have this?",
+  "url": "https://reddit.com/r/loseit/comments/ghi789",
+  "normalized_text": "It's been 6 months since my surgery and sometimes after eating I feel really weak and tired. Started taking semaglutide from Novo Nordisk recently too. Not sure if this is normal or something I should worry about. Anyone else have this?"
+}

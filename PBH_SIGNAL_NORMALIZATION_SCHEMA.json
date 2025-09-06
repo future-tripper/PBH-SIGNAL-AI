@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PBH Signal Normalization Schema",
+  "description": "Reference normalization schema for social media data ingestion",
+  "version": "1.0",
+  "type": "object",
+  "required": ["source", "source_id", "url", "text", "timestamp"],
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "Platform of origin (channel name)",
+      "examples": ["reddit", "tiktok", "facebook", "twitter"]
+    },
+    "source_id": {
+      "type": "string",
+      "description": "Unique post/record ID from the platform",
+      "examples": ["t3_abc123", "7234567890123456789"]
+    },
+    "url": {
+      "type": "string",
+      "description": "Canonical URL to the record",
+      "format": "uri",
+      "examples": ["https://reddit.com/r/BariatricSurgery/comments/abc123"]
+    },
+    "permalink": {
+      "type": ["string", "null"],
+      "description": "Platform-specific permalink path",
+      "examples": ["/r/BariatricSurgery/comments/abc123"]
+    },
+    "title": {
+      "type": ["string", "null"],
+      "description": "Title if available (posts only)",
+      "examples": ["Struggling after surgery"]
+    },
+    "text": {
+      "type": "string",
+      "description": "Main text content (title+body/caption combined)",
+      "examples": ["I feel shaky after meals and get sugar crashes..."]
+    },
+    "subsource": {
+      "type": ["string", "null"],
+      "description": "Sub-channel identifier (e.g., subreddit/page/hashtag)",
+      "examples": ["BariatricSurgery", "pbhawareness"]
+    },
+    "author_handle": {
+      "type": ["string", "null"],
+      "description": "Handle or username (as displayed)",
+      "examples": ["u/patient123", "@tiktoker"]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Creation time in UTC (ISO8601)",
+      "examples": ["2025-08-25T14:32:00Z"]
+    },
+    "language": {
+      "type": ["string", "null"],
+      "description": "ISO 639-1 language code if provided by source",
+      "examples": ["en", "es"]
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Engagement metrics",
+      "properties": {
+        "likes": {
+          "type": ["number", "null"],
+          "description": "Like/upvote/favorite count",
+          "examples": [52]
+        },
+        "comments": {
+          "type": ["number", "null"],
+          "description": "Comment/reply count",
+          "examples": [12]
+        },
+        "shares": {
+          "type": ["number", "null"],
+          "description": "Share/repost/retweet count when available",
+          "examples": [3]
+        }
+      }
+    },
+    "sentiment_raw": {
+      "type": ["string", "null"],
+      "description": "Source-provided sentiment if available (e.g., from a vendor export)",
+      "enum": ["positive", "negative", "neutral", null],
+      "examples": ["neutral"]
+    }
+  },
+  "example": {
+    "source": "reddit",
+    "source_id": "t3_abc123",
+    "url": "https://reddit.com/r/BariatricSurgery/comments/abc123",
+    "permalink": "/r/BariatricSurgery/comments/abc123",
+    "title": "Struggling after surgery",
+    "text": "I feel shaky after meals and get sugar crashes...",
+    "subsource": "BariatricSurgery",
+    "author_handle": "u/patient123",
+    "timestamp": "2025-08-25T14:32:00Z",
+    "language": "en",
+    "metrics": {
+      "likes": 52,
+      "comments": 12,
+      "shares": 3
+    },
+    "sentiment_raw": "neutral"
+  }
+}

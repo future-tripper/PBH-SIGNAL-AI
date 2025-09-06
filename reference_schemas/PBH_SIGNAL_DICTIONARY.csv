@@ -1,0 +1,58 @@
+Entry_ID,Category,Label,Variations,Exclude,Note
+audience_anchor_patient_anchor_001,audience_anchor,patient_anchor,"i have|my symptoms|i'm having|since my surgery|after my bypass|my sleeve|post-op i|dx'd with|diagnosed with|my sugar crashes|ever since surgery|anyone else have?|after eating i|had my|my doctor told me|dealing with",,Patient voice indicator; technically different than in FETCH RULES; we can discuss if there is confusion
+audience_anchor_hcp_anchor_002,audience_anchor,hcp_anchor,"my patient|in clinic|we see patients|presented with|we diagnose|in practice|our bariatric program|case of|we follow patients|managed a patient|treated with|our clinic|seeing cases|clinical experience",,HCP voice indicator; technically different than in FETCH RULES; we can discuss if there is confusion
+companies_Amylyx_003,companies,Amylyx,Amylyx|amylyx pharma|amylyx pharmaceuticals|amylix,,Client company
+companies_Novo_Nordisk_004,companies,Novo_Nordisk,Novo Nordisk|novo|novo nordic|maker of ozempic,novo restaurant,Major competitor
+companies_Eli_Lilly_005,companies,Eli_Lilly,Eli Lilly|lilly|LLY|lilly pharma,lilly flower|lilly pad,GLP-1 manufacturer
+companies_AstraZeneca_006,companies,AstraZeneca,AstraZeneca|AZ|astra zeneca,Arizona|az,Pharma competitor
+companies_Boehringer_Ingelheim_007,companies,Boehringer_Ingelheim,Boehringer Ingelheim|BI|boehringer,,Pharma competitor
+conditions_PBH_008,conditions,PBH,post-bariatric hypoglycemia|post bariatric hypoglycemia|PBH|postbariatric hypoglycemia|post-prandial hypoglycemia after surgery,,Canonical PBH mention
+conditions_reactive_hypoglycemia_009,conditions,reactive_hypoglycemia,reactive hypoglycemia|postprandial hypoglycemia|RH,type 1|T1D,Likely PBH misattribution when in bariatric context
+conditions_hypoglycemia_010,conditions,hypoglycemia,hypoglycemia|low blood sugar|sugar crash|glucose crash,type 1|T1D,Generic hypo in bariatric context → possible PBH
+conditions_late_dumping_011,conditions,late_dumping,late dumping|late dumping syndrome|delayed dumping|postprandial dumping,garbage dumping|trash dumping|dumping boyfriend|dumping stock,
+conditions_idiopathic_postprandial_syndrome_012,conditions,idiopathic_postprandial_syndrome,idiopathic_postprandial_syndrome|IPS,,
+symptoms_shakiness_013,symptoms,shakiness,shaky|shaking|tremors|trembling|jittery|jitters|hands shaking|unsteady|wobbly|hands trembling|feeling shaky,protein shake|milkshake|earthquake,Most common PBH symptom
+symptoms_dizziness_014,symptoms,dizziness,dizzy|lightheaded|light-headed|vertigo|woozy|spinning|off balance|unsteady,dizzy with excitement,Common symptom
+symptoms_sweating_015,symptoms,sweating,sweaty|perspiration|clammy|cold sweats|diaphoretic|soaking sweat,sweaty palms (nervousness),Physical symptom
+symptoms_hypoglycemia_016,symptoms,hypoglycemia,low blood sugar|sugar crash|glucose drop|hypo|going low|sugar low|lows in the 50s|lows in the 60s|glucose plummeted|BG dropped|blood sugar tanked,hypoglycemic medication,Core condition symptom
+symptoms_brain_fog_017,symptoms,brain_fog,mental fog|foggy|confused|confusion|can't think|forgetful|spaced out|zoned out,confused about directions,Cognitive symptom
+symptoms_tachycardia_018,symptoms,tachycardia,fast heartbeat|racing heart|heart racing|palpitations|pounding heart,race car|racing,Cardiovascular symptom
+symptoms_fainting_019,symptoms,fainting,passed out|syncope|blacked out|lost consciousness|fainted|collapsed,passed out drunk,Severe symptom
+symptoms_nausea_020,symptoms,nausea,nauseous|sick to stomach|queasy|throw up|vomiting|retching,morning sickness,GI symptom
+symptoms_seizures_021,symptoms,seizures,seizure|convulsions|fit,,
+symptoms_vision_changes_022,symptoms,vision_changes,blurred vision|double vision|can't see properly,,
+symptoms_weakness_023,symptoms,weakness,weak|fatigue|tired|exhausted|no energy|lethargic|drained|wiped out,weak signal|weak wifi,Physical symptom
+topics_bariatric_surgery_024,topics,bariatric_surgery,"bariatric surgery|weight loss surgery|WLS|metabolic surgery|bariatric operation|weight-loss surgery|gastric bypass|roux-en-y|RNY|Rny|rny|RYGB|roux en y|Roux-en-Y Gastric Bypass|bypass surgery|sleeve|gastrectomy|gastricsleeve|VSG|vertical sleeve|vertical sleeve gastrectomy|mini gastric bypass|one-anastomosis gastric bypass|OAGB|lap band|lapband|gastric band|adjustable gastric band|duodenal switch|DS|biliopancreatic diversion|BPD/DS|SADI|SIPS|single anastomosis duodenal switch",,General bucket for all bariatric surgery mentions; use this rollup for relevance (bariatric_context) and theme mapping
+,topics,dietary_modification,"low carb|cut carbs|slow carb|no simple sugars|LC|low glycemic|low sugar|
+small meals|frequent meals|grazing|6 small meals|
+meal timing|eating schedule|diet changes|diet modification|dietary changes|
+protein first|protein before carbs|protein anchor|start with protein|protein at every meal|
+fat before carbs|fat first|butter before carbs|peanut butter first|
+cornstarch|superstarch|uncooked cornstarch|UCAN|slow starch|extended-release starch",,"general dietary signals are a topic but can be rolled up to ""treatments"" with cross reference to ""treatment_anchors""; future state!"
+,topics,diagnostics_monitoring,"CGM|continuous glucose monitor|continuous glucose monitoring|glucose sensor|Dexcom|Libre|Freestyle Libre|Libre2|Libre3|Guardian|Guardian Connect|
+oral glucose tolerance test|OGTT|glucose tolerance test|tolerance test|2 hour glucose test|mixed meal tolerance test|MMTT|meal test|mixed meal test|fingerstick|finger stick|finger prick|glucose meter|glucometer|finger poke|meal challenge|provocation test|glucose challenge",,
+,topics,patient_support,support group|patient group|community|forum|Facebook group|online suport group,customer support|tech support,Social connection
+,topics,doctor_visit,saw doctor|appointment|clinic visit|endocrinologist|physician|check-up|doctor's office,doctor show,Healthcare interaction
+,topics,medication_side_effects,side effects|adverse effects|drug reaction|reaction to treatment,side effects (movie),Treatment issues
+,topics,surgery_complications,complications|surgical complications|post-op issues|after surgery problems,,Surgery-related issues
+,topics,meal_tolerance,meal intolerance|food intolerance|can't eat|trouble eating|eating makes me feel sick,lactose intolerance,Eating difficulties
+,topics,weight_regain,weight regain|gaining weight back|weight gain after surgery|put weight back on,weight gain (general),Post-surgery concern
+,topics,financial_burden,expensive|can't afford|cost|price|copay|out of pocket|financial stress,,Economic impact
+,topics,clinical_trial,clinical trial|study|research|phase 2|phase 3|enrolling|trial participant,,Pipeline tracking
+,topics,dose_adjustment,dose change|titration|increasing dose|decreasing dose|adjusting|dose reduction,,Treatment optimization
+,topics,treatment_failure,not working|failed|doesn't help|no improvement|stopped working|ineffective treatment,work failure|job failure,Drug ineffectiveness
+,topics,hcp_referral,referred to|seeing specialist|endocrinologist referral|bariatric surgeon|doctor referral,referee|referral bonus,Healthcare navigation
+,topics,quality_of_life,quality of life|life impact|daily activities|normal life|can't live normally|can't work|missed work|work accomodations|driving risk|car accident|unsafe driving|don't feel like myself|depressed|anxious|mental burden|mental health,quality control,Outcome measure
+,topics,medication_adherence,compliance|taking medication|skipping doses|forgot to take|noncompliance|missed dose,,Treatment behavior
+,topics,access_coverage,access|coverage|insurance denial|denied by insurance|coverage denied|insurance refusal|denial letter|coverage determination denial|benefit exclusion|not covered|prior auth|PA|pre-auth|authorization required|preauthorization|prec ertification|copay|co-pay|out of pocket|OOP|coinsurance|deductible|step therapy|fail first|step edit|fail-first requirement|appeal|appealed|letter of medical necessity|LMN|insurance appeal|external review,,Rolled up into one topic for MVP
+,topics,care_settings,endocrinology clinic|endo clinic|endocrinology office|diabetes and endocrine clinic|bariatric clinic|WLS center|bariatric program|metabolic and bariatric surgery center|MBSAQIP-accredited center|primary care clinic|PCP office|family practice|general practitioner office|emergency room|ER|ED|urgent care|nutritionist office|dietitian office|RD clinic|CDE office,doc|nutrition (general sense),"Broad roll-up of settings where PBH is managed for MVP; if we get this right, we can test separating settings"
+,treatments,avexitide,avexitide|exendin(9-39)|exendin 9-39|exendin-9-39,,Launch drug - PRIMARY
+,treatments,acarbose,acarbose|precose|glucobay|acarbase,,First-line competitor
+,treatments,diazoxide,diazoxide|proglycem,,Second-line option
+,treatments,octreotide,octreotide|sandostatin|sandostatin LAR|sandostatin injection|sandostatin long-acting,,Third-line option
+,treatments,semaglutide,semaglutide|ozempic|wegovy|wegoivy|ozmpic,,GLP-1 competitor
+,treatments,tirzepatide,tirzepatide|mounjaro|zepbound|mounjaro injection|tirzep,,Major GLP-1 competitor
+,treatments,dulaglutide,dulaglutide|trulicity,,GLP-1 competitor
+,treatments,liraglutide,liraglutide|victoza|saxenda,,GLP-1 competitor
+,treatments,exenatide,exenatide|byetta|bydureon,,
+,treatments,sglt2_inhibitors,sodium-glucose contransporter-2|sglt2|inhibitors|empagliflozin|jardiance|dapagliflozin|farxiga|canagliflozin|invokana,,

@@ -1,0 +1,15 @@
+﻿Field,Type,Description,Example,Required,
+source,string,Platform of origin (channel name),reddit,TRUE,
+source_id,string,Unique post/record ID from the platform,t3_abc123,TRUE,
+url,string,Canonical URL to the record,https://reddit.com/r/BariatricSurgery/comments/abc123,TRUE,
+permalink,string,Platform-specific permalink path,/r/BariatricSurgery/comments/abc123,FALSE,
+title,string,Title if available (posts only),Struggling after surgery,FALSE,
+text,string,Main text content (title+body/caption combined),I feel shaky after meals and get sugar crashes‚Ä¶,TRUE,
+subsource,string,Sub-channel identifier (e.g., subreddit/page/hashtag),BariatricSurgery,FALSE
+author_handle,string,Handle or username (as displayed),u/patient123,FALSE,
+timestamp,datetime (ISO8601),Creation time in UTC,2025-08-25T14:32:00Z,TRUE,
+language,string,ISO 639-1 language code if provided by source,en,FALSE,
+metrics.likes,number,Like/upvote/favorite count,52,FALSE,
+metrics.comments,number,Comment/reply count,12,FALSE,
+metrics.shares,number,Share/repost/retweet count when available,3,FALSE,
+sentiment_raw,enum,Source-provided sentiment if available (e.g., from a vendor export),neutral,FALSE

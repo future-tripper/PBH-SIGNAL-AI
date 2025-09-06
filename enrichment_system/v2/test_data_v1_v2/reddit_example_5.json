@@ -1,0 +1,20 @@
+{
+  "source": "reddit",
+  "platform": "reddit",
+  "post_type": "post",
+  "subreddit": "r/Endocrinology",
+  "post_id": "avx001",
+  "author_id": "u_endocrinologist",
+  "author_type": "unknown",
+  "created_utc": "2024-08-15T14:30:00Z",
+  "lang": "en",
+  "metrics": {
+    "likes": 32,
+    "comments": 18,
+    "shares": 4
+  },
+  "title": "Early experience with avexitide for severe PBH",
+  "body": "We've been trialing avexitide from Amylyx in our bariatric clinic for patients with severe post-bariatric hypoglycemia. Three month follow-up shows remarkable improvement in frequency and severity of episodes. Most patients report significant reduction in shakiness, dizziness, and sweating. The subcutaneous injection is well tolerated though we've seen some mild nausea initially. Dosing protocol requires careful titration but results are promising. This could be a game changer for our most difficult PBH cases who haven't responded to dietary modification or acarbose.",
+  "url": "https://reddit.com/r/Endocrinology/comments/avx001",
+  "normalized_text": "We've been trialing avexitide from Amylyx in our bariatric clinic for patients with severe post-bariatric hypoglycemia. Three month follow-up shows remarkable improvement in frequency and severity of episodes. Most patients report significant reduction in shakiness, dizziness, and sweating. The subcutaneous injection is well tolerated though we've seen some mild nausea initially. Dosing protocol requires careful titration but results are promising. This could be a game changer for our most difficult PBH cases who haven't responded to dietary modification or acarbose."
+}
