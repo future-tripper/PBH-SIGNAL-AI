@@ -16,10 +16,12 @@ The data pipeline consists of four key stages:
 
 ### Current Status
 
-**Production Ready:** v3 Multi-Platform system validated (98.05% accuracy on 19 test cases)
-- **Platforms:** Reddit + TikTok fully supported
-- **Test Results:** Tracked in `project_docs/ENRICHMENT_TEST_RESULTS.csv`
-- **Next Phase:** v4 minor optimizations and expanded platform support (Facebook/Instagram)
+**Ready for Testing:** v4 Full MVP Platform Coverage with Enhanced Schema
+- **Platforms:** 5-platform MVP (Reddit, TikTok, Facebook, Instagram, Twitter*)
+- **Schema Enhancement:** Nested author data, demographics, geographic tracking
+- **Real Data Sources:** 14 production test cases from actual MVP platforms
+- **Testing Phase:** Manual validation of enrichment accuracy across all platforms
+- **Previous:** v3 Multi-Platform (98.05% accuracy, Reddit + TikTok only)
 
 ## Project Structure & Data Architecture
 
@@ -36,9 +38,13 @@ PBH-SIGNAL-AI/
 ├── enrichment_system/                        # Versioned systems
 │   ├── v1/                                  # Baseline (80% accuracy)
 │   ├── v2/                                  # Reddit-only (91% accuracy)
-│   └── v3/                                  # Multi-platform (98% accuracy)
-│       ├── normalization_schema_v3.json    # Unified schema
-│       ├── test_data_v3/                   # 19 test cases
+│   ├── v3/                                  # Multi-platform (98% accuracy)
+│   │   ├── normalization_schema_v3.json    # Unified schema
+│   │   ├── test_data_v3/                   # 19 test cases
+│   │   └── [system files]                  # Dictionary, prompt, schema
+│   └── v4/                                  # 5-platform MVP (in development)
+│       ├── normalization_schema_v4.json    # Enhanced schema with demographics
+│       ├── test_data_v4/                   # 14 real MVP test cases
 │       └── [system files]                  # Dictionary, prompt, schema
 └── [Root Level - Active Files]              # Current working versions
     ├── PBH_SIGNAL_DICTIONARY.txt           # Entity extraction rules
@@ -88,6 +94,21 @@ Themes are derived from presence of specific dictionary tags:
 - Medium: 10-19
 - Low: <10
 
+## Testing Protocol (v4)
+
+### Manual Validation Process
+1. **Case Selection:** Test all 14 production examples (3 Reddit, 3 TikTok, 3 Facebook, 3 Instagram, 2 Twitter)
+2. **Expected Output:** Generate correct enrichment using v4 system prompt + dictionary + response format
+3. **Actual Testing:** Run through OpenAI Assistant API with v4 configuration
+4. **Scoring:** Compare expected vs actual results field-by-field
+5. **Documentation:** Record results in `project_docs/ENRICHMENT_TEST_RESULTS.csv`
+
+### Test Coverage Goals
+- **Platform Diversity:** Validate all 5 MVP platforms including new Facebook/Instagram
+- **Schema Validation:** Ensure enhanced v4 schema fields (author, country, parent_source) work correctly
+- **Edge Cases:** Twitter null text handling, clinical trial content, multi-platform relevance logic
+- **Accuracy Target:** ≥98% to match or exceed v3 performance
+
 ## Implementation Notes
 
 ### Data Processing Pipeline
@@ -131,8 +152,15 @@ Themes are derived from presence of specific dictionary tags:
   - Unified schema for all platforms
   - Sophisticated edge case handling
 
-### v4: Future Enhancements (Planned)
-- Facebook/Instagram support
-- Enhanced entity linkage (medication→company)
-- Expanded test coverage
-- Minor prompt optimizations
+### v4: Full MVP Platform Coverage (Ready for Testing)
+- **Platforms:** 5-platform MVP (Reddit, TikTok, Facebook, Instagram, Twitter*)
+- **Test Cases:** 14 real production examples from actual data sources
+- **Schema Enhancement:**
+  - Nested author object with demographics (gender, age, subscribers)
+  - Geographic tracking (country codes)
+  - Hierarchical content structure (parent_source, subsource)
+  - Platform-specific metrics handling
+- **Key Limitations:** Twitter text content unavailable due to API restrictions
+- **Real Clinical Data:** Facebook examples include actual Amylyx PBH trial recruitment
+- **Testing Approach:** Manual case-by-case validation against expected enrichment outputs
+- **Success Target:** Maintain or exceed v3's 98% accuracy across expanded platform coverage
