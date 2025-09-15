@@ -1,0 +1,39 @@
+ {
+            "id": "871437662",
+            "seq": 798,
+            "published": "2025-08-09T04:56:15+00:00",
+            "addedAt": "2025-08-20T17:11:44.7347371Z",
+            "source": "twitter.com",
+            "author": {
+                "nickname": "ArchivistCos",
+                "bio": "☆Elias☆32☆They☆Turing Tested, Mother Approved☆ 💍6.30.21💍🇯🇲🇵🇷 Cosplayer and all around nerd☆                                       \n🚫Not Safe for Work🚫, https://archivistcosplays.carrd.co/",
+                "profileId": "951584387044401157",
+                "subscribers": 984,
+                "gender": "unknown",
+                "age": 30
+            },
+            "sentiment": "negative",
+            "resourceType": "social",
+            "sourceType": "social",
+            "language": "eng",
+            "postType": "post",
+            "contentTypes": [
+                "text"
+            ],
+            "tags": [],
+            "autoCategories": [
+                "wom"
+            ],
+            "subjects": [],
+            "starred": false,
+            "processed": false,
+            "engagement": {
+                "views": 43,
+                "engagement": 0,
+                "dateCollected": "2025-08-20T16:17:36.7931606Z"
+            },
+            "postId": "1954044027709587906",
+            "discussionId": "1954044027709587906",
+            "potentialReach": 984,
+            "customTags": []
+        }

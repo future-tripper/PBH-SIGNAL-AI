@@ -1,0 +1,53 @@
+{
+            "id": "4278599122",
+            "seq": 786,
+            "published": "2025-08-10T02:54:03+00:00",
+            "addedAt": "2025-08-20T17:11:44.7342697Z",
+            "source": "twitter.com",
+            "author": {
+                "nickname": "z0mb4be_",
+                "bio": "21 mia ; non-edtwt dni 🎼 can you stake my heart? can you stake my heart?",
+                "profileId": "1564645346915000320",
+                "subscribers": 867,
+                "gender": "unknown"
+            },
+            "sentiment": "neutral",
+            "resourceType": "social",
+            "sourceType": "social",
+            "language": "eng",
+            "postType": "replyComment",
+            "contentTypes": [
+                "text"
+            ],
+            "tags": [],
+            "autoCategories": [
+                "wom"
+            ],
+            "subjects": [
+                "health",
+                "wellness"
+            ],
+            "starred": false,
+            "processed": false,
+            "engagement": {
+                "likes": 2,
+                "views": 99,
+                "engagement": 2,
+                "dateCollected": "2025-09-03T20:49:09.8841981Z"
+            },
+            "postId": "1954375662762123532",
+            "parentPostId": "1954372705287111165",
+            "discussionId": "1954336057367175297",
+            "aspects": [
+                "health effects_negative"
+            ],
+            "sentimentAspects": [
+                {
+                    "aspect": "health effects",
+                    "sentiment": "negative",
+                    "id": "health effects_negative"
+                }
+            ],
+            "potentialReach": 867,
+            "customTags": []
+        }

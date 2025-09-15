@@ -1,0 +1,26 @@
+{
+  "source": "twitter",
+  "source_id": "4278599122",
+  "url": "https://twitter.com/i/web/status/1954375662762123532",
+  "title": null,
+  "text": null,
+  "parent_source": null,
+  "subsource": "1954372705287111165",
+  "author": {
+    "id": "1564645346915000320",
+    "name": "z0mb4be_",
+    "handle": "z0mb4be_",
+    "gender": "unknown",
+    "age": null,
+    "subscribers": 867
+  },
+  "country": null,
+  "language": "eng",
+  "metrics": {
+    "likes": 2,
+    "comments": 0,
+    "shares": null
+  },
+  "sentiment": "neutral",
+  "published_at": "2025-08-10T02:54:03+00:00"
+}

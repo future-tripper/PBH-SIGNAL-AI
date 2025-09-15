@@ -1,0 +1,26 @@
+{
+  "source": "twitter",
+  "source_id": "871437662",
+  "url": "https://twitter.com/i/web/status/1954044027709587906",
+  "title": null,
+  "text": null,
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "951584387044401157",
+    "name": "ArchivistCos",
+    "handle": "ArchivistCos",
+    "gender": "unknown",
+    "age": 30,
+    "subscribers": 984
+  },
+  "country": null,
+  "language": "eng",
+  "metrics": {
+    "likes": 0,
+    "comments": 0,
+    "shares": null
+  },
+  "sentiment": "negative",
+  "published_at": "2025-08-09T04:56:15+00:00"
+}
