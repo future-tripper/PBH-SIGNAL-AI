@@ -15,7 +15,7 @@
       "subsource",
       "author",
       "country",
-      "timestamp",
+      "published_at",
       "language",
       "metrics",
       "topics",
@@ -66,7 +66,7 @@
       },
 
       "country": { "type": "string", "nullable": true },
-      "timestamp": { "type": "string" },
+      "published_at": { "type": "string" },
       "language": { "type": "string", "nullable": true },
 
       "metrics": {

@@ -39,9 +39,10 @@ glucose dropped to 45", "BG crashed", "sugar bottomed out"
 ## FIELD-BY-FIELD ENRICHMENT INSTRUCTIONS
 
 ### PRESERVED FIELDS (copy from input)
-- source, source_id, url, permalink, title, text, subsource
-- author_handle, timestamp, language, metrics
-- sentiment_raw: Copy if present in input, otherwise set to null (NOT empty string)
+- source, source_id, url, permalink, title, text, parent_source, subsource
+- author (nested object with id, name, handle, gender, age, subscribers)
+- country, published_at, language, metrics
+- sentiment: Copy if present in input, otherwise set to null (NOT empty string)
 
 ### DICTIONARY EXTRACTIONS (DETERMINISTIC LABELS ONLY)
 Extract ONLY the exact Labels from the dictionary when you recognize their concepts:
@@ -282,12 +283,21 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "permalink": "/r/gastricbypass/comments/abc123",
   "title": "Crashing after meals a year post sleeve",
   "text": "I had a sleeve a year ago and lately about 1–2 hours after eating I get shaky, sweaty, dizzy, and my heart races. My CGM shows lows in the 50s. Eating protein first and small meals helps a little. My endo mentioned reactive hypoglycemia and suggested maybe trying acarbose from Eli Lilly. This is so frustrating and scary - anyone else experienced this nightmare?",
-  "subsource": "r/gastricbypass",
-  "author_handle": "u/anonymous",
-  "timestamp": "2024-07-14T16:35:00Z",
+  "parent_source": "gastricbypass",
+  "subsource": null,
+  "author": {
+    "id": "t2_abc123",
+    "name": "anonymous",
+    "handle": "anonymous",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 12, "comments": 4, "shares": 1 },
-  "sentiment_raw": null
+  "sentiment": null,
+  "published_at": "2024-07-14T16:35:00Z"
 }
 
 // OUTPUT (enriched; schema-valid)
@@ -295,14 +305,23 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "source": "reddit",
   "source_id": "abc123",
   "url": "https://reddit.com/r/gastricbypass/comments/abc123",
-  "permalink": "https://reddit.com/r/gastricbypass/comments/abc123",
+  "permalink": "/r/gastricbypass/comments/abc123",
   "title": "Crashing after meals a year post sleeve",
   "text": "I had a sleeve a year ago and lately about 1–2 hours after eating I get shaky, sweaty, dizzy, and my heart races. My CGM shows lows in the 50s. Eating protein first and small meals helps a little. My endo mentioned reactive hypoglycemia and suggested maybe trying acarbose from Eli Lilly. This is so frustrating and scary - anyone else experienced this nightmare?",
-  "subsource": "r/gastricbypass",
-  "author_handle": "u_anonymous",
-  "timestamp": "2024-07-14T16:35:00Z",
+  "parent_source": "gastricbypass",
+  "subsource": null,
+  "author": {
+    "id": "t2_abc123",
+    "name": "anonymous",
+    "handle": "anonymous",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 12, "comments": 4, "shares": 1 },
+  "published_at": "2024-07-14T16:35:00Z",
 
   "topics": ["bariatric_surgery","dietary_modification","diagnostics_monitoring"],
   "symptoms": ["shakiness","sweating","dizziness","tachycardia","hypoglycemia"],
@@ -372,12 +391,21 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "permalink": "/r/Endocrinology/comments/def456",
   "title": "Great success with avexitide for PBH management",
   "text": "We've started using avexitide from Amylyx for post-bariatric hypoglycemia in our clinic and seeing fantastic results! Three patients who failed acarbose and diazoxide have shown remarkable improvement. The dosing requires careful titration but side effects have been minimal. Highly recommend considering this breakthrough treatment for patients with severe PBH who haven't responded to first-line options.",
-  "subsource": "r/Endocrinology",
-  "author_handle": "u/endodoc",
-  "timestamp": "2024-08-02T09:15:00Z",
+  "parent_source": "Endocrinology",
+  "subsource": null,
+  "author": {
+    "id": "t2_def456",
+    "name": "endodoc",
+    "handle": "endodoc",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 15, "comments": 8, "shares": 3 },
-  "sentiment_raw": null
+  "sentiment": null,
+  "published_at": "2024-08-02T09:15:00Z"
 }
 
 // OUTPUT (enriched; schema-valid)
@@ -385,14 +413,23 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "source": "reddit",
   "source_id": "def456",
   "url": "https://reddit.com/r/Endocrinology/comments/def456",
-  "permalink": "https://reddit.com/r/Endocrinology/comments/def456",
+  "permalink": "/r/Endocrinology/comments/def456",
   "title": "Great success with avexitide for PBH management",
   "text": "We've started using avexitide from Amylyx for post-bariatric hypoglycemia in our clinic and seeing fantastic results! Three patients who failed acarbose and diazoxide have shown remarkable improvement. The dosing requires careful titration but side effects have been minimal. Highly recommend considering this breakthrough treatment for patients with severe PBH who haven't responded to first-line options.",
-  "subsource": "r/Endocrinology",
-  "author_handle": "u_endodoc",
-  "timestamp": "2024-08-02T09:15:00Z",
+  "parent_source": "Endocrinology",
+  "subsource": null,
+  "author": {
+    "id": "t2_def456",
+    "name": "endodoc",
+    "handle": "endodoc",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 15, "comments": 8, "shares": 3 },
+  "published_at": "2024-08-02T09:15:00Z",
 
   "topics": ["bariatric_surgery","treatment_failure","dose_adjustment","medication_side_effects"],
   "symptoms": [],
@@ -459,12 +496,21 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "permalink": null,
   "title": null,
   "text": "PSA for anyone considering bariatric surgery - nobody warned me about this. So I'm about 10 months post RNY and I keep having these really scary episodes where I feel like I'm gonna pass out. It happens like an hour after I eat and my blood sugar just crashes into the 50s. I get super shaky, sweaty, my heart races and I feel panicky. My surgeon said it might be something called reactive hypoglycemia but honestly I'm starting to get really worried because it's happening more often now. Has anyone else dealt with this? I'm scared to eat sometimes because I don't know when it's gonna hit.",
+  "parent_source": null,
   "subsource": null,
-  "author_handle": "@bariatricjourney2024",
-  "timestamp": "2024-08-15T16:30:00Z",
+  "author": {
+    "id": "bariatricjourney2024",
+    "name": "bariatricjourney2024",
+    "handle": "bariatricjourney2024",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 234, "comments": 18, "shares": 12 },
-  "sentiment_raw": null
+  "sentiment": null,
+  "published_at": "2024-08-15T16:30:00Z"
 }
 
 // OUTPUT (enriched; schema-valid)
@@ -475,11 +521,20 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "permalink": null,
   "title": null,
   "text": "PSA for anyone considering bariatric surgery - nobody warned me about this. So I'm about 10 months post RNY and I keep having these really scary episodes where I feel like I'm gonna pass out. It happens like an hour after I eat and my blood sugar just crashes into the 50s. I get super shaky, sweaty, my heart races and I feel panicky. My surgeon said it might be something called reactive hypoglycemia but honestly I'm starting to get really worried because it's happening more often now. Has anyone else dealt with this? I'm scared to eat sometimes because I don't know when it's gonna hit.",
+  "parent_source": null,
   "subsource": null,
-  "author_handle": "@bariatricjourney2024",
-  "timestamp": "2024-08-15T16:30:00Z",
+  "author": {
+    "id": "bariatricjourney2024",
+    "name": "bariatricjourney2024",
+    "handle": "bariatricjourney2024",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 234, "comments": 18, "shares": 12 },
+  "published_at": "2024-08-15T16:30:00Z",
 
   "topics": ["bariatric_surgery"],
   "symptoms": ["fainting","shakiness","sweating","tachycardia","hypoglycemia"],
@@ -537,7 +592,7 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
 
 ### Example: TikTok HCP Author
 
-// INPUT (normalized)  
+// INPUT (normalized)
 {
   "source": "tiktok",
   "source_id": "7291234567890123456",
@@ -545,27 +600,45 @@ Scope: Multi-platform inputs (Reddit and TikTok). Handle platform-specific diffe
   "permalink": null,
   "title": null,
   "text": "Exciting news for my post-bariatric surgery patients struggling with hypoglycemic episodes! Hi everyone, Dr. Martinez here. I wanted to share some exciting news for my patients who've been struggling with post-bariatric hypoglycemia. We now have access to a new medication called avexitide that's specifically designed for this condition. I've been prescribing it for several of my patients who weren't responding well to dietary modifications alone, and the results have been really promising. If you're experiencing frequent hypoglycemic episodes after your bariatric surgery, especially with symptoms like shakiness, sweating, or rapid heartbeat about 1-2 hours after eating, please reach out to your surgical team. There are treatment options available, and you don't have to suffer through this alone.",
+  "parent_source": null,
   "subsource": null,
-  "author_handle": "@dr_metabolicsurgery",
-  "timestamp": "2024-08-22T14:45:00Z",
+  "author": {
+    "id": "dr_metabolicsurgery",
+    "name": "Dr. Martinez",
+    "handle": "dr_metabolicsurgery",
+    "gender": null,
+    "age": null,
+    "subscribers": 45000
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 892, "comments": 76, "shares": 45 },
-  "sentiment_raw": null
+  "sentiment": null,
+  "published_at": "2024-08-22T14:45:00Z"
 }
 
 // OUTPUT (enriched; schema-valid)
 {
   "source": "tiktok",
-  "source_id": "7291234567890123456", 
+  "source_id": "7291234567890123456",
   "url": "https://tiktok.com/@dr_metabolicsurgery/video/7291234567890123456",
   "permalink": null,
   "title": null,
   "text": "Exciting news for my post-bariatric surgery patients struggling with hypoglycemic episodes! Hi everyone, Dr. Martinez here. I wanted to share some exciting news for my patients who've been struggling with post-bariatric hypoglycemia. We now have access to a new medication called avexitide that's specifically designed for this condition. I've been prescribing it for several of my patients who weren't responding well to dietary modifications alone, and the results have been really promising. If you're experiencing frequent hypoglycemic episodes after your bariatric surgery, especially with symptoms like shakiness, sweating, or rapid heartbeat about 1-2 hours after eating, please reach out to your surgical team. There are treatment options available, and you don't have to suffer through this alone.",
+  "parent_source": null,
   "subsource": null,
-  "author_handle": "@dr_metabolicsurgery",
-  "timestamp": "2024-08-22T14:45:00Z",
+  "author": {
+    "id": "dr_metabolicsurgery",
+    "name": "Dr. Martinez",
+    "handle": "dr_metabolicsurgery",
+    "gender": null,
+    "age": null,
+    "subscribers": 45000
+  },
+  "country": null,
   "language": "en",
   "metrics": { "likes": 892, "comments": 76, "shares": 45 },
+  "published_at": "2024-08-22T14:45:00Z",
 
   "topics": ["bariatric_surgery","dietary_modification"],
   "symptoms": ["shakiness","sweating","tachycardia","hypoglycemia"],
