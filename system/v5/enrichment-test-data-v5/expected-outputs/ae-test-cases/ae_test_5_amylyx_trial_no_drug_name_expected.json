@@ -1,0 +1,87 @@
+{
+  "source": "reddit",
+  "source_id": "005",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/005",
+  "permalink": null,
+  "title": "Trial update - experiencing side effects",
+  "text": "I'm in the Amylyx trial for PBH. After my dose of the study drug yesterday I got really dizzy and nauseous. Called the study coordinator this morning. They said to monitor it and report any changes. Has anyone else in the trial experienced this?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_005",
+    "name": "User G",
+    "handle": "user_g",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 8,
+    "comments": 12,
+    "shares": null
+  },
+  "published_at": "2025-03-22T10:45:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "clinical_trial"
+  ],
+  "symptoms": [
+    "dizziness",
+    "nausea"
+  ],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [
+    "Amylyx"
+  ],
+  "engagement_score": 32,
+  "engagement_label": "high",
+  "key_phrases": [
+    "amylyx trial",
+    "post-bariatric hypoglycemia",
+    "study drug",
+    "dizziness",
+    "nausea",
+    "after dose",
+    "study coordinator",
+    "monitor it"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with Amylyx trial context",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "anxiety",
+    "frustration"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "companies_Amylyx_003",
+    "topics_clinical_trial_044",
+    "conditions_PBH_008",
+    "symptoms_dizziness_014",
+    "symptoms_nausea_020",
+    "topics_bariatric_surgery_034"
+  ]
+}

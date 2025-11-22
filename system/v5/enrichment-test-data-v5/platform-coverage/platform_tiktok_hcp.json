@@ -1,0 +1,26 @@
+{
+  "source": "tiktok",
+  "source_id": "001",
+  "url": "https://www.tiktok.com/@dr_weightloss_md/video/001",
+  "title": null,
+  "text": "Educating my patients about post-bariatric hypoglycemia. If you've had gastric bypass or sleeve and experience shakiness, sweating, or dizziness 1-2 hours after eating, talk to your doctor. This is a real complication we see in clinic. Diet modifications and medication like acarbose can help. #bariatricsurgery #PBH #medicaleducation",
+  "parent_source": null,
+  "subsource": "bariatricsurgery",
+  "author": {
+    "id": "tiktok_user_001",
+    "name": "User R",
+    "handle": "user_r",
+    "gender": "female",
+    "age": 42,
+    "subscribers": 125000
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 3420,
+    "comments": 156,
+    "shares": 89
+  },
+  "sentiment": null,
+  "published_at": "2025-05-08T18:30:00+00:00"
+}

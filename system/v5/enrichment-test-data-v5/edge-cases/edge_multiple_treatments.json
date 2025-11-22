@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "004",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/004",
+  "title": "My PBH treatment journey",
+  "text": "Sharing my experience managing post-bariatric hypoglycemia for anyone newly diagnosed. Started with dietary modifications - small frequent meals, protein first, avoiding simple carbs. That helped but wasn't enough. Doctor added acarbose which made a difference. Also tried octreotide injections for a while but the side effects weren't worth it. Now using a CGM (continuous glucose monitor) to track patterns and it's been a game changer. Recently started diazoxide and it's helping with the severe drops. Still carrying glucose tablets everywhere just in case.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_004",
+    "name": "User W",
+    "handle": "user_w",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 156,
+    "comments": 67,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-04-30T13:25:00+00:00"
+}

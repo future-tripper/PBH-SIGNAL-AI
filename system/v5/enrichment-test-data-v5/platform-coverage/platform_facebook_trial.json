@@ -1,0 +1,26 @@
+{
+  "source": "facebook",
+  "source_id": "001",
+  "url": "https://www.facebook.com/AmylyxPharma/posts/001",
+  "title": null,
+  "text": "Amylyx Pharmaceuticals is enrolling patients in a Phase 3 clinical trial for avexitide, an investigational treatment for post-bariatric hypoglycemia (PBH). If you've had bariatric surgery and experience low blood sugar episodes after meals, you may be eligible. Visit our website to learn more about participation. #ClinicalTrial #PBH #BariatricSurgery",
+  "parent_source": null,
+  "subsource": "Amylyx Pharmaceuticals",
+  "author": {
+    "id": "fb_user_001",
+    "name": "User M",
+    "handle": "user_m",
+    "gender": null,
+    "age": null,
+    "subscribers": 15200
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 124,
+    "comments": 38,
+    "shares": 22
+  },
+  "sentiment": null,
+  "published_at": "2025-04-25T10:00:00+00:00"
+}

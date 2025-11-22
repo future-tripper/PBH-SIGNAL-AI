@@ -1,0 +1,26 @@
+{
+  "source": "twitter",
+  "source_id": "003",
+  "url": "https://twitter.com/metabolic_research/status/003",
+  "title": null,
+  "text": "Our latest study on post-bariatric hypoglycemia published in JAMA. 127 patients post-RYGB evaluated for PBH symptoms. 34% presented with severe hypoglycemic episodes <50mg/dL. Acarbose showed 67% efficacy in symptom reduction. Novel GLP-1 antagonist therapies showing promise. Link to full paper: [redacted] #BariatricResearch #Endocrinology",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_003",
+    "name": "User c",
+    "handle": "user_c",
+    "gender": "male",
+    "age": 45,
+    "subscribers": 12500
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 234,
+    "comments": 45,
+    "shares": 89
+  },
+  "sentiment": null,
+  "published_at": "2025-05-12T09:15:00+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "source": "facebook",
+  "source_id": "006",
+  "url": "https://www.facebook.com/pbh_support/posts/006",
+  "title": null,
+  "text": "Support group meeting update: We had a really sweet turnout last night - 15 people! Someone brought sweet potato casserole which was too sweet for most of us with PBH (sugar spikes are no joke). We discussed managing the sweet spot between eating enough and avoiding crashes. One member shared how she's feeling weak but staying strong mentally. The support here is sweet and helps when you're feeling weak emotionally. Next month's topic: finding that sweet balance in treatment.",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_006",
+    "name": "User `",
+    "handle": "user_`",
+    "gender": "female",
+    "age": 38,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 42,
+    "comments": 18,
+    "shares": 3
+  },
+  "sentiment": null,
+  "published_at": "2025-05-15T09:30:00+00:00"
+}

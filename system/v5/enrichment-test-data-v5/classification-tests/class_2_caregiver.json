@@ -1,0 +1,26 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support/posts/002",
+  "title": null,
+  "text": "My wife was diagnosed with post-bariatric hypoglycemia 6 months ago and I'm struggling to know how to help. She gets these episodes where she becomes shaky, confused, and sweaty - it's terrifying to watch. I've learned to recognize the signs and always have glucose tablets ready. We've adjusted our whole routine around her eating schedule. She's on acarbose now which helps but not completely. Any other spouses/partners here dealing with this? How do you cope with the worry?",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User b",
+    "handle": "user_b",
+    "gender": "male",
+    "age": 48,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 78,
+    "comments": 45,
+    "shares": 5
+  },
+  "sentiment": null,
+  "published_at": "2025-05-13T18:40:00+00:00"
+}

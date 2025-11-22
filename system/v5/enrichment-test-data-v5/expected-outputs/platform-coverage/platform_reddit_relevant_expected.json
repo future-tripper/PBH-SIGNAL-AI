@@ -1,0 +1,92 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "permalink": null,
+  "title": "My PBH has been terrible - need advice",
+  "text": "I'm 6 months post-sleeve and my post-bariatric hypoglycemia is out of control. Getting shaky, dizzy, and sweating about 90 minutes after meals. My endo put me on acarbose but it's not really helping. Anyone else dealing with this? What's worked for you?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User Q",
+    "handle": "user_q",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 15,
+    "comments": 23,
+    "shares": null
+  },
+  "published_at": "2025-05-12T14:20:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "doctor_visit",
+    "treatment_failure"
+  ],
+  "symptoms": [
+    "shakiness",
+    "dizziness",
+    "sweating"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 61,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "6 months post-sleeve",
+    "feeling shaky",
+    "dizziness",
+    "sweating",
+    "90 minutes after meals",
+    "acarbose",
+    "endocrinologist",
+    "not helping",
+    "out of control"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with multiple symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.95,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "topics_bariatric_surgery_034",
+    "conditions_PBH_008",
+    "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
+    "symptoms_sweating_015",
+    "treatments_acarbose_025",
+    "topics_doctor_visit_038",
+    "topics_treatment_failure_046"
+  ]
+}

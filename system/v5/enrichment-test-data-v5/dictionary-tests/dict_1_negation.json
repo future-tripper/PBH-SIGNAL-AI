@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "title": "Acarbose is working!",
+  "text": "Update on my PBH treatment! I'm 8 weeks on acarbose and I'm NOT having shakiness or dizziness anymore. My blood sugar is staying stable after meals. I'm NOT experiencing any of the symptoms I had before starting treatment. Feeling so much better and NOT worried about hypos constantly like I was.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User \\",
+    "handle": "user_\\",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 12,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-05-20T10:15:00+00:00"
+}

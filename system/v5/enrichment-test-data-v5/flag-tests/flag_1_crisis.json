@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "title": "I can't do this anymore",
+  "text": "I'm 10 months post-gastric bypass and my post-bariatric hypoglycemia is destroying my life. I can't work, can't drive, can't do anything normal. The constant fear of passing out is paralyzing. I've tried everything - dietary changes, acarbose, continuous glucose monitoring - nothing helps enough. I feel trapped in my own body. I honestly don't know how much longer I can keep living like this. I just want it to stop. I can't see a way forward anymore.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User g",
+    "handle": "user_g",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 5,
+    "comments": 67,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-05-08T02:15:00+00:00"
+}

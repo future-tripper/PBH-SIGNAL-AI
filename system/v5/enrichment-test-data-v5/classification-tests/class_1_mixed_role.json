@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "title": "Perspective from both sides - nurse AND patient",
+  "text": "I'm a bariatric nurse and I also had gastric bypass 2 years ago. In my professional role, I counsel patients about potential complications. But experiencing post-bariatric hypoglycemia myself has been humbling. I tell my patients about PBH symptoms - shakiness, dizziness, sweating - but living with it is different. My own episodes are scary even though I know the clinical facts. I started on acarbose last month and it's helping my symptoms. Strange being on both sides of this condition.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User a",
+    "handle": "user_a",
+    "gender": "female",
+    "age": 42,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 156,
+    "comments": 67,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-05-14T15:20:00+00:00"
+}

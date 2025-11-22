@@ -1,0 +1,73 @@
+{
+  "source": "twitter",
+  "source_id": "005",
+  "url": "https://twitter.com/pbh_life/status/005",
+  "permalink": null,
+  "title": null,
+  "text": "Oh GREAT, another hypoglycemic episode \ud83d\ude44 Love getting dizzy and shaky 90 minutes after eating. Post-bariatric hypoglycemia is just SO much fun. Really enjoying carrying glucose tablets everywhere like they're my new personality trait. #PBH #Sarcasm #BariatricProblems",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_005",
+    "name": "User e",
+    "handle": "user_e",
+    "gender": null,
+    "age": null,
+    "subscribers": 890
+  },
+  "country": "US",
+  "published_at": "2025-05-10T14:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 67,
+    "comments": 23,
+    "shares": 8
+  },
+  "topics": [],
+  "symptoms": [
+    "dizziness",
+    "shakiness",
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 137,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "hypoglycemic episode",
+    "dizziness",
+    "feeling shaky",
+    "90 minutes after eating",
+    "glucose tablets"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with symptoms and timing patterns",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "frustration"
+  ],
+  "intent": [
+    "venting"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "symptoms_hypoglycemia_016",
+    "symptoms_dizziness_014",
+    "symptoms_shakiness_013",
+    "conditions_PBH_008"
+  ]
+}

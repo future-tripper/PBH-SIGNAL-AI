@@ -1,0 +1,26 @@
+{
+  "source": "twitter",
+  "source_id": "010",
+  "url": "https://twitter.com/pbh_support/status/010",
+  "title": null,
+  "text": "People in clinical trials for avexitide say it has some side effects. Has anyone here actually tried it? Looking for real experiences not just trial data. #PBH #avexitide #bariatricsurgery",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_010",
+    "name": "User B",
+    "handle": "user_b",
+    "gender": null,
+    "age": null,
+    "subscribers": 3200
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 23,
+    "comments": 8,
+    "shares": 4
+  },
+  "sentiment": null,
+  "published_at": "2025-04-05T11:00:00+00:00"
+}

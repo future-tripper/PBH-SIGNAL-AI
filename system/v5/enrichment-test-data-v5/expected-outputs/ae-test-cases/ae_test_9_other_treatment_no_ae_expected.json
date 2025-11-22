@@ -1,0 +1,77 @@
+{
+  "source": "reddit",
+  "source_id": "008",
+  "url": "https://reddit.com/r/wls/comments/008",
+  "permalink": null,
+  "title": "Acarbose side effects are killing me",
+  "text": "After starting acarbose 3 weeks ago I got terrible bloating and diarrhea. Can't tolerate it anymore. My doctor mentioned avexitide as an alternative. Has anyone switched from acarbose to avexitide? How did it go?",
+  "parent_source": "wls",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_008",
+    "name": "User K",
+    "handle": "user_k",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "language": "eng",
+  "metrics": {
+    "likes": 15,
+    "comments": 22,
+    "shares": null
+  },
+  "published_at": "2025-03-22T16:10:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "medication_side_effects"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "acarbose",
+    "avexitide"
+  ],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 59,
+  "engagement_label": "high",
+  "key_phrases": [
+    "acarbose",
+    "avexitide",
+    "bloating",
+    "diarrhea",
+    "3 weeks",
+    "after starting",
+    "switched from acarbose",
+    "side effects"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.85,
+  "relevance_reason": "avexitide treatment mentioned with strong bariatric context",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "frustration"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "treatments_acarbose_025",
+    "treatments_avexitide_024",
+    "topics_bariatric_surgery_034",
+    "topics_medication_side_effects_039"
+  ]
+}

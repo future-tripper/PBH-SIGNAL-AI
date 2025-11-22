@@ -1,0 +1,94 @@
+{
+  "source": "reddit",
+  "source_id": "004",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/004",
+  "permalink": null,
+  "title": "My PBH treatment journey",
+  "text": "Sharing my experience managing post-bariatric hypoglycemia for anyone newly diagnosed. Started with dietary modifications - small frequent meals, protein first, avoiding simple carbs. That helped but wasn't enough. Doctor added acarbose which made a difference. Also tried octreotide injections for a while but the side effects weren't worth it. Now using a CGM (continuous glucose monitor) to track patterns and it's been a game changer. Recently started diazoxide and it's helping with the severe drops. Still carrying glucose tablets everywhere just in case.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_004",
+    "name": "User W",
+    "handle": "user_w",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-04-30T13:25:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 156,
+    "comments": 67,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "diagnostics_monitoring",
+    "medication_side_effects"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose",
+    "octreotide",
+    "diazoxide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 290,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "dietary modifications",
+    "small frequent meals",
+    "protein first",
+    "avoiding simple carbs",
+    "acarbose",
+    "octreotide injections",
+    "continuous glucose monitor",
+    "diazoxide",
+    "glucose tablets"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with strong bariatric context and multiple treatments",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diagnostics",
+    "Diet"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope",
+    "relief"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "treatments_acarbose_025",
+    "treatments_octreotide_027",
+    "treatments_diazoxide_026",
+    "topics_diagnostics_monitoring_036",
+    "symptoms_hypoglycemia_016",
+    "topics_medication_side_effects_039"
+  ]
+}

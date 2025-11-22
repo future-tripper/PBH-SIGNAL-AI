@@ -1,0 +1,26 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support_group/posts/002",
+  "title": null,
+  "text": "My aunt is taking avexitide for her PBH. She ended up in the ER with chest pain after her last dose yesterday. Really scared for her. The doctors are running tests now. Has anyone else had serious reactions like this?",
+  "parent_source": null,
+  "subsource": "PBH Support Group",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User D",
+    "handle": "user_d",
+    "gender": "female",
+    "age": 32,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 23,
+    "shares": 3
+  },
+  "sentiment": null,
+  "published_at": "2025-03-20T09:15:00+00:00"
+}

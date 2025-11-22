@@ -1,0 +1,70 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "permalink": null,
+  "title": "Acarbose is working!",
+  "text": "Update on my PBH treatment! I'm 8 weeks on acarbose and I'm NOT having shakiness or dizziness anymore. My blood sugar is staying stable after meals. I'm NOT experiencing any of the symptoms I had before starting treatment. Feeling so much better and NOT worried about hypos constantly like I was.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User \\",
+    "handle": "user_\\",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-20T10:15:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 12,
+    "shares": null
+  },
+  "topics": [],
+  "symptoms": [],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 69,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "acarbose treatment",
+    "blood sugar stable",
+    "symptom improvement",
+    "8 weeks on treatment"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with treatment success story",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.95,
+  "sentiment_raw": "positive",
+  "emotions": [
+    "relief",
+    "hope"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "conditions_PBH_008",
+    "treatments_acarbose_025"
+  ]
+}

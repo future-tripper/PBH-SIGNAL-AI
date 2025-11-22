@@ -1,0 +1,76 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support_group/posts/002",
+  "permalink": null,
+  "title": null,
+  "text": "My aunt is taking avexitide for her PBH. She ended up in the ER with chest pain after her last dose yesterday. Really scared for her. The doctors are running tests now. Has anyone else had serious reactions like this?",
+  "parent_source": null,
+  "subsource": "PBH Support Group",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User D",
+    "handle": "user_d",
+    "gender": "female",
+    "age": 32,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 23,
+    "shares": 3
+  },
+  "published_at": "2025-03-20T09:15:00+00:00",
+  "topics": [
+    "care_settings"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 100,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "avexitide",
+    "emergency room",
+    "chest pain",
+    "serious reactions"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with avexitide treatment",
+  "audience_label": "patient",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Care Settings"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.95,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "fear",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "treatments_avexitide_024",
+    "conditions_PBH_008",
+    "topics_care_settings_051"
+  ]
+}

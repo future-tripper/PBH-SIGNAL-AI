@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "005",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/005",
+  "title": "Trial update - experiencing side effects",
+  "text": "I'm in the Amylyx trial for PBH. After my dose of the study drug yesterday I got really dizzy and nauseous. Called the study coordinator this morning. They said to monitor it and report any changes. Has anyone else in the trial experienced this?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_005",
+    "name": "User G",
+    "handle": "user_g",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 8,
+    "comments": 12,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-03-22T10:45:00+00:00"
+}

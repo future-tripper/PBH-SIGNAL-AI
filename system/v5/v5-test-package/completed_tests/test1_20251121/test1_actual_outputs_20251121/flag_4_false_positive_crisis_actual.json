@@ -1,0 +1,80 @@
+{
+  "source": "tiktok",
+  "source_id": "004",
+  "url": "https://www.tiktok.com/@pbh_humor/video/004",
+  "permalink": null,
+  "title": null,
+  "text": "This PBH is literally killing me lol \u001f602 Kidding obvs but seriously why does my body hate me? Had another sugar crash today and I'm like bruh can we NOT? My blood glucose said it's giving chaos energy and I'm just trying to live my best life. Acarbose keeping me alive out here fr. Shoutout to everyone managing this condition - we're all just trying not to die from shaky episodes \u001f480 #PBH #DarkHumor #BariatricLife #SurvivingNotThriving",
+  "parent_source": null,
+  "subsource": "PBH",
+  "author": {
+    "id": "tiktok_user_004",
+    "name": "User j",
+    "handle": "user_j",
+    "gender": null,
+    "age": 29,
+    "subscribers": 8900
+  },
+  "country": "US",
+  "published_at": "2025-05-05T16:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 1240,
+    "comments": 89,
+    "shares": 34
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [
+    "shakiness",
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 1520,
+  "engagement_label": "high",
+  "key_phrases": [
+    "sugar crash",
+    "blood glucose chaos",
+    "acarbase",
+    "shaky episodes",
+    "PBH"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with strong bariatric context and symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "mixed",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "sharing_experience",
+    "venting"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "symptoms_hypoglycemia_016",
+    "symptoms_shakiness_013",
+    "treatments_acarbose_025",
+    "topics_bariatric_surgery_034"
+  ]
+}

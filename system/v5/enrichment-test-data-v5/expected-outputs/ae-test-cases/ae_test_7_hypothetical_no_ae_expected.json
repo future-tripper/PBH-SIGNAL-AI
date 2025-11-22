@@ -1,0 +1,75 @@
+{
+  "source": "reddit",
+  "source_id": "006",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/006",
+  "permalink": null,
+  "title": "Starting avexitide - what to expect?",
+  "text": "Starting avexitide next week for my PBH. Worried it might cause side effects like nausea or dizziness. What should I watch out for? Any tips for managing side effects if they happen?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_006",
+    "name": "User I",
+    "handle": "user_i",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "language": "eng",
+  "metrics": {
+    "likes": 5,
+    "comments": 18,
+    "shares": null
+  },
+  "published_at": "2025-03-28T10:45:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "medication_side_effects"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 41,
+  "engagement_label": "high",
+  "key_phrases": [
+    "avexitide",
+    "post-bariatric hypoglycemia",
+    "starting next week",
+    "side effects",
+    "managing side effects"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with avexitide treatment",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": "neutral",
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "treatments_avexitide_024",
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "topics_medication_side_effects_039"
+  ]
+}

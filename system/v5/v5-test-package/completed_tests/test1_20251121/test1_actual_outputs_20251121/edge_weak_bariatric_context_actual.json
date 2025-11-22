@@ -1,0 +1,81 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/hypoglycemia/comments/001",
+  "permalink": null,
+  "title": "Low blood sugar after meals - is this normal?",
+  "text": "Ever since my procedure last year, I've been having these weird episodes where I feel super shaky and lightheaded about an hour after eating. My blood sugar drops pretty low. Doctor mentioned something about reactive hypoglycemia. Anyone experience this post-op? Not sure if I should be worried or if it's just part of recovery.",
+  "parent_source": "hypoglycemia",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User [",
+    "handle": "user_[",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-09T11:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 5,
+    "comments": 8,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [
+    "shakiness",
+    "dizziness",
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 21,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-op",
+    "shaky",
+    "lightheaded",
+    "blood sugar drops",
+    "reactive hypoglycemia",
+    "hour after eating"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "strong bariatric context with reactive hypoglycemia condition and multiple PBH-like symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "possible_PBH_misattribution"
+  ],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
+    "symptoms_hypoglycemia_016",
+    "conditions_reactive_hypoglycemia_009",
+    "topics_bariatric_surgery_034"
+  ]
+}

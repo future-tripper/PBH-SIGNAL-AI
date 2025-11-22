@@ -1,0 +1,78 @@
+{
+  "source": "reddit",
+  "source_id": "003",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/003",
+  "permalink": null,
+  "title": "Great day despite PBH",
+  "text": "Had my endocrinologist appointment this morning to discuss my post-bariatric hypoglycemia. Afterwards, my friend and I went to lunch at Novo restaurant downtown - their grilled chicken and vegetables were perfect for my dietary needs. Then we walked around the park for an hour. Managing PBH is hard but days like this remind me life goes on. My blood sugar stayed stable the whole time!",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_003",
+    "name": "User ]",
+    "handle": "user_]",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-17T16:45:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 23,
+    "comments": 7,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "doctor_visit"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 37,
+  "engagement_label": "high",
+  "key_phrases": [
+    "endocrinologist appointment",
+    "post-bariatric hypoglycemia",
+    "dietary needs",
+    "blood sugar stayed stable",
+    "managing PBH",
+    "grilled chicken and vegetables",
+    "life goes on"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with strong bariatric context",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet",
+    "Care Settings"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "relief",
+    "hope"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "topics_doctor_visit_038",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

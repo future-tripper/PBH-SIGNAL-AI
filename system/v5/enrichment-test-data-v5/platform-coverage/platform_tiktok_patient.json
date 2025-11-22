@@ -1,0 +1,26 @@
+{
+  "source": "tiktok",
+  "source_id": "002",
+  "url": "https://www.tiktok.com/@my_vsg_journey/video/002",
+  "title": null,
+  "text": "Day 187 post-VSG and dealing with reactive hypoglycemia is THE WORST. I literally have to eat every 2 hours or I get so shaky and dizzy I can't function. My doctor says it's common after sleeve but nobody warned me about this! Carrying protein snacks everywhere now. Anyone else struggling with this? #vsg #gastricsleeve #postopsideeffects #hypoglycemia",
+  "parent_source": null,
+  "subsource": "vsg",
+  "author": {
+    "id": "tiktok_user_002",
+    "name": "User S",
+    "handle": "user_s",
+    "gender": "female",
+    "age": 31,
+    "subscribers": 8500
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 567,
+    "comments": 89,
+    "shares": 12
+  },
+  "sentiment": null,
+  "published_at": "2025-05-15T11:20:00+00:00"
+}

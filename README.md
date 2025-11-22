@@ -1,54 +1,55 @@
-# SIGNAL Enrichment System
+# SIGNAL: Social Listening Platform
 
-Social listening platform for Amylyx PBH treatment launch with AI-powered entity extraction and classification.
+AI-powered social listening platform for Amylyx Pharmaceuticals to support the launch of Avexitide, a treatment for Post-Bariatric Hypoglycemia (PBH).
+
+## What It Does
+
+SIGNAL processes social media posts, forum discussions, and healthcare content to extract insights about:
+- Patient experiences and sentiment
+- Healthcare provider perspectives
+- Treatment discussions and adverse events
+- Bariatric surgery context and PBH symptoms
+
+## Platform Coverage
+
+Current MVP supports 4 platforms:
+- Reddit
+- TikTok
+- Facebook
+- Instagram
+
+## Data Pipeline
+
+1. **Fetching** - Collect data from social sources
+2. **Normalizing** - Standardize to common schema
+3. **Enriching** - AI-powered entity extraction and classification
+4. **Storing** - Database with filtering for dashboard and chatbot
 
 ## Project Structure
 
 ```
-SIGNAL/
-├── README.md                                    # This file
-├── project_docs/                               # Project documentation
-│   ├── CLAUDE.md                              # Claude Code guidance
-│   └── ENRICHMENT_TEST_TRACKER.md             # Test tracking and issues
-├── reference_schemas/                          # Reference CSV files (read-only)
-│   ├── PBH_SIGNAL_DICTIONARY.csv             # Dictionary in CSV format
-│   ├── PBH_SIGNAL_ENRICHMENT_SCHEMA.csv      # Enrichment schema reference
-│   ├── PBH_SIGNAL_NORMALIZATION_SCHEMA.csv   # Input normalization schema
-│   └── PBH_SIGNAL_DASHBOARD_FEATURES.csv     # Dashboard requirements
-├── test_data/                                 # Test cases for validation
-│   ├── reddit_example_1.json                 # Patient voice, relevant, negative
-│   ├── reddit_example_2.json                 # HCP voice, relevant, positive
-│   ├── reddit_example_3.json                 # Borderline relevance, neutral
-│   └── reddit_example_4.json                 # Not relevant (T1D control)
-├── enrichment_system/                        # Active development files
-│   └── v1/                                   # Version 1 (current baseline)
-│       ├── PBH_SIGNAL_DICTIONARY_v1.txt      # Optimized dictionary
-│       ├── openai_assistant_system_prompt_v1.md # Optimized system prompt
-│       └── openai_assistant_response_format_v1.json # JSON schema
-└── [Active Files - Working Versions]
-    ├── PBH_SIGNAL_DICTIONARY.txt             # Current dictionary (editable)
-    ├── openai_assistant_system_prompt.md     # Current prompt (editable)  
-    └── openai_assistant_response_format.json # Current schema (editable)
+PBH-SIGNAL-AI/
+├── CLAUDE.md                    # AI assistant guidance for this project
+├── project_docs/                # Documentation and tracking
+├── reference_schemas/           # Schema definitions and feature specs
+├── enrichment_system/           # Versioned enrichment systems
+│   └── v5/                      # Current production system
+└── system/v5/                   # Testing infrastructure
 ```
 
-## Development Workflow
+## Key Features
 
-### Current Phase: Testing & Optimization
-1. **Active Files**: Edit `PBH_SIGNAL_DICTIONARY.txt`, `openai_assistant_system_prompt.md`, `openai_assistant_response_format.json` in root
-2. **Testing**: Use files from `test_data/` to validate enrichment accuracy
-3. **Tracking**: Document results in `project_docs/ENRICHMENT_TEST_TRACKER.md`
-4. **Versioning**: When significant improvements are made, copy to `enrichment_system/vX/` with version suffix
+- **Dictionary-based entity extraction** - Symptoms, treatments, conditions, companies, topics
+- **Audience detection** - Patient, HCP, caregiver, researcher perspectives
+- **Sentiment analysis** - Positive, negative, neutral, mixed sentiment with emotions
+- **Adverse event flagging** - FDA-aligned detection for patient safety
+- **Crisis detection** - Self-harm language and misattribution flags
+- **Relevance scoring** - Bariatric context triangulation for filtering
 
-### Version Control Strategy
-- **Root files**: Current working versions (editable)
-- **enrichment_system/vX/**: Stable versions with timestamp and changelog
-- **reference_schemas/**: Static CSV references (don't edit)
-- **test_data/**: Test cases (add new ones as needed)
+## Current Focus
 
-## Next Steps
-1. Test v1 enrichment system with Reddit examples
-2. Identify and fix issues iteratively  
-3. Create v2 when major improvements are achieved
-4. Repeat until >90% test accuracy achieved
+Production testing of enrichment accuracy across multiple platforms with comprehensive test coverage including adverse event detection, platform-specific content handling, and edge case validation.
 
-*Created: September 4, 2024*
+---
+
+**Last Updated:** 2025-11-21

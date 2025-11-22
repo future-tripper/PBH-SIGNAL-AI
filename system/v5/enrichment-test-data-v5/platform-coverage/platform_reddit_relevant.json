@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "title": "My PBH has been terrible - need advice",
+  "text": "I'm 6 months post-sleeve and my post-bariatric hypoglycemia is out of control. Getting shaky, dizzy, and sweating about 90 minutes after meals. My endo put me on acarbose but it's not really helping. Anyone else dealing with this? What's worked for you?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User Q",
+    "handle": "user_q",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 15,
+    "comments": 23,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-05-12T14:20:00+00:00"
+}

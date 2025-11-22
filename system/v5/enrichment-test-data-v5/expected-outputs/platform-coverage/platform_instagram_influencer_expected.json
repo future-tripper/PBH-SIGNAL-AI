@@ -1,0 +1,90 @@
+{
+  "source": "instagram",
+  "source_id": "001",
+  "url": "https://www.instagram.com/p/001/",
+  "permalink": null,
+  "title": null,
+  "text": "Let's talk about something REAL that nobody warned me about before my VSG: reactive hypoglycemia \ud83d\ude30 About 1-2 hours after eating, my blood sugar can drop dangerously low. I get shaky, sweaty, anxious, and sometimes feel like I'm going to pass out. It's called post-bariatric hypoglycemia and it affects up to 30% of us post-op. I'm working with my endo on management strategies. If you're experiencing this - you're not alone! Swipe for my tips on managing it \ud83d\udc49 #VSG #BariatricSurgery #PostBariatricHypoglycemia #PBH #RealTalk",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "ig_user_001",
+    "name": "User N",
+    "handle": "user_n",
+    "gender": "female",
+    "age": 29,
+    "subscribers": 42000
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 2156,
+    "comments": 189,
+    "shares": null
+  },
+  "published_at": "2025-05-14T13:00:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "doctor_visit"
+  ],
+  "symptoms": [
+    "shakiness",
+    "sweating",
+    "fainting",
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "PBH",
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 2534,
+  "engagement_label": "high",
+  "key_phrases": [
+    "vsg",
+    "reactive hypoglycemia",
+    "post-bariatric hypoglycemia",
+    "1-2 hours after eating",
+    "blood sugar drops",
+    "feeling shaky",
+    "sweating",
+    "feel like passing out",
+    "endocrinologist",
+    "management strategies"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with multiple symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.95,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "anxiety",
+    "frustration"
+  ],
+  "intent": [
+    "giving_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "topics_bariatric_surgery_034",
+    "conditions_reactive_hypoglycemia_009",
+    "conditions_PBH_008",
+    "symptoms_hypoglycemia_016",
+    "symptoms_shakiness_013",
+    "symptoms_sweating_015",
+    "symptoms_fainting_019",
+    "topics_doctor_visit_038"
+  ]
+}

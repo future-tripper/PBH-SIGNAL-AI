@@ -1,0 +1,78 @@
+{
+  "source": "facebook",
+  "source_id": "009",
+  "url": "https://www.facebook.com/pbh_community/posts/009",
+  "permalink": null,
+  "title": null,
+  "text": "Just learned about avexitide from my endocrinologist! She thinks it could really help with my severe PBH episodes after my RNY surgery. Excited to have a new treatment option. Anyone here tried it yet?",
+  "parent_source": null,
+  "subsource": "PBH Community",
+  "author": {
+    "id": "fb_user_009",
+    "name": "User A",
+    "handle": "user_a",
+    "gender": "female",
+    "age": 41,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 32,
+    "comments": 18,
+    "shares": 1
+  },
+  "published_at": "2025-03-30T13:25:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "doctor_visit"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 71,
+  "engagement_label": "high",
+  "key_phrases": [
+    "avexitide",
+    "endocrinologist",
+    "post-bariatric hypoglycemia",
+    "severe pbh episodes",
+    "rny surgery",
+    "new treatment option"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with avexitide treatment",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": "positive",
+  "emotions": [
+    "hope",
+    "relief"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "treatments_avexitide_024",
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "topics_doctor_visit_038"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "source": "twitter",
+  "source_id": "003",
+  "url": "https://twitter.com/endocrinologist_md/status/003",
+  "title": null,
+  "text": "Had a patient on avexitide who developed severe nausea within 3 days of starting treatment. We had to discontinue. Important to monitor closely in the early stages. #endocrinology #PBH #avexitide",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_003",
+    "name": "User E",
+    "handle": "user_e",
+    "gender": "male",
+    "age": null,
+    "subscribers": 8500
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 156,
+    "comments": 34,
+    "shares": 12
+  },
+  "sentiment": null,
+  "published_at": "2025-03-18T16:45:00+00:00"
+}

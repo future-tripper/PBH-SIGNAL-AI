@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "008",
+  "url": "https://reddit.com/r/wls/comments/008",
+  "title": "Acarbose side effects are killing me",
+  "text": "After starting acarbose 3 weeks ago I got terrible bloating and diarrhea. Can't tolerate it anymore. My doctor mentioned avexitide as an alternative. Has anyone switched from acarbose to avexitide? How did it go?",
+  "parent_source": "wls",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_008",
+    "name": "User K",
+    "handle": "user_k",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "language": "eng",
+  "metrics": {
+    "likes": 15,
+    "comments": 22,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-03-22T16:10:00+00:00"
+}

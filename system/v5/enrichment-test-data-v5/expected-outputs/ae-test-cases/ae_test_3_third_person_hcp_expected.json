@@ -1,0 +1,80 @@
+{
+  "source": "twitter",
+  "source_id": "003",
+  "url": "https://twitter.com/endocrinologist_md/status/003",
+  "permalink": null,
+  "title": null,
+  "text": "Had a patient on avexitide who developed severe nausea within 3 days of starting treatment. We had to discontinue. Important to monitor closely in the early stages. #endocrinology #PBH #avexitide",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_003",
+    "name": "User E",
+    "handle": "user_e",
+    "gender": "male",
+    "age": null,
+    "subscribers": 8500
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 156,
+    "comments": 34,
+    "shares": 12
+  },
+  "published_at": "2025-03-18T16:45:00+00:00",
+  "topics": [
+    "medication_side_effects"
+  ],
+  "symptoms": [
+    "nausea"
+  ],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 260,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "avexitide",
+    "severe nausea",
+    "within 3 days",
+    "starting treatment",
+    "discontinue",
+    "monitor closely",
+    "early stages"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with avexitide treatment",
+  "audience_label": "hcp",
+  "audience_confidence": 0.95,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": "neutral",
+  "emotions": [],
+  "intent": [
+    "giving_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "audience_anchor_hcp_anchor_002",
+    "treatments_avexitide_024",
+    "symptoms_nausea_020",
+    "conditions_PBH_008",
+    "topics_medication_side_effects_039"
+  ]
+}

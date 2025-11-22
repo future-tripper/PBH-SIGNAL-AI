@@ -1,0 +1,80 @@
+{
+  "source": "tiktok",
+  "source_id": "005",
+  "url": "https://www.tiktok.com/@bariatric_realness/video/005",
+  "permalink": null,
+  "title": null,
+  "text": "POV: your sugar crashes AGAIN 2 hours after eating \ud83d\ude29 Like why is my body so wonky after VSG? Feeling absolutely crappy and shaky rn. The hangry feelings are real but backwards lol. My blood sugar be doing the most fr fr. Anyone else's body acting all kinds of weird post-op? This reactive hypo is not it bestie \ud83d\udc80 #VSG #PostOp #SugarCrash #BariatricProblems",
+  "parent_source": null,
+  "subsource": "VSG",
+  "author": {
+    "id": "tiktok_user_005",
+    "name": "User _",
+    "handle": "user__",
+    "gender": "female",
+    "age": 26,
+    "subscribers": 15200
+  },
+  "country": "US",
+  "published_at": "2025-05-19T13:45:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 2340,
+    "comments": 178,
+    "shares": 45
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [
+    "shakiness",
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 2831,
+  "engagement_label": "high",
+  "key_phrases": [
+    "sugar crashes",
+    "2 hours after eating",
+    "sleeve gastrectomy",
+    "feeling shaky",
+    "reactive hypoglycemia",
+    "post-op experience",
+    "blood sugar issues"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "strong bariatric context with hypoglycemia condition and PBH symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.95,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "frustration"
+  ],
+  "intent": [
+    "sharing_experience",
+    "seeking_advice"
+  ],
+  "flags": [
+    "possible_PBH_misattribution"
+  ],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001",
+    "symptoms_hypoglycemia_016",
+    "symptoms_shakiness_013",
+    "conditions_reactive_hypoglycemia_009"
+  ]
+}

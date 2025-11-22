@@ -1,0 +1,26 @@
+{
+  "source": "tiktok",
+  "source_id": "005",
+  "url": "https://tiktok.com/@pbh_awareness/video/005",
+  "title": null,
+  "text": "I heard avexitide can cause dizziness and nausea. Anyone know if that's true? Trying to decide if I should ask my doctor about it for my reactive hypo after surgery. #pbh #avexitide #bariatricsurgery",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "tiktok_user_005",
+    "name": "User H",
+    "handle": "user_h",
+    "gender": null,
+    "age": 28,
+    "subscribers": 1200
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 12,
+    "shares": 2
+  },
+  "sentiment": null,
+  "published_at": "2025-03-25T18:30:00+00:00"
+}

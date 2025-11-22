@@ -1,0 +1,76 @@
+{
+  "source": "reddit",
+  "source_id": "002",
+  "url": "https://reddit.com/r/loseit/comments/002",
+  "permalink": null,
+  "title": "Low blood sugar episodes since surgery",
+  "text": "Anyone else get dizzy spells after eating since their procedure? I had WLS 4 months ago and sometimes feel shaky about an hour or two post-meal. Not sure if this is normal or something to worry about. My glucose drops pretty low according to my meter.",
+  "parent_source": "loseit",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_002",
+    "name": "User P",
+    "handle": "user_p",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 8,
+    "comments": 12,
+    "shares": null
+  },
+  "published_at": "2025-04-18T09:45:00+00:00",
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [
+    "dizziness",
+    "shakiness",
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 32,
+  "engagement_label": "high",
+  "key_phrases": [
+    "weight loss surgery",
+    "4 months ago",
+    "dizzy spells",
+    "after eating",
+    "feeling shaky",
+    "hour or two post-meal",
+    "glucose drops",
+    "since procedure"
+  ],
+  "bariatric_context": "weak",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "weak bariatric context with hypoglycemia and symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.85,
+  "themes": [
+    "Symptoms",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.75,
+  "sentiment_raw": "neutral",
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "topics_bariatric_surgery_034",
+    "symptoms_dizziness_014",
+    "symptoms_shakiness_013",
+    "symptoms_hypoglycemia_016"
+  ]
+}

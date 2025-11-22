@@ -1,0 +1,26 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support/posts/002",
+  "title": null,
+  "text": "It's been 8 months since my gastric bypass and I'm finally finding a routine that works for my post-bariatric hypoglycemia. Small frequent meals with protein first, avoiding simple carbs, and using a CGM to track my patterns. Some days are still rough but I'm getting better at managing it. For anyone newly diagnosed - it does get easier as you learn your triggers! My endocrinologist has been amazing. #PBH #BariatricLife #ChronicIllness",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User L",
+    "handle": "user_l",
+    "gender": "female",
+    "age": 45,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 67,
+    "comments": 34,
+    "shares": 8
+  },
+  "sentiment": null,
+  "published_at": "2025-05-10T16:45:00+00:00"
+}

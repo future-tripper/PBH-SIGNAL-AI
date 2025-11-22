@@ -1,0 +1,85 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support/posts/002",
+  "permalink": null,
+  "title": null,
+  "text": "My wife was diagnosed with post-bariatric hypoglycemia 6 months ago and I'm struggling to know how to help. She gets these episodes where she becomes shaky, confused, and sweaty - it's terrifying to watch. I've learned to recognize the signs and always have glucose tablets ready. We've adjusted our whole routine around her eating schedule. She's on acarbose now which helps but not completely. Any other spouses/partners here dealing with this? How do you cope with the worry?",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User b",
+    "handle": "user_b",
+    "gender": "male",
+    "age": 48,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-13T18:40:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 78,
+    "comments": 45,
+    "shares": 5
+  },
+  "topics": [
+    "patient_support"
+  ],
+  "symptoms": [
+    "shakiness",
+    "brain_fog",
+    "sweating"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 183,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "caregiver perspective",
+    "feeling shaky",
+    "confusion",
+    "sweating",
+    "acarbose treatment",
+    "glucose tablets",
+    "eating schedule",
+    "symptom management"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with caregiver support context",
+  "audience_label": "patient",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "fear",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "symptoms_shakiness_013",
+    "symptoms_brain_fog_017",
+    "symptoms_sweating_015",
+    "treatments_acarbose_025",
+    "topics_patient_support_037"
+  ]
+}

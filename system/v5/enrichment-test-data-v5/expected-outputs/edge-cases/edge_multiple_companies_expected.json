@@ -1,0 +1,90 @@
+{
+  "source": "reddit",
+  "source_id": "003",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/003",
+  "permalink": null,
+  "title": "Comparing PBH treatment options",
+  "text": "My endo wants to try avexitide for my post-bariatric hypoglycemia. I've been on acarbose for 6 months but it's not cutting it. He mentioned Amylyx is doing trials with avexitide and early results look promising. I'm also on Ozempic from Novo Nordisk for weight maintenance. Anyone tried avexitide? How does it compare to acarbose or other options from companies like Xeris?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_003",
+    "name": "User V",
+    "handle": "user_v",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 28,
+    "comments": 45,
+    "shares": null
+  },
+  "published_at": "2025-05-05T16:40:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "clinical_trial",
+    "treatment_failure",
+    "doctor_visit"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide",
+    "acarbose",
+    "semaglutide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [
+    "Amylyx",
+    "Novo_Nordisk"
+  ],
+  "engagement_score": 118,
+  "engagement_label": "high",
+  "key_phrases": [
+    "avexitide",
+    "post-bariatric hypoglycemia",
+    "acarbose",
+    "6 months",
+    "not cutting it",
+    "amylyx trials",
+    "ozempic",
+    "weight maintenance",
+    "endocrinologist"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with multiple treatments",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.75,
+  "sentiment_raw": "neutral",
+  "emotions": [],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "conditions_PBH_008",
+    "treatments_avexitide_024",
+    "treatments_acarbose_025",
+    "companies_Amylyx_003",
+    "topics_clinical_trial_044",
+    "treatments_semaglutide_028",
+    "companies_Novo_Nordisk_004",
+    "topics_bariatric_surgery_034",
+    "topics_treatment_failure_046",
+    "topics_doctor_visit_038"
+  ]
+}

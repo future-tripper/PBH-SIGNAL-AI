@@ -1,0 +1,45 @@
+test_name,category,tier1_pass,tier2_pass,tier3_pass,overall_pass,critical_pass,flags_match,relevance_match,audience_match,bariatric_context_match,sentiment_match,themes_match,entity_extraction_quality,notes
+ae_test_10_mention_only_no_ae,adverse_events,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.88,emotions: Missing: ['relief']
+ae_test_11_general_statement_no_ae,adverse_events,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,All fields match
+ae_test_12_amylyx_no_trial_no_ae,adverse_events,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,FAIL,FAIL,0.75,"sentiment_label: Expected: mixed, Actual: positive; themes: Missing: ['Bariatric Surgery']; emotions: Missing: ['frustration']"
+ae_test_1_first_person_trial,adverse_events,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,All fields match
+ae_test_2_third_person_family,adverse_events,FAIL,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,FAIL,0.78,"themes: Missing: ['Care Settings']; emotions: Missing: ['anxiety']; bariatric_context: Expected: strong, Actual: none"
+ae_test_3_third_person_hcp,adverse_events,FAIL,FAIL,FAIL,FAIL,FAIL,PASS,PASS,PASS,FAIL,FAIL,FAIL,0.80,"sentiment_label: Expected: neutral, Actual: negative; themes: Missing: ['Symptoms']; emotions: Expected: [], Actual: ['frustration']; bariatric_context: Expected: strong, Actual: none"
+ae_test_4_first_person_post_market,adverse_events,PASS,PASS,PASS,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.88,All fields match
+ae_test_5_amylyx_trial_no_drug_name,adverse_events,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.87,emotions: Missing: ['frustration']
+ae_test_6_vague_hearsay_no_ae,adverse_events,FAIL,PASS,FAIL,FAIL,FAIL,PASS,FAIL,PASS,PASS,PASS,FAIL,0.85,"themes: Missing: ['Treatments']; relevance_label: Expected: relevant, Actual: borderline; intent: Extra: ['sharing_experience']"
+ae_test_7_hypothetical_no_ae,adverse_events,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,All fields match
+ae_test_8_suggestion_no_ae,adverse_events,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,FAIL,FAIL,0.92,"sentiment_label: Expected: positive, Actual: neutral; themes: Extra: ['Care Settings']; emotions: Expected: ['hope'], Actual: []"
+ae_test_9_other_treatment_no_ae,adverse_events,FAIL,PASS,FAIL,FAIL,FAIL,PASS,FAIL,PASS,FAIL,PASS,FAIL,0.85,"themes: Missing: ['Bariatric Surgery']; relevance_label: Expected: relevant, Actual: borderline; bariatric_context: Expected: strong, Actual: weak"
+platform_facebook_patient,platform_coverage,PASS,PASS,PASS,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.93,All fields match
+platform_facebook_trial,platform_coverage,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.81,themes: Missing: ['Symptoms']
+platform_instagram_influencer,platform_coverage,FAIL,PASS,FAIL,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,0.83,"flags: Expected: [], Actual: ['possible_PBH_misattribution']; emotions: Missing: ['frustration']"
+platform_instagram_personal,platform_coverage,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,FAIL,PASS,0.88,"sentiment_label: Expected: mixed, Actual: neutral; emotions: Expected: ['hope', 'relief'], Actual: []"
+platform_reddit_borderline,platform_coverage,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,"flags: Expected: [], Actual: ['possible_PBH_misattribution']; sentiment_label: Expected: neutral, Actual: negative; intent: Extra: ['sharing_experience']"
+platform_reddit_relevant,platform_coverage,PASS,PASS,PASS,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.93,All fields match
+platform_tiktok_hcp,platform_coverage,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,intent: Extra: ['sharing_experience']
+platform_tiktok_patient,platform_coverage,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.85,emotions: Missing: ['anxiety']; intent: Missing: ['venting']
+edge_misspellings_abbreviations,edge_cases,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.95,intent: Extra: ['sharing_experience']
+edge_mixed_sentiment,edge_cases,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.84,emotions: Missing: ['anxiety']; intent: Missing: ['venting']
+edge_multiple_companies,edge_cases,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.87,intent: Extra: ['sharing_experience']
+edge_multiple_treatments,edge_cases,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.80,themes: Extra: ['Symptoms']; intent: Missing: ['giving_advice']
+edge_no_bariatric_context,edge_cases,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.93,"emotions: Expected: ['anxiety'], Actual: []; intent: Extra: ['sharing_experience']"
+edge_very_long_post,edge_cases,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.75,"emotions: Missing: ['frustration', 'sadness']; Extra: ['anxiety']"
+edge_very_short_post,edge_cases,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,PASS,1.00,"bariatric_context: Expected: strong, Actual: none"
+edge_weak_bariatric_context,edge_cases,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,FAIL,PASS,FAIL,FAIL,FAIL,0.72,"flags: Expected: [], Actual: ['possible_PBH_misattribution']; sentiment_label: Expected: neutral, Actual: negative; themes: Extra: ['Bariatric Surgery']; relevance_label: Expected: borderline, Actual: relevant; bariatric_context: Expected: weak, Actual: strong; intent: Extra: ['sharing_experience']"
+dict_1_negation,dictionary,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.57,"themes: Extra: ['Bariatric Surgery', 'Symptoms']"
+dict_2_hypothetical,dictionary,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,FAIL,FAIL,0.77,"sentiment_label: Expected: neutral, Actual: negative; themes: Extra: ['Bariatric Surgery']; intent: Extra: ['sharing_experience']"
+dict_3_exclusion_context,dictionary,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,emotions: Extra: ['relief']
+dict_4_past_tense,dictionary,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.96,intent: Missing: ['giving_advice']
+dict_5_casual_language,dictionary,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,All fields match
+dict_6_context_dependent,dictionary,FAIL,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,FAIL,0.78,"themes: Extra: ['Symptoms']; emotions: Extra: ['relief']; bariatric_context: Expected: strong, Actual: none"
+class_1_mixed_role,classification,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.98,emotions: Extra: ['anxiety']; intent: Extra: ['giving_advice']
+class_2_caregiver,classification,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.77,"themes: Extra: ['Bariatric Surgery', 'Diet']"
+class_3_researcher,classification,FAIL,PASS,FAIL,FAIL,FAIL,PASS,PASS,FAIL,PASS,PASS,FAIL,0.88,"themes: Missing: ['Symptoms']; audience_label: Expected: hcp, Actual: media"
+class_4_offtopic,classification,FAIL,PASS,FAIL,FAIL,FAIL,PASS,FAIL,PASS,PASS,PASS,FAIL,0.86,"themes: Extra: ['Diet']; relevance_label: Expected: not_relevant, Actual: relevant; emotions: Extra: ['hope']; intent: Extra: ['giving_advice']"
+class_5_sarcasm,classification,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.80,themes: Extra: ['Bariatric Surgery']; intent: Extra: ['sharing_experience']
+class_6_clinical_neutral,classification,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,FAIL,PASS,0.80,"sentiment_label: Expected: neutral, Actual: negative; emotions: Expected: [], Actual: ['anxiety', 'frustration']; intent: Extra: ['sharing_experience']"
+flag_1_crisis,flags,FAIL,PASS,FAIL,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,FAIL,0.90,flags: Extra: ['possible_PBH_misattribution']; themes: Extra: ['Care Settings']; emotions: Extra: ['frustration']; intent: Extra: ['sharing_experience']
+flag_2_borderline_crisis,flags,FAIL,PASS,FAIL,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,FAIL,0.77,"themes: Extra: ['Diet']; emotions: Missing: ['sadness']; Extra: ['anxiety']; bariatric_context: Expected: strong, Actual: none; intent: Extra: ['sharing_experience']"
+flag_3_multiple_flags,flags,PASS,PASS,PASS,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.89,All fields match
+flag_4_false_positive_crisis,flags,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.80,themes: Extra: ['Bariatric Surgery']; emotions: Extra: ['anxiety']

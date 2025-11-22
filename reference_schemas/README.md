@@ -1,7 +1,7 @@
-# SIGNAL Reference Schemas - v4 Documentation
+# SIGNAL Reference Schemas - v5 Documentation
 
-**Last Updated:** November 10, 2025
-**Version:** 4.0 (5-Platform MVP)
+**Last Updated:** November 20, 2025
+**Version:** 5.0 (Avexitide AE Reporting)
 
 ## Overview
 
@@ -12,17 +12,42 @@ This directory contains the reference CSV schemas for the SIGNAL platform enrich
 ```
 reference_schemas/
 ├── README.md                                    # This file
-├── AMX1013_PBH_SIGNAL_features_v4.csv          # Dashboard features specification
-├── PBH_SIGNAL_DICTIONARY_v4.csv                # Entity extraction taxonomy (51 entries)
-├── PBH_SIGNAL_NORMALIZATION_SCHEMA_v4.csv      # Input data structure (20 fields)
-├── PBH_SIGNAL_ENRICHMENT_SCHEMA_v4.csv         # Output data structure (42 fields)
-└── v3_archive/                                  # Archived v3 schemas (Reddit + TikTok only)
-    ├── PBH_SIGNAL_DICTIONARY.csv
-    ├── PBH_SIGNAL_ENRICHMENT_SCHEMA.csv
-    └── PBH_SIGNAL_NORMALIZATION_SCHEMA.csv
+├── AMX1013_PBH_SIGNAL_features_v5.csv          # Dashboard features specification (includes AE Reporting)
+├── PBH_SIGNAL_DICTIONARY_v5.csv                # Entity extraction taxonomy (51 entries)
+├── PBH_SIGNAL_NORMALIZATION_SCHEMA_v5.csv      # Input data structure (20 fields)
+├── PBH_SIGNAL_ENRICHMENT_SCHEMA_v5.csv         # Output data structure (42 fields, enhanced AE criteria)
+├── v3_archive/                                  # Archived v3 schemas (Reddit + TikTok only)
+│   ├── PBH_SIGNAL_DICTIONARY.csv
+│   ├── PBH_SIGNAL_ENRICHMENT_SCHEMA.csv
+│   └── PBH_SIGNAL_NORMALIZATION_SCHEMA.csv
+└── v4_archive/                                  # Archived v4 schemas (5-platform MVP)
+    ├── PBH_SIGNAL_DICTIONARY_v4.txt
+    ├── normalization_schema_v4.json
+    ├── openai_assistant_response_format_v4.json
+    ├── openai_assistant_system_prompt_v4.md
+    └── README_v4_ARCHIVE.md
 ```
 
-## v4 Changes Summary
+## v5 Changes Summary
+
+### Adverse Event Detection Enhancement (v4 → v5)
+- **v4**: Basic AE flag for any treatment ("treatment caused symptoms")
+- **v5**: FDA-aligned avexitide-specific AE detection
+  - 3-criteria rule: (1) avexitide product, (2) temporal/causal link, (3) symptoms present
+  - Third-person reporting support ("My aunt...", "A patient...")
+  - Explicit exclusions (hearsay, hypotheticals, suggestions, competitor drugs)
+  - Symptom suppression in non-actual contexts
+
+### Dashboard Features Update
+- Added: **Adverse Event Reporting** module (row 6 in features CSV)
+- Enables compliance/medical team to review flagged avexitide AEs
+- Future v6: Alert/notification system for real-time monitoring
+
+### Enrichment Schema Update
+- Updated `flags` field documentation with v5 AE criteria
+- No schema structure changes (flags array unchanged)
+
+## v4 Changes Summary (Archived)
 
 ### Platform Coverage Enhancement
 - **v3**: Reddit + TikTok (2 platforms)

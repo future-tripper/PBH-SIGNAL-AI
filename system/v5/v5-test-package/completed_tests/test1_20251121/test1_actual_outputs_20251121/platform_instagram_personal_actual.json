@@ -1,0 +1,68 @@
+{
+  "source": "instagram",
+  "source_id": "002",
+  "url": "https://www.instagram.com/p/002/",
+  "permalink": null,
+  "title": null,
+  "text": "Update on my health journey: My doctor diagnosed me with post-bariatric hypoglycemia last week. Explains SO much about why I've been feeling awful after meals. Starting treatment next month and hoping for some relief. Has anyone dealt with this? Would love to hear your experiences \u001f497 #HealthJourney #ChronicIllness #BariatricLife",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "ig_user_002",
+    "name": "User O",
+    "handle": "user_o",
+    "gender": "female",
+    "age": 34,
+    "subscribers": 1200
+  },
+  "country": "US",
+  "published_at": "2025-05-16T19:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 12,
+    "shares": null
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 69,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "feeling awful after meals",
+    "starting treatment",
+    "health journey",
+    "bariatric life"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with strong bariatric context",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

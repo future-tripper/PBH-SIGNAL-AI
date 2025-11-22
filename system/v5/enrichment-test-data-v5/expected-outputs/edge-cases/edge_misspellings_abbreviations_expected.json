@@ -1,0 +1,104 @@
+{
+  "source": "reddit",
+  "source_id": "005",
+  "url": "https://reddit.com/r/gastricsleeve/comments/005",
+  "permalink": null,
+  "title": "RH after VSG - need help",
+  "text": "8 mo post VSG and dealing w/ reactive hypo. Getting shakines, dizzyness, and sweeting about 90 min after eating. My endo prescribed acerbose but I keep forgetting to take it. Using my CGM (continous glucose monitr) and seeing drops to the 50s. Anyone else experiance this? What meds worked for u? Heard about avexitid from Amylyx but not sure if its approved yet.",
+  "parent_source": "gastricsleeve",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_005",
+    "name": "User T",
+    "handle": "user_t",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 9,
+    "comments": 14,
+    "shares": null
+  },
+  "published_at": "2025-05-06T10:50:00+00:00",
+  "topics": [
+    "bariatric_surgery",
+    "diagnostics_monitoring",
+    "medication_adherence",
+    "doctor_visit"
+  ],
+  "symptoms": [
+    "shakiness",
+    "dizziness",
+    "sweating",
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose",
+    "avexitide"
+  ],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
+  "companies": [
+    "Amylyx"
+  ],
+  "engagement_score": 37,
+  "engagement_label": "high",
+  "key_phrases": [
+    "8 months post vsg",
+    "reactive hypoglycemia",
+    "feeling shaky",
+    "dizziness",
+    "sweating",
+    "90 minutes after eating",
+    "acarbose",
+    "continuous glucose monitor",
+    "drops to the 50s",
+    "avexitide",
+    "amylyx"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "strong bariatric context with reactive hypoglycemia and multiple symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.95,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diagnostics"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": "negative",
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [
+    "possible_PBH_misattribution"
+  ],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "topics_bariatric_surgery_034",
+    "conditions_reactive_hypoglycemia_009",
+    "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
+    "symptoms_sweating_015",
+    "symptoms_hypoglycemia_016",
+    "topics_doctor_visit_038",
+    "treatments_acarbose_025",
+    "topics_diagnostics_monitoring_036",
+    "treatments_avexitide_024",
+    "companies_Amylyx_003",
+    "topics_medication_adherence_049"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source": "facebook",
+  "source_id": "012",
+  "url": "https://www.facebook.com/pbh_support/posts/012",
+  "permalink": null,
+  "title": null,
+  "text": "I saw Amylyx is developing a drug for PBH! Really hope it gets approved soon. My post-bariatric hypoglycemia has been so hard to manage. Anyone know when it might be available?",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_012",
+    "name": "User C",
+    "handle": "user_c",
+    "gender": "female",
+    "age": 38,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-04-08T15:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 24,
+    "comments": 15,
+    "shares": 2
+  },
+  "topics": [],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [
+    "Amylyx"
+  ],
+  "engagement_score": 59,
+  "engagement_label": "high",
+  "key_phrases": [
+    "Amylyx developing drug",
+    "post-bariatric hypoglycemia",
+    "hope it gets approved",
+    "hard to manage"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH mentioned with strong context",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "companies_Amylyx_003",
+    "conditions_PBH_008"
+  ]
+}

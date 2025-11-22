@@ -1,0 +1,86 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "permalink": null,
+  "title": "Update on trial participation",
+  "text": "I'm in the Amylyx trial for avexitide. After my dose of avexitide yesterday I got really dizzy and nauseous. Called the study coordinator and they said to monitor it. Has anyone else in the trial experienced this?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User A",
+    "handle": "user_a",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-03-15T14:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 12,
+    "comments": 5,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "clinical_trial"
+  ],
+  "symptoms": [
+    "dizziness",
+    "nausea"
+  ],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [],
+  "companies": [
+    "Amylyx"
+  ],
+  "engagement_score": 22,
+  "engagement_label": "high",
+  "key_phrases": [
+    "Amylyx trial",
+    "avexitide",
+    "dizzy",
+    "nauseous",
+    "study coordinator",
+    "monitor it",
+    "trial participation"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "strong bariatric context with avexitide treatment and adverse event",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety",
+    "frustration"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "companies_Amylyx_003",
+    "treatments_avexitide_024",
+    "symptoms_dizziness_014",
+    "symptoms_nausea_020",
+    "topics_bariatric_surgery_034",
+    "topics_clinical_trial_044",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

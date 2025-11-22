@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "003",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/003",
+  "title": "Great day despite PBH",
+  "text": "Had my endocrinologist appointment this morning to discuss my post-bariatric hypoglycemia. Afterwards, my friend and I went to lunch at Novo restaurant downtown - their grilled chicken and vegetables were perfect for my dietary needs. Then we walked around the park for an hour. Managing PBH is hard but days like this remind me life goes on. My blood sugar stayed stable the whole time!",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_003",
+    "name": "User ]",
+    "handle": "user_]",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 23,
+    "comments": 7,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-05-17T16:45:00+00:00"
+}

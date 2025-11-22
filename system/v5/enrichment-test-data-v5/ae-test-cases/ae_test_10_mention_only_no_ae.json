@@ -1,0 +1,26 @@
+{
+  "source": "facebook",
+  "source_id": "009",
+  "url": "https://www.facebook.com/pbh_community/posts/009",
+  "title": null,
+  "text": "Just learned about avexitide from my endocrinologist! She thinks it could really help with my severe PBH episodes after my RNY surgery. Excited to have a new treatment option. Anyone here tried it yet?",
+  "parent_source": null,
+  "subsource": "PBH Community",
+  "author": {
+    "id": "fb_user_009",
+    "name": "User A",
+    "handle": "user_a",
+    "gender": "female",
+    "age": 41,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 32,
+    "comments": 18,
+    "shares": 1
+  },
+  "sentiment": null,
+  "published_at": "2025-03-30T13:25:00+00:00"
+}

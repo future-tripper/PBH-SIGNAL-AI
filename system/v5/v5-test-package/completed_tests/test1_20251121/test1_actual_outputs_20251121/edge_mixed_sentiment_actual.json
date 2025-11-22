@@ -1,0 +1,86 @@
+{
+  "source": "reddit",
+  "source_id": "008",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/008",
+  "permalink": null,
+  "title": "PBH update - good news and bad news",
+  "text": "So I finally got my post-bariatric hypoglycemia under control with acarbose and dietary changes, which is amazing! No more scary drops into the 40s and I can actually function normally most days. I'm so relieved and grateful to my endo for figuring this out. BUT the trade-off is that I have to be incredibly rigid with my eating schedule - I can't skip meals, can't eat out spontaneously without major planning, and I'm constantly thinking about food timing. It's exhausting. Yesterday I had to leave a work meeting early because I could feel my blood sugar dropping and I'd forgotten my snacks. So embarrassing. I guess I'm happy to have found something that works but also frustrated that this is my life now. Anyone else feel this way? Like grateful but also annoyed?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_008",
+    "name": "User U",
+    "handle": "user_u",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-03T17:35:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 78,
+    "comments": 42,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 162,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "acarbose",
+    "dietary changes",
+    "blood sugar dropping",
+    "eating schedule",
+    "function normally",
+    "food timing",
+    "leave a work meeting",
+    "grateful but also annoyed"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with treatment and strong bariatric context",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "mixed",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "relief",
+    "frustration"
+  ],
+  "intent": [
+    "sharing_experience",
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "treatments_acarbose_025",
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "symptoms_hypoglycemia_016",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

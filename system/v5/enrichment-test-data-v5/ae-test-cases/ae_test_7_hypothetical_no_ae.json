@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "006",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/006",
+  "title": "Starting avexitide - what to expect?",
+  "text": "Starting avexitide next week for my PBH. Worried it might cause side effects like nausea or dizziness. What should I watch out for? Any tips for managing side effects if they happen?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_006",
+    "name": "User I",
+    "handle": "user_i",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "language": "eng",
+  "metrics": {
+    "likes": 5,
+    "comments": 18,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-03-28T10:45:00+00:00"
+}

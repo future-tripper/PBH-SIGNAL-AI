@@ -1,0 +1,71 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support_group/posts/002",
+  "permalink": null,
+  "title": null,
+  "text": "My aunt is taking avexitide for her PBH. She ended up in the ER with chest pain after her last dose yesterday. Really scared for her. The doctors are running tests now. Has anyone else had serious reactions like this?",
+  "parent_source": null,
+  "subsource": "PBH Support Group",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User D",
+    "handle": "user_d",
+    "gender": "female",
+    "age": 32,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-03-20T09:15:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 23,
+    "shares": 3
+  },
+  "topics": [],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 100,
+  "engagement_label": "high",
+  "key_phrases": [
+    "avexitide",
+    "chest pain",
+    "ER visit",
+    "serious reactions",
+    "doctors running tests"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH condition with avexitide treatment and adverse event",
+  "audience_label": "patient",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "fear"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "treatments_avexitide_024",
+    "conditions_PBH_008"
+  ]
+}

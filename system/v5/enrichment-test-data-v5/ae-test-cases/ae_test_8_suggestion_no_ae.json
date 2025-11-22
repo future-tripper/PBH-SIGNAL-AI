@@ -1,0 +1,26 @@
+{
+  "source": "instagram",
+  "source_id": "007",
+  "url": "https://instagram.com/p/007",
+  "title": null,
+  "text": "Saw my endo today about my post-bariatric hypoglycemia. She said avexitide could cause some GI issues but we should try it anyway since my symptoms are so severe. Starting next month! \ud83e\udd1e #pbh #bariatriclife #avexitide",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "ig_user_007",
+    "name": "User J",
+    "handle": "user_j",
+    "gender": "female",
+    "age": 35,
+    "subscribers": 2400
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 78,
+    "comments": 12,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-04-01T14:20:00+00:00"
+}

@@ -1,0 +1,9 @@
+# PHASE 2 REVIEW SUMMARY
+Date,Reviewer,Samples_Reviewed,Issues_Found,Status,Overall_Notes
+2025-11-21,Joe,25,3,Needs_Iteration,"Relevance scoring off on borderline cases"
+
+# ISSUE LOG (one row per issue found)
+Sample_ID,Field_Name,Issue_Description,Expected_Value,Actual_Value,Severity,Notes
+reddit_post_042,relevance_label,"Marked borderline but should be relevant",relevant,borderline,major,"Strong PBH context present"
+tiktok_video_15,audience_label,"Missed that this is a caregiver",caregiver,patient,minor,"Spouse describing partner's symptoms"
+fb_post_089,flags,"Should flag adverse_event","[adverse_event]","[]",critical,"Patient reports nausea after avexitide"

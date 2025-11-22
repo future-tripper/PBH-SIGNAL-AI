@@ -1,0 +1,73 @@
+{
+  "source": "tiktok",
+  "source_id": "005",
+  "url": "https://tiktok.com/@pbh_awareness/video/005",
+  "permalink": null,
+  "title": null,
+  "text": "I heard avexitide can cause dizziness and nausea. Anyone know if that's true? Trying to decide if I should ask my doctor about it for my reactive hypo after surgery. #pbh #avexitide #bariatricsurgery",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "tiktok_user_005",
+    "name": "User H",
+    "handle": "user_h",
+    "gender": null,
+    "age": 28,
+    "subscribers": 1200
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 45,
+    "comments": 12,
+    "shares": 2
+  },
+  "published_at": "2025-03-25T18:30:00+00:00",
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH",
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 75,
+  "engagement_label": "high",
+  "key_phrases": [
+    "avexitide",
+    "post-bariatric hypoglycemia",
+    "reactive hypoglycemia",
+    "after surgery",
+    "ask doctor"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "avexitide mentioned with PBH and bariatric surgery context",
+  "audience_label": "patient",
+  "audience_confidence": 0.85,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.75,
+  "sentiment_raw": "neutral",
+  "emotions": [],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "audience_anchor_patient_anchor_001",
+    "treatments_avexitide_024",
+    "conditions_PBH_008",
+    "conditions_reactive_hypoglycemia_009",
+    "topics_bariatric_surgery_034"
+  ]
+}

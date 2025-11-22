@@ -1,0 +1,86 @@
+{
+  "source": "reddit",
+  "source_id": "004",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/004",
+  "permalink": null,
+  "title": "My PBH journey - before and after treatment",
+  "text": "Sharing my experience for anyone newly diagnosed with post-bariatric hypoglycemia. Before starting acarbose, I USED TO have terrible shakiness and sweating after every meal. I USED TO get so dizzy I couldn't drive. My life WAS controlled by constant fear of sugar crashes. That WAS my reality for 6 months post-surgery. Now, 3 months on treatment, I'm doing so much better. Still have occasional symptoms but nothing like before.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_004",
+    "name": "User ^",
+    "handle": "user_^",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-16T11:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 89,
+    "comments": 34,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [
+    "shakiness",
+    "sweating",
+    "dizziness",
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 157,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "shakiness after every meal",
+    "sweating",
+    "dizziness",
+    "fear of sugar crashes",
+    "3 months on treatment",
+    "occasional symptoms"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with strong bariatric context and multiple symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "relief",
+    "hope"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "symptoms_shakiness_013",
+    "symptoms_sweating_015",
+    "symptoms_dizziness_014",
+    "symptoms_hypoglycemia_011",
+    "treatments_acarbose_025",
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

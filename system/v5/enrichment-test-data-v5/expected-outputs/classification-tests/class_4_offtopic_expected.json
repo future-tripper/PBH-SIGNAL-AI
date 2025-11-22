@@ -1,0 +1,64 @@
+{
+  "source": "reddit",
+  "source_id": "004",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/004",
+  "permalink": null,
+  "title": "NSV: Hit ONEDERLAND today! \ud83c\udf89",
+  "text": "I'm officially under 200 pounds for the first time in 15 years! Started at 285, had VSG 7 months ago, and today I'm 199.6! I'm crying happy tears. The journey hasn't been easy - lots of adjustments, learning new eating habits, dealing with loose skin - but seeing that 1 on the scale makes it all worth it. To everyone earlier in their journey: keep going, you've got this! Stats: 5'6\" F, SW: 285, CW: 199.6, GW: 160",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_004",
+    "name": "User d",
+    "handle": "user_d",
+    "gender": "female",
+    "age": 34,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-11T07:45:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 342,
+    "comments": 89,
+    "shares": null
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 520,
+  "engagement_label": "high",
+  "key_phrases": [
+    "sleeve gastrectomy",
+    "weight loss success",
+    "7 months post-op",
+    "new eating habits"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "weight loss celebration with no PBH or hypoglycemia symptoms mentioned",
+  "audience_label": "patient",
+  "audience_confidence": 0.95,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.95,
+  "sentiment_raw": "positive",
+  "emotions": [
+    "joy"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

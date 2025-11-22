@@ -1,0 +1,74 @@
+{
+  "source": "twitter",
+  "source_id": "010",
+  "url": "https://twitter.com/pbh_support/status/010",
+  "permalink": null,
+  "title": null,
+  "text": "People in clinical trials for avexitide say it has some side effects. Has anyone here actually tried it? Looking for real experiences not just trial data. #PBH #avexitide #bariatricsurgery",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_010",
+    "name": "User B",
+    "handle": "user_b",
+    "gender": null,
+    "age": null,
+    "subscribers": 3200
+  },
+  "country": "US",
+  "published_at": "2025-04-05T11:00:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 23,
+    "comments": 8,
+    "shares": 4
+  },
+  "topics": [
+    "bariatric_surgery",
+    "clinical_trial",
+    "medication_side_effects"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 51,
+  "engagement_label": "high",
+  "key_phrases": [
+    "clinical trials",
+    "avexitide",
+    "side effects",
+    "real experiences",
+    "trial data"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.85,
+  "relevance_reason": "mentions PBH and avexitide in a strong bariatric context",
+  "audience_label": "unknown",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "treatments_avexitide_024",
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "topics_clinical_trial_044",
+    "topics_medication_side_effects_039"
+  ]
+}

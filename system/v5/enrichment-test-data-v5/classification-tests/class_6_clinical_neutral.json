@@ -1,0 +1,26 @@
+{
+  "source": "reddit",
+  "source_id": "006",
+  "url": "https://reddit.com/r/AskDocs/comments/006",
+  "title": "Post-bariatric hypoglycemia episode documentation",
+  "text": "35F, 8 months post-Roux-en-Y gastric bypass, presenting with recurrent hypoglycemic episodes. Symptoms include diaphoresis, tremor, tachycardia, and neuroglycopenic symptoms including confusion and visual disturbances. Episodes occur 90-120 minutes postprandial. Continuous glucose monitoring demonstrates glucose nadirs of 45-55 mg/dL. Currently on acarbose 50mg TID with partial symptom control. No prior history of diabetes mellitus. BMI pre-surgery 42, current BMI 28. Seeking additional treatment recommendations.",
+  "parent_source": "AskDocs",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_006",
+    "name": "User f",
+    "handle": "user_f",
+    "gender": "female",
+    "age": 35,
+    "subscribers": null
+  },
+  "country": "US",
+  "language": "eng",
+  "metrics": {
+    "likes": 12,
+    "comments": 8,
+    "shares": null
+  },
+  "sentiment": null,
+  "published_at": "2025-05-09T10:30:00+00:00"
+}
