@@ -65,6 +65,31 @@ class TestComparator:
         self.base_dir = base_dir
         self.results = []
 
+    def calculate_list_overlap_score(self, expected: List, actual: List) -> float:
+        """
+        Calculate partial credit score for list fields using Jaccard similarity.
+        Score = intersection / union
+
+        This gives partial credit:
+        - Expected: ['anxiety', 'fear'], Actual: ['fear'] → 0.50 (got 1 of 2)
+        - Expected: ['anxiety', 'fear'], Actual: [] → 0.00 (got none)
+        - Expected: ['anxiety', 'fear'], Actual: ['hope'] → 0.00 (wrong)
+        - Expected: ['anxiety', 'fear'], Actual: ['anxiety', 'fear', 'hope'] → 0.67 (got 2/3)
+        """
+        if not expected and not actual:
+            return 1.0  # Both empty = perfect score
+
+        if not expected or not actual:
+            return 0.0  # One empty, one not = no credit
+
+        expected_set = set(expected)
+        actual_set = set(actual)
+
+        intersection = len(expected_set & actual_set)
+        union = len(expected_set | actual_set)
+
+        return intersection / union if union > 0 else 0.0
+
     def compare_arrays(self, expected: List, actual: List) -> Tuple[bool, float, str]:
         """
         Compare two arrays.
@@ -133,7 +158,11 @@ class TestComparator:
             'critical_pass': True,  # Legacy: same as tier1_pass
             'tier1_pass': True,     # Tier 1: Critical/Safety fields
             'tier2_pass': True,     # Tier 2: Core product fields
-            'tier3_pass': True,     # Tier 3: Enhancement fields
+            'tier3_pass': True,     # Tier 3: Enhancement fields (partial credit)
+            'tier3_avg_score': 0.0, # Average of emotions, intent, themes scores
+            'emotions_score': 0.0,  # Partial credit for emotions field
+            'intent_score': 0.0,    # Partial credit for intent field
+            'themes_score': 0.0,    # Partial credit for themes field
             'field_results': {}
         }
 
@@ -171,11 +200,22 @@ class TestComparator:
                         result['overall_pass'] = False
                         result['tier2_pass'] = False
 
-                # For tier 3 (enhancement) fields, require exact match
+                # For tier 3 (enhancement) fields, use partial credit scoring
                 elif field in self.TIER3_ENHANCEMENT_FIELDS:
+                    # Calculate partial credit score (Jaccard similarity)
+                    score = self.calculate_list_overlap_score(expected_val, actual_val)
+
+                    # Store individual field scores
+                    if field == 'emotions':
+                        result['emotions_score'] = score
+                    elif field == 'intent':
+                        result['intent_score'] = score
+                    elif field == 'themes':
+                        result['themes_score'] = score
+
+                    # Tier 3 pass is calculated later as average score >= 0.50
                     if not exact_match:
-                        result['overall_pass'] = False
-                        result['tier3_pass'] = False
+                        result['overall_pass'] = False  # Keep overall_pass strict
 
                 # For entity fields, allow high overlap (>= 0.8)
                 elif field in self.ENTITY_FIELDS:
@@ -213,7 +253,17 @@ class TestComparator:
                         result['tier2_pass'] = False
                     elif field in self.TIER3_ENHANCEMENT_FIELDS:
                         result['overall_pass'] = False
-                        result['tier3_pass'] = False
+                        # Note: tier3_pass calculated below based on average score
+
+        # Calculate Tier 3 average score and pass/fail
+        # Use partial credit: average score >= 0.50 = pass
+        tier3_scores = [
+            result['emotions_score'],
+            result['intent_score'],
+            result['themes_score']
+        ]
+        result['tier3_avg_score'] = sum(tier3_scores) / len(tier3_scores) if tier3_scores else 0.0
+        result['tier3_pass'] = result['tier3_avg_score'] >= 0.50
 
         return result
 
@@ -302,7 +352,11 @@ class TestComparator:
                 'category',
                 'tier1_pass',           # NEW: Tier 1 (Critical/Safety) pass
                 'tier2_pass',           # NEW: Tier 2 (Core Product) pass
-                'tier3_pass',           # NEW: Tier 3 (Enhancement) pass
+                'tier3_pass',           # NEW: Tier 3 (Enhancement) pass - partial credit
+                'tier3_avg_score',      # NEW: Average of emotions, intent, themes scores
+                'emotions_score',       # NEW: Partial credit for emotions
+                'intent_score',         # NEW: Partial credit for intent
+                'themes_score',         # NEW: Partial credit for themes
                 'overall_pass',         # Legacy: all fields
                 'critical_pass',        # Legacy: same as tier1_pass
                 'flags_match',
@@ -361,6 +415,10 @@ class TestComparator:
                     'tier1_pass': 'PASS' if result['tier1_pass'] else 'FAIL',
                     'tier2_pass': 'PASS' if result['tier2_pass'] else 'FAIL',
                     'tier3_pass': 'PASS' if result['tier3_pass'] else 'FAIL',
+                    'tier3_avg_score': f"{result['tier3_avg_score']:.2f}",
+                    'emotions_score': f"{result['emotions_score']:.2f}",
+                    'intent_score': f"{result['intent_score']:.2f}",
+                    'themes_score': f"{result['themes_score']:.2f}",
                     'overall_pass': 'PASS' if result['overall_pass'] else 'FAIL',
                     'critical_pass': 'PASS' if result['critical_pass'] else 'FAIL',
                     'flags_match': 'PASS' if field_results.get('flags', {}).get('match', True) else 'FAIL',

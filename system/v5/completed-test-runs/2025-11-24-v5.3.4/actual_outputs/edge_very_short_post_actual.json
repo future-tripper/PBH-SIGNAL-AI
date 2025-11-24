@@ -1,0 +1,60 @@
+{
+  "source": "twitter",
+  "source_id": "007",
+  "url": "https://twitter.com/pbh_patient/status/007",
+  "permalink": null,
+  "title": null,
+  "text": "PBH is the worst. That's it. That's the tweet.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_007",
+    "name": "User Z",
+    "handle": "user_z",
+    "gender": null,
+    "age": null,
+    "subscribers": 450
+  },
+  "country": "US",
+  "published_at": "2025-05-04T09:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 12,
+    "comments": 3,
+    "shares": 1
+  },
+  "topics": [],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 21,
+  "engagement_label": "high",
+  "key_phrases": [
+    "PBH is the worst"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned as a condition.",
+  "audience_label": "patient",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration"
+  ],
+  "intent": [
+    "venting"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008"
+  ]
+}

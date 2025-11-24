@@ -1,0 +1,80 @@
+{
+  "source": "twitter",
+  "source_id": "003",
+  "url": "https://twitter.com/metabolic_research/status/003",
+  "permalink": null,
+  "title": null,
+  "text": "Our latest study on post-bariatric hypoglycemia published in JAMA. 127 patients post-RYGB evaluated for PBH symptoms. 34% presented with severe hypoglycemic episodes <50mg/dL. Acarbose showed 67% efficacy in symptom reduction. Novel GLP-1 antagonist therapies showing promise. Link to full paper: [redacted] #BariatricResearch #Endocrinology",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "twitter_user_003",
+    "name": "User c",
+    "handle": "user_c",
+    "gender": "male",
+    "age": 45,
+    "subscribers": 12500
+  },
+  "country": "US",
+  "published_at": "2025-05-12T09:15:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 234,
+    "comments": 45,
+    "shares": 89
+  },
+  "topics": [
+    "bariatric_surgery",
+    "diagnostics_monitoring",
+    "treatment_failure"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 581,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "severe hypoglycemic episodes",
+    "acarbose efficacy",
+    "novel GLP-1 antagonist therapies",
+    "127 patients post-RYGB",
+    "symptom reduction",
+    "JAMA publication"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "PBH explicitly mentioned with treatment context and hypoglycemia symptoms.",
+  "audience_label": "hcp",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Conditions/Diagnosis",
+    "Treatments",
+    "Bariatric Surgery",
+    "Diagnostics"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "news"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "symptoms_hypoglycemia_016",
+    "treatments_acarbose_025",
+    "topics_bariatric_surgery_034",
+    "topics_diagnostics_monitoring_036",
+    "topics_treatment_failure_046"
+  ]
+}

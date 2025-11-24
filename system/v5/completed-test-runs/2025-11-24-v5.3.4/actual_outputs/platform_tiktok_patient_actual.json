@@ -1,0 +1,87 @@
+{
+  "source": "tiktok",
+  "source_id": "002",
+  "url": "https://www.tiktok.com/@my_vsg_journey/video/002",
+  "permalink": null,
+  "title": null,
+  "text": "Day 187 post-VSG and dealing with reactive hypoglycemia is THE WORST. I literally have to eat every 2 hours or I get so shaky and dizzy I can't function. My doctor says it's common after sleeve but nobody warned me about this! Carrying protein snacks everywhere now. Anyone else struggling with this? #vsg #gastricsleeve #postopsideeffects #hypoglycemia",
+  "parent_source": null,
+  "subsource": "vsg",
+  "author": {
+    "id": "tiktok_user_002",
+    "name": "User S",
+    "handle": "user_s",
+    "gender": "female",
+    "age": 31,
+    "subscribers": 8500
+  },
+  "country": "US",
+  "published_at": "2025-05-15T11:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 567,
+    "comments": 89,
+    "shares": 12
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [
+    "shakiness",
+    "dizziness",
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 835,
+  "engagement_label": "high",
+  "key_phrases": [
+    "day 187 post-VSG",
+    "reactive hypoglycemia",
+    "eating every 2 hours",
+    "feeling shaky",
+    "dizziness",
+    "protein snacks",
+    "common after sleeve",
+    "post-op side effects"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "strong bariatric context with reactive hypoglycemia and multiple symptoms",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "sharing_experience",
+    "seeking_advice"
+  ],
+  "flags": [
+    "possible_PBH_misattribution"
+  ],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
+    "symptoms_hypoglycemia_016",
+    "conditions_reactive_hypoglycemia_009",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

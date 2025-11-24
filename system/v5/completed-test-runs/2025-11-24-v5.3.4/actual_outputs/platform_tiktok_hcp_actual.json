@@ -1,0 +1,87 @@
+{
+  "source": "tiktok",
+  "source_id": "001",
+  "url": "https://www.tiktok.com/@dr_weightloss_md/video/001",
+  "permalink": null,
+  "title": null,
+  "text": "Educating my patients about post-bariatric hypoglycemia. If you've had gastric bypass or sleeve and experience shakiness, sweating, or dizziness 1-2 hours after eating, talk to your doctor. This is a real complication we see in clinic. Diet modifications and medication like acarbose can help. #bariatricsurgery #PBH #medicaleducation",
+  "parent_source": null,
+  "subsource": "bariatricsurgery",
+  "author": {
+    "id": "tiktok_user_001",
+    "name": "User R",
+    "handle": "user_r",
+    "gender": "female",
+    "age": 42,
+    "subscribers": 125000
+  },
+  "country": "US",
+  "published_at": "2025-05-08T18:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 3420,
+    "comments": 156,
+    "shares": 89
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [
+    "shakiness",
+    "sweating",
+    "dizziness"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 4148,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "gastric bypass",
+    "sleeve gastrectomy",
+    "shakiness after eating",
+    "sweating after eating",
+    "dizziness after eating",
+    "diet modifications",
+    "acarbose",
+    "clinic observation"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "Explicit mention of PBH with strong bariatric context and treatment discussion.",
+  "audience_label": "hcp",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "giving_advice",
+    "news"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "symptoms_shakiness_013",
+    "symptoms_sweating_015",
+    "symptoms_dizziness_014",
+    "conditions_PBH_008",
+    "treatments_acarbose_025",
+    "audience_anchor_hcp_anchor_002"
+  ]
+}

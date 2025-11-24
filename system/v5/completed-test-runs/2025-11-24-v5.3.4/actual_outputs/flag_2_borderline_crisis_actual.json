@@ -1,0 +1,76 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support/posts/002",
+  "permalink": null,
+  "title": null,
+  "text": "I'm having such a hard time today. My PBH has been really bad this week - multiple episodes daily despite being careful with diet. I'm exhausted from the constant vigilance. Sometimes I feel like I can't take this anymore, like it's too much to handle. I know I need to push through but I'm running on empty. Just venting I guess. Tomorrow will be better hopefully. Thanks for listening to my rant.",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User h",
+    "handle": "user_h",
+    "gender": "female",
+    "age": 41,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-07T19:45:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 89,
+    "comments": 56,
+    "shares": 2
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [
+    "exhaustion"
+  ],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 211,
+  "engagement_label": "high",
+  "key_phrases": [
+    "PBH episodes",
+    "constant vigilance",
+    "running on empty",
+    "venting",
+    "diet carefulness"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with strong personal context.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "sadness",
+    "anxiety"
+  ],
+  "intent": [
+    "venting",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "symptoms_weakness_023",
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

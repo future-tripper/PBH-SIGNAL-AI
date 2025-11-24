@@ -1,0 +1,107 @@
+{
+  "source": "reddit",
+  "source_id": "006",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/006",
+  "permalink": null,
+  "title": "My complete PBH story - from diagnosis to management (long post)",
+  "text": "I want to share my entire post-bariatric hypoglycemia journey because I wish someone had told me all this when I was first diagnosed. I'm now 18 months post-gastric bypass and finally feeling like I have this condition under control, but it was a long road to get here. It started about 3 months after my surgery. I would get these episodes where I felt incredibly shaky, sweaty, anxious, and confused about 90 minutes to 2 hours after eating. At first I thought it was just normal post-op adjustment, but when I checked my blood sugar during an episode, it was 48. That scared me enough to call my surgeon. My surgeon referred me to an endocrinologist who specializes in post-bariatric complications. The endo ran a bunch of tests including a mixed meal tolerance test, which confirmed post-bariatric hypoglycemia. She explained that my altered anatomy from the bypass was causing rapid glucose absorption and excessive insulin response. The first intervention was dietary - eating small frequent meals every 2-3 hours, prioritizing protein and healthy fats, strictly avoiding simple carbohydrates and sugary foods. This helped somewhat but I was still having 2-3 episodes per week. Next we tried acarbose, starting at 25mg with meals and working up to 50mg three times daily. This made a noticeable difference and my episodes dropped to maybe once every two weeks. But the GI side effects were pretty rough - lots of gas and bloating. Around month 8 post-op, I invested in a continuous glucose monitor (CGM) and this was absolutely life-changing for understanding my patterns. I could see exactly which foods triggered drops and what my glucose curve looked like throughout the day. I learned that I do best with meals that are 60% protein, 30% fat, and only 10% complex carbs. I also discovered that walking for 10 minutes after eating helps stabilize my levels. My endo also mentioned that there are clinical trials happening for new medications specifically for PBH, including something called avexitide being studied by Amylyx Pharmaceuticals, but since I'm doing okay with current management we decided to wait and see. I still carry glucose tablets everywhere and have emergency snacks in my car, purse, and desk. I wear a medical alert bracelet that says I have post-bariatric hypoglycemia in case I ever have a severe episode in public. My family and coworkers know what to do if they see me acting confused or sweaty. The emotional toll was harder than I expected. I felt broken and defective for a while. Like I traded one health problem for another. But connecting with others in the PBH community online really helped. We share tips, celebrate victories, and support each other through the hard days. If you're newly diagnosed, please know it gets easier. You will learn your body's signals. You will figure out what works for you. And you're not alone in this. Feel free to ask me anything - happy to help however I can.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_006",
+    "name": "User Y",
+    "handle": "user_y",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-04-28T20:15:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 342,
+    "comments": 89,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "diagnostics_monitoring",
+    "clinical_trial",
+    "patient_support"
+  ],
+  "symptoms": [
+    "shakiness",
+    "sweating",
+    "anxiety",
+    "confusion",
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose",
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [
+    "Amylyx"
+  ],
+  "engagement_score": 520,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "gastric bypass",
+    "shakiness",
+    "sweating",
+    "confusion",
+    "continuous glucose monitor",
+    "dietary changes",
+    "clinical trials",
+    "emergency snacks",
+    "medical alert bracelet"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "Explicit discussion of PBH diagnosis and management with strong bariatric context.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet",
+    "Diagnostics"
+  ],
+  "sentiment_label": "mixed",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety",
+    "hope",
+    "relief"
+  ],
+  "intent": [
+    "sharing_experience",
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "symptoms_shakiness_013",
+    "symptoms_sweating_015",
+    "symptoms_anxiety_016",
+    "symptoms_confusion_017",
+    "symptoms_hypoglycemia_016",
+    "treatments_acarbose_025",
+    "treatments_avexitide_024",
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "topics_diagnostics_monitoring_036",
+    "topics_clinical_trial_044",
+    "topics_patient_support_037",
+    "companies_Amylyx_003"
+  ]
+}

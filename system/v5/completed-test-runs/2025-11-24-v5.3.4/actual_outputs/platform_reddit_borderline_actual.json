@@ -16,15 +16,16 @@
     "subscribers": null
   },
   "country": "US",
+  "published_at": "2025-04-18T09:45:00+00:00",
   "language": "eng",
   "metrics": {
     "likes": 8,
     "comments": 12,
-    "shares": null
+    "shares": 0
   },
-  "published_at": "2025-04-18T09:45:00+00:00",
   "topics": [
-    "bariatric_surgery"
+    "bariatric_surgery",
+    "diagnostics_monitoring"
   ],
   "symptoms": [
     "dizziness",
@@ -32,47 +33,51 @@
     "hypoglycemia"
   ],
   "treatments": [],
-  "conditions": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
   "companies": [],
   "engagement_score": 32,
   "engagement_label": "high",
   "key_phrases": [
-    "weight loss surgery",
-    "4 months ago",
-    "dizzy spells",
-    "after eating",
-    "feeling shaky",
-    "hour or two post-meal",
-    "glucose drops",
-    "since procedure"
+    "dizzy spells after eating",
+    "WLS 4 months ago",
+    "shaky about an hour or two post-meal",
+    "glucose drops pretty low",
+    "low blood sugar episodes"
   ],
-  "bariatric_context": "strong",
+  "bariatric_context": "weak",
   "relevance_label": "borderline",
   "relevance_confidence": 0.7,
-  "relevance_reason": "strong bariatric context with hypoglycemia and multiple PBH symptoms but no explicit PBH diagnosis",
+  "relevance_reason": "Weak bariatric context with hypoglycemia symptoms post-surgery.",
   "audience_label": "patient",
-  "audience_confidence": 0.85,
+  "audience_confidence": 0.8,
   "themes": [
     "Symptoms",
-    "Bariatric Surgery"
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diagnostics"
   ],
   "sentiment_label": "neutral",
-  "sentiment_confidence": 0.75,
-  "sentiment_raw": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
   "emotions": [
     "anxiety"
   ],
   "intent": [
-    "seeking_advice"
+    "seeking_advice",
+    "sharing_experience"
   ],
   "flags": [
     "possible_PBH_misattribution"
   ],
   "debug_matches": [
-    "audience_anchor_patient_anchor_001",
     "topics_bariatric_surgery_034",
     "symptoms_dizziness_014",
     "symptoms_shakiness_013",
-    "symptoms_hypoglycemia_016"
+    "symptoms_hypoglycemia_016",
+    "conditions_reactive_hypoglycemia_009",
+    "topics_diagnostics_monitoring_036",
+    "audience_anchor_patient_anchor_001"
   ]
 }

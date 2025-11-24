@@ -1,0 +1,93 @@
+{
+  "source": "reddit",
+  "source_id": "001",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/001",
+  "permalink": null,
+  "title": "My PBH has been terrible - need advice",
+  "text": "I'm 6 months post-sleeve and my post-bariatric hypoglycemia is out of control. Getting shaky, dizzy, and sweating about 90 minutes after meals. My endo put me on acarbose but it's not really helping. Anyone else dealing with this? What's worked for you?",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_001",
+    "name": "User Q",
+    "handle": "user_q",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-12T14:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 15,
+    "comments": 23,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "treatment_failure"
+  ],
+  "symptoms": [
+    "shakiness",
+    "dizziness",
+    "sweating",
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 61,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "shakiness",
+    "dizziness",
+    "sweating",
+    "90 minutes after meals",
+    "acarbose",
+    "not really helping",
+    "6 months post-sleeve",
+    "need advice"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with strong bariatric context and multiple symptoms.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "topics_treatment_failure_046",
+    "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
+    "symptoms_sweating_015",
+    "symptoms_hypoglycemia_016",
+    "conditions_PBH_008",
+    "treatments_acarbose_025"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "source": "reddit",
+  "source_id": "008",
+  "url": "https://reddit.com/r/wls/comments/008",
+  "permalink": null,
+  "title": "Acarbose side effects are killing me",
+  "text": "After starting acarbose 3 weeks ago I got terrible bloating and diarrhea. Can't tolerate it anymore. My doctor mentioned avexitide as an alternative. Has anyone switched from acarbose to avexitide? How did it go?",
+  "parent_source": "wls",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_008",
+    "name": "User K",
+    "handle": "user_k",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-03-22T16:10:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 15,
+    "comments": 22,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "medication_side_effects"
+  ],
+  "symptoms": [
+    "bloating",
+    "diarrhea"
+  ],
+  "treatments": [
+    "acarbose",
+    "avexitide"
+  ],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 59,
+  "engagement_label": "high",
+  "key_phrases": [
+    "starting acarbose",
+    "terrible bloating",
+    "diarrhea",
+    "can't tolerate",
+    "doctor mentioned avexitide",
+    "alternative treatment",
+    "switched from acarbose",
+    "how did it go"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "Strong bariatric context with treatment discussion and side effects.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Bariatric Surgery",
+    "Diagnostics"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_medication_side_effects_039",
+    "symptoms_bloating_023",
+    "symptoms_diarrhea_024",
+    "treatments_acarbose_025",
+    "treatments_avexitide_024"
+  ]
+}

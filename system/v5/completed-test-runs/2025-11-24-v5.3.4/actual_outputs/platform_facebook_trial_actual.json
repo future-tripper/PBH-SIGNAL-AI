@@ -1,0 +1,81 @@
+{
+  "source": "facebook",
+  "source_id": "001",
+  "url": "https://www.facebook.com/AmylyxPharma/posts/001",
+  "permalink": null,
+  "title": null,
+  "text": "Amylyx Pharmaceuticals is enrolling patients in a Phase 3 clinical trial for avexitide, an investigational treatment for post-bariatric hypoglycemia (PBH). If you've had bariatric surgery and experience low blood sugar episodes after meals, you may be eligible. Visit our website to learn more about participation. #ClinicalTrial #PBH #BariatricSurgery",
+  "parent_source": null,
+  "subsource": "Amylyx Pharmaceuticals",
+  "author": {
+    "id": "fb_user_001",
+    "name": "User M",
+    "handle": "user_m",
+    "gender": null,
+    "age": null,
+    "subscribers": 15200
+  },
+  "country": "US",
+  "published_at": "2025-04-25T10:00:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 124,
+    "comments": 38,
+    "shares": 22
+  },
+  "topics": [
+    "bariatric_surgery",
+    "clinical_trial"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [
+    "Amylyx"
+  ],
+  "engagement_score": 286,
+  "engagement_label": "high",
+  "key_phrases": [
+    "Amylyx Pharmaceuticals",
+    "Phase 3 clinical trial",
+    "avexitide",
+    "post-bariatric hypoglycemia",
+    "bariatric surgery",
+    "low blood sugar episodes",
+    "clinical trial participation"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "Strong bariatric context with PBH condition and treatment focus.",
+  "audience_label": "industry",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Treatments",
+    "Diagnostics"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "news"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "companies_Amylyx_003",
+    "conditions_PBH_008",
+    "symptoms_hypoglycemia_016",
+    "treatments_avexitide_024",
+    "topics_bariatric_surgery_034",
+    "topics_clinical_trial_044"
+  ]
+}

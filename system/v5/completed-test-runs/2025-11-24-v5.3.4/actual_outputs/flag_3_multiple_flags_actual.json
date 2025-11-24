@@ -1,0 +1,93 @@
+{
+  "source": "reddit",
+  "source_id": "003",
+  "url": "https://reddit.com/r/BariatricSurgery/comments/003",
+  "permalink": null,
+  "title": "Avexitide side effects + wrong diagnosis?",
+  "text": "I've been diagnosed with reactive hypoglycemia after my gastric sleeve 6 months ago. My doctor started me on avexitide 2 weeks ago and after my doses I'm getting worse - severe shakiness, dizziness, and nausea within an hour of taking it. But I'm wondering if my original diagnosis was even right? I never got formally tested for PBH, just reactive hypo. Should hypoglycemia after bariatric surgery automatically be called PBH or is that different? Confused and feeling awful from this medication.",
+  "parent_source": "BariatricSurgery",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_003",
+    "name": "User i",
+    "handle": "user_i",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-06T11:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 23,
+    "comments": 34,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "medication_side_effects"
+  ],
+  "symptoms": [
+    "shakiness",
+    "dizziness",
+    "nausea"
+  ],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "reactive_hypoglycemia",
+    "hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 91,
+  "engagement_label": "high",
+  "key_phrases": [
+    "reactive hypoglycemia",
+    "gastric sleeve",
+    "avexitide",
+    "severe shakiness",
+    "dizziness",
+    "nausea",
+    "hypoglycemia after bariatric surgery",
+    "PBH",
+    "wrong diagnosis"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "Strong bariatric context with hypoglycemia symptoms and treatment discussion.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "sharing_experience",
+    "seeking_advice"
+  ],
+  "flags": [
+    "possible_PBH_misattribution",
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_medication_side_effects_039",
+    "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
+    "symptoms_nausea_020",
+    "treatments_avexitide_024",
+    "conditions_reactive_hypoglycemia_009",
+    "conditions_hypoglycemia_010"
+  ]
+}

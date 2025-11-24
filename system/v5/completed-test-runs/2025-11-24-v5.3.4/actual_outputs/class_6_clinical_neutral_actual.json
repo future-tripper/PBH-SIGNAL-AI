@@ -1,0 +1,100 @@
+{
+  "source": "reddit",
+  "source_id": "006",
+  "url": "https://reddit.com/r/AskDocs/comments/006",
+  "permalink": null,
+  "title": "Post-bariatric hypoglycemia episode documentation",
+  "text": "35F, 8 months post-Roux-en-Y gastric bypass, presenting with recurrent hypoglycemic episodes. Symptoms include diaphoresis, tremor, tachycardia, and neuroglycopenic symptoms including confusion and visual disturbances. Episodes occur 90-120 minutes postprandial. Continuous glucose monitoring demonstrates glucose nadirs of 45-55 mg/dL. Currently on acarbose 50mg TID with partial symptom control. No prior history of diabetes mellitus. BMI pre-surgery 42, current BMI 28. Seeking additional treatment recommendations.",
+  "parent_source": "AskDocs",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_006",
+    "name": "User f",
+    "handle": "user_f",
+    "gender": "female",
+    "age": 35,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-09T10:30:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 12,
+    "comments": 8,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "diagnostics_monitoring",
+    "dietary_modification"
+  ],
+  "symptoms": [
+    "sweating",
+    "tremor",
+    "tachycardia",
+    "confusion",
+    "vision+changes",
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "acarbose"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 28,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-Roux-en-Y gastric bypass",
+    "recurrent hypoglycemic episodes",
+    "diaphoresis",
+    "tremor",
+    "tachycardia",
+    "neuroglycopenic symptoms",
+    "confusion",
+    "visual disturbances",
+    "continuous glucose monitoring",
+    "glucose nadirs of 45-55 mg/dL",
+    "acarbose 50mg TID",
+    "BMI pre-surgery 42",
+    "current BMI 28"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "Explicit PBH diagnosis with detailed symptomatology and treatment context.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diagnostics"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_diagnostics_monitoring_036",
+    "topics_dietary_modification_035",
+    "symptoms_sweating_015",
+    "symptoms_tremor_013",
+    "symptoms_tachycardia_018",
+    "symptoms_confusion_017",
+    "symptoms_vision+changes_022",
+    "symptoms_hypoglycemia_016",
+    "conditions_PBH_008",
+    "treatments_acarbose_025"
+  ]
+}

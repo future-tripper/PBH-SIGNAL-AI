@@ -66,7 +66,7 @@ class ChatCompletionsTestRunner:
             self.client = OpenAI(api_key=api_key)
 
         # Load system prompt
-        prompt_path = self.base_dir.parent.parent / "enrichment" / "openai_assistant_system_prompt_v5.md"
+        prompt_path = self.base_dir.parent.parent / "enrichment" / "openai_assistant_system_prompt_v5.3.4.md"
         if not prompt_path.exists():
             print(f"❌ Error: System prompt not found at {prompt_path}")
             sys.exit(1)
@@ -115,7 +115,7 @@ class ChatCompletionsTestRunner:
 
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4o-2024-08-06",
+                model="gpt-4o-2024-11-20",
                 temperature=0.3,
                 messages=[
                     {
@@ -207,8 +207,8 @@ class ChatCompletionsTestRunner:
                     print("❌ (API error)")
                     failures += 1
 
-                # Rate limiting: delay between requests
-                time.sleep(1.0)
+                # Rate limiting: delay between requests (30s for gpt-4.1 TPM limit)
+                time.sleep(30.0)
 
             except Exception as e:
                 print(f"❌ (Error: {str(e)})")

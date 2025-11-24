@@ -1,0 +1,78 @@
+{
+  "source": "reddit",
+  "source_id": "004",
+  "url": "https://reddit.com/r/gastricsleeve/comments/004",
+  "permalink": null,
+  "title": "Avexitide side effects - help!",
+  "text": "Been on avexitide for 2 weeks for my PBH and I'm having terrible headaches since I started. They're getting worse each day. Anyone else experiencing this? Should I call my doctor or is this normal at first?",
+  "parent_source": "gastricsleeve",
+  "subsource": null,
+  "author": {
+    "id": "t2_user_004",
+    "name": "User F",
+    "handle": "user_f",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-04-02T11:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 8,
+    "comments": 15,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "medication_side_effects"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 38,
+  "engagement_label": "high",
+  "key_phrases": [
+    "avexitide",
+    "PBH",
+    "terrible headaches",
+    "call my doctor",
+    "normal at first"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH condition explicitly mentioned with treatment context and adverse event.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [
+    "adverse_event"
+  ],
+  "debug_matches": [
+    "treatments_avexitide_024",
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034",
+    "topics_medication_side_effects_039"
+  ]
+}

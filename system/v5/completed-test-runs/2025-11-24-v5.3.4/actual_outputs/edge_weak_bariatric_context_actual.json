@@ -16,18 +16,19 @@
     "subscribers": null
   },
   "country": "US",
+  "published_at": "2025-05-09T11:30:00+00:00",
   "language": "eng",
   "metrics": {
     "likes": 5,
     "comments": 8,
-    "shares": null
+    "shares": 0
   },
-  "published_at": "2025-05-09T11:30:00+00:00",
   "topics": [
     "bariatric_surgery"
   ],
   "symptoms": [
     "shakiness",
+    "dizziness",
     "hypoglycemia"
   ],
   "treatments": [],
@@ -38,40 +39,42 @@
   "engagement_score": 21,
   "engagement_label": "high",
   "key_phrases": [
+    "low blood sugar after meals",
+    "shaky and lightheaded",
     "reactive hypoglycemia",
-    "since my procedure",
-    "feeling shaky",
-    "lightheaded",
-    "hour after eating",
-    "blood sugar drops",
-    "post-op"
+    "post-op recovery",
+    "blood sugar drops"
   ],
   "bariatric_context": "strong",
   "relevance_label": "relevant",
-  "relevance_confidence": 0.8,
-  "relevance_reason": "strong bariatric context with reactive hypoglycemia diagnosis and multiple PBH symptoms",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "Strong bariatric context with hypoglycemia and symptoms indicative of PBH.",
   "audience_label": "patient",
-  "audience_confidence": 0.85,
+  "audience_confidence": 0.9,
   "themes": [
     "Symptoms",
-    "Conditions/Diagnosis"
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
   ],
   "sentiment_label": "neutral",
   "sentiment_confidence": 0.7,
-  "sentiment_raw": "neutral",
+  "sentiment_raw": null,
   "emotions": [
     "anxiety"
   ],
   "intent": [
-    "seeking_advice"
+    "seeking_advice",
+    "sharing_experience"
   ],
   "flags": [
     "possible_PBH_misattribution"
   ],
   "debug_matches": [
-    "audience_anchor_patient_anchor_001",
+    "topics_bariatric_surgery_034",
     "symptoms_shakiness_013",
+    "symptoms_dizziness_014",
     "symptoms_hypoglycemia_016",
-    "conditions_reactive_hypoglycemia_009"
+    "conditions_reactive_hypoglycemia_009",
+    "audience_anchor_patient_anchor_001"
   ]
 }

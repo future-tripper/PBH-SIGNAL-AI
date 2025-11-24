@@ -1,0 +1,81 @@
+{
+  "source": "facebook",
+  "source_id": "002",
+  "url": "https://www.facebook.com/pbh_support/posts/002",
+  "permalink": null,
+  "title": null,
+  "text": "It's been 8 months since my gastric bypass and I'm finally finding a routine that works for my post-bariatric hypoglycemia. Small frequent meals with protein first, avoiding simple carbs, and using a CGM to track my patterns. Some days are still rough but I'm getting better at managing it. For anyone newly diagnosed - it does get easier as you learn your triggers! My endocrinologist has been amazing. #PBH #BariatricLife #ChronicIllness",
+  "parent_source": null,
+  "subsource": "PBH Support Community",
+  "author": {
+    "id": "fb_user_002",
+    "name": "User L",
+    "handle": "user_l",
+    "gender": "female",
+    "age": 45,
+    "subscribers": null
+  },
+  "country": "US",
+  "published_at": "2025-05-10T16:45:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 67,
+    "comments": 34,
+    "shares": 8
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "diagnostics_monitoring"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 159,
+  "engagement_label": "high",
+  "key_phrases": [
+    "gastric bypass",
+    "post-bariatric hypoglycemia",
+    "small frequent meals",
+    "protein first",
+    "avoiding simple carbs",
+    "using a CGM",
+    "learn your triggers",
+    "newly diagnosed",
+    "chronic illness"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.95,
+  "relevance_reason": "Strong bariatric context with explicit PBH diagnosis and management strategies.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Conditions/Diagnosis",
+    "Bariatric Surgery",
+    "Diet",
+    "Diagnostics"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope",
+    "relief"
+  ],
+  "intent": [
+    "sharing_experience",
+    "giving_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "topics_diagnostics_monitoring_036",
+    "conditions_PBH_008",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

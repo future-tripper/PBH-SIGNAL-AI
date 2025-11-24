@@ -13,67 +13,23 @@ Automated validation of v5 enrichment system (AI that analyzes social media post
 
 ---
 
-## Phase 1: AI-Assisted Test Validation (Dev Team)
-
-**WHO:** Dev team with enrichment pipeline already running
-**WHEN:** Immediately after receiving this package
-**TIME:** ~30-60 minutes (run tests, use Claude Code for comparison, review results)
-
-### Prerequisites
-
-**You need:**
-- Enrichment pipeline configured with v5 system (see Step 0 above)
-- Access to Claude Code or similar AI coding assistant
-- 44 test input files (in `../enrichment-test-data-v5/` organized by category)
-
-**Files you'll use:**
-- `phase1_claude_prompt.md` - Detailed instructions for Claude Code
-- `phase1_test_results.csv` - Where results will be tracked
-- `CLAUDE.md` - Project context for AI assistant
-
----
-
-### Internal Testing Results (For Context)
-
-We've completed initial internal testing using Chat Completions API with 44 test cases:
-
-**Results (Tier-Based):**
-- **Tier 1 (Critical/Safety):** 70.5% — Below 90% threshold, needs improvement
-- **Tier 2 (Core Product):** 81.8% — Above 80% target ✓
-- **Tier 3 (Enhancements):** 20.5% — Tracking only (subjective fields)
-
-**Key Takeaways:**
-- **Root cause of 70.5% Tier 1 result:** `bariatric_context` field at 84% accuracy (needs 90%+)
-  - This field is CORE to product functionality - determines if post is PBH-relevant
-  - Other critical fields performing well: flags 91%, relevance 91%, audience 97.7%
-  - Fixing bariatric_context alone would bring Tier 1 to ~90%+
-- **Primary issue:** Not consistently recognizing PBH mentions as "strong" bariatric context
-- **Secondary issues:** Flag logic edge cases, third-person narratives
-- More comprehensive testing recommended before production deployment
-
-See `completed_tests/test1_20251121/` for detailed analysis.
-
----
-
-### Step-by-Step Process
-
-#### Step 0: Configure v5 Enrichment System ⚠️ **DO THIS FIRST**
+## System Configuration ⚠️ **DO THIS FIRST**
 
 **Before running any tests, configure your enrichment pipeline with v5 system files.**
 
-##### Required Configuration (n8n or API)
+### Required Configuration (n8n or API)
 
 **Model Settings:**
-- **Model:** `gpt-4o-2024-08-06`
+- **Model:** `gpt-4o-2024-11-20`
 - **Temperature:** `0.3` (balanced for consistency + nuance)
 
 **System Files (from `../enrichment/` folder):**
 
 **1. System Prompt:**
-- File: `openai_assistant_system_prompt_v5.md`
+- File: `openai_assistant_system_prompt_v5.3.4.md`
 - Where: Set as system message in your API call
-- Content: Complete prompt instructions (~315 lines)
-- **Note:** Updated with Adverse Event detection logic
+- Content: Complete prompt instructions (~913 lines)
+- **Note:** Updated with bariatric_context logic fix and late dumping misattribution criteria
 
 **2. Schema Update:**
 - **Add a 'flags' field** to your existing enrichment schema/database
@@ -90,9 +46,9 @@ See `completed_tests/test1_20251121/` for detailed analysis.
 - Note: The system prompt references "File Search" for dictionary lookups, but will work with either approach
 
 **Configuration checklist:**
-- [ ] Model set to `gpt-4o-2024-08-06`
+- [ ] Model set to `gpt-4o-2024-11-20`
 - [ ] Temperature set to `0.3`
-- [ ] System prompt loaded from `openai_assistant_system_prompt_v5.md` (includes AE detection logic)
+- [ ] System prompt loaded from `openai_assistant_system_prompt_v5.3.4.md`
 - [ ] 'flags' field added to your enrichment schema/database
 - [ ] Dictionary attached as File Search tool (recommended) or embedded in prompt (alternative)
 
@@ -101,6 +57,53 @@ Test with one sample input. Check that:
 - Output includes the 'flags' field
 - Entity extraction works (symptoms, treatments, etc. captured)
 - Adverse event posts correctly populate the flags array
+
+---
+
+## Phase 1: AI-Assisted Test Validation (Dev Team)
+
+**WHO:** Dev team with enrichment pipeline already running
+**WHEN:** Immediately after receiving this package
+**TIME:** ~30-60 minutes (run tests, use Claude Code for comparison, review results)
+
+---
+
+### TCD Internal Testing Results (v5.3.4 - Final)
+
+**After 34 iterations with surgical fixes, TCD achieved:**
+
+**System Version:** v5.3.4 (bariatric_context logic corrected)
+
+**Results (Tier-Based):**
+- **Tier 1 (Critical/Safety):** 93.2% (41/44) ✅ Target: ≥90%
+- **Tier 2 (Core Product):** 97.7% (43/44) ✅ Target: ≥80%
+- **Tier 3 (Enhancements):** 97.7% (43/44) 📊 Tracking only
+
+**Known Unresolved Issues:**
+1. **platform_instagram_influencer** - Flagging edge case (possible_PBH_misattribution on borderline content)
+2. **platform_reddit_borderline** - bariatric_context classification on weak surgery references
+3. **class_6_clinical_neutral** - Flag detection on clinical research content
+
+**Note for Dev Teams:**
+Since TCD has completed extensive internal testing with high scores across all tiers, **dev teams may skip Phase 1 automated testing** and proceed directly to Phase 2 (real sample validation). However, if you encounter issues during integration or want to validate your pipeline configuration, Phase 1 provides a comprehensive testing framework.
+
+---
+
+### Prerequisites
+
+**You need:**
+- Enrichment pipeline configured with v5.3.4 system (see Configuration section above)
+- Access to Claude Code or similar AI coding assistant
+- 44 test input files (in `../enrichment-test-data-v5/` organized by category)
+
+**Files you'll use:**
+- `phase1_claude_prompt.md` - Detailed instructions for Claude Code
+- `phase1_test_results.csv` - Where results will be tracked
+- `CLAUDE.md` - Project context for AI assistant
+
+---
+
+### Step-by-Step Process
 
 #### 1. Run Tests Through Your Pipeline (5-10 min)
 
@@ -115,7 +118,7 @@ Test with one sample input. Check that:
    - `flag-tests/` (4 JSON files)
 
 2. Run each test input through your enrichment pipeline
-   - Use v5 system prompt from `../enrichment/openai_assistant_system_prompt_v5.md`
+   - Use v5.3.4 system prompt from `../enrichment/openai_assistant_system_prompt_v5.3.4.md`
    - Ensure your output schema includes the 'flags' field
    - Generate enriched JSON output for each test
 
@@ -237,7 +240,7 @@ Claude Code has identified issues and suggested fixes in the CSV. Common pattern
 
 **Prompt Issues:**
 - Unclear logic or criteria
-- Fix: Update `../enrichment/openai_assistant_system_prompt_v5.md`
+- Fix: Update `../enrichment/openai_assistant_system_prompt_v5.3.4.md`
 - Example: "Emphasize AE causal language detection in adverse_event criteria"
 
 **Schema Issues:**
@@ -274,7 +277,7 @@ Continue iterating:
 ## Phase 2: Real Sample Validation (TCD Team)
 
 **WHO:** TCD team (Joe's team)
-**WHEN:** After Phase 1 passes
+**WHEN:** After Phase 1 passes (or skipped per TCD approval)
 **TIME:** 1-2 hours for sample collection + review
 
 ### What TCD Team Requests from Devs:
@@ -335,7 +338,8 @@ For each post in the CSV, check these enrichment fields:
 - ❌ Flag if: Theme doesn't align with the post content
 
 **Flags (Critical for Safety!):**
-- `flags`: Special alerts - adverse_event, crisis, misattribution, clinical_trial
+- `flags`: Special alerts - adverse_event, crisis, possible_PBH_misattribution
+- **Note:** `possible_PBH_misattribution` now includes late dumping syndrome cases (commonly misdiagnosed as PBH and warrants pharmaceutical evaluation)
 - ❌ Flag if: Missing "adverse_event" when patient reports side effects from avexitide, or missing "crisis" for self-harm language
 
 **Key Phrases:**
@@ -523,7 +527,7 @@ After each test run, report the following via **email or Teams**:
 - **Date:** YYYY-MM-DD
 - **Overall Pass Rate:** X% (e.g., 43/44 tests = 97.7%)
 - **Field Accuracy:** X% (from comparison summary)
-- **Model:** gpt-4o-2024-08-06
+- **Model:** gpt-4o-2024-11-20
 - **Test Count:** 44 (or subset if partial run)
 
 **If Failed Tests:**
@@ -580,6 +584,6 @@ After each test run, report the following via **email or Teams**:
 
 ---
 
-**Last Updated:** 2025-11-21
-**Version:** v5.0
+**Last Updated:** 2025-11-24
+**Version:** v5.3.4
 **Test Count:** 44 cases across 6 categories (4-platform MVP)

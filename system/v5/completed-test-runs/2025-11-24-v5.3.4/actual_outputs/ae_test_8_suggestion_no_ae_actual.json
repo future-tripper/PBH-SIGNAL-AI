@@ -1,0 +1,78 @@
+{
+  "source": "instagram",
+  "source_id": "007",
+  "url": "https://instagram.com/p/007",
+  "permalink": null,
+  "title": null,
+  "text": "Saw my endo today about my post-bariatric hypoglycemia. She said avexitide could cause some GI issues but we should try it anyway since my symptoms are so severe. Starting next month! \u0001 #pbh #bariatriclife #avexitide",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "ig_user_007",
+    "name": "User J",
+    "handle": "user_j",
+    "gender": "female",
+    "age": 35,
+    "subscribers": 2400
+  },
+  "country": "US",
+  "published_at": "2025-04-01T14:20:00+00:00",
+  "language": "eng",
+  "metrics": {
+    "likes": 78,
+    "comments": 12,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "treatment_failure"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [
+    "avexitide"
+  ],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 102,
+  "engagement_label": "high",
+  "key_phrases": [
+    "post-bariatric hypoglycemia",
+    "severe symptoms",
+    "GI issues",
+    "starting avexitide",
+    "bariatric life"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "PBH explicitly mentioned with treatment context and severe symptoms.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Treatments",
+    "Conditions/Diagnosis",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope"
+  ],
+  "intent": [
+    "sharing_experience",
+    "news"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "conditions_PBH_008",
+    "symptoms_hypoglycemia_016",
+    "treatments_avexitide_024"
+  ]
+}

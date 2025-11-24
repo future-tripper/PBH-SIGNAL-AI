@@ -1,0 +1,45 @@
+test_name,category,tier1_pass,tier2_pass,tier3_pass,tier3_avg_score,emotions_score,intent_score,themes_score,overall_pass,critical_pass,flags_match,relevance_match,audience_match,bariatric_context_match,sentiment_match,themes_match,entity_extraction_quality,notes
+ae_test_10_mention_only_no_ae,adverse_events,PASS,PASS,PASS,1.00,1.00,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.85,All fields match
+ae_test_11_general_statement_no_ae,adverse_events,PASS,PASS,PASS,1.00,1.00,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.82,All fields match
+ae_test_12_amylyx_no_trial_no_ae,adverse_events,PASS,FAIL,PASS,0.89,1.00,1.00,0.67,FAIL,PASS,PASS,PASS,PASS,PASS,FAIL,FAIL,0.85,"themes: Extra: ['Access & Coverage']; sentiment_label: Expected: mixed, Actual: positive"
+ae_test_1_first_person_trial,adverse_events,PASS,PASS,PASS,0.92,1.00,1.00,0.75,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.90,themes: Extra: ['Diagnostics']
+ae_test_2_third_person_family,adverse_events,PASS,PASS,PASS,0.89,1.00,1.00,0.67,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.78,themes: Missing: ['Care Settings']
+ae_test_3_third_person_hcp,adverse_events,PASS,PASS,PASS,1.00,1.00,1.00,1.00,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,All fields match
+ae_test_4_first_person_post_market,adverse_events,PASS,PASS,PASS,1.00,1.00,1.00,1.00,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.97,All fields match
+ae_test_5_amylyx_trial_no_drug_name,adverse_events,PASS,PASS,PASS,0.92,1.00,1.00,0.75,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.90,themes: Extra: ['Diagnostics']
+ae_test_6_vague_hearsay_no_ae,adverse_events,PASS,PASS,PASS,0.67,0.00,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.85,"emotions: Expected: [], Actual: ['anxiety']"
+ae_test_7_hypothetical_no_ae,adverse_events,PASS,PASS,PASS,1.00,1.00,1.00,1.00,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.97,All fields match
+ae_test_8_suggestion_no_ae,adverse_events,PASS,PASS,PASS,0.75,1.00,0.50,0.75,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.61,themes: Extra: ['Symptoms']; intent: Extra: ['news']
+ae_test_9_other_treatment_no_ae,adverse_events,PASS,PASS,PASS,0.67,0.50,1.00,0.50,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.76,"themes: Extra: ['Diagnostics', 'Symptoms']; emotions: Extra: ['anxiety']"
+platform_facebook_patient,platform_coverage,PASS,PASS,PASS,1.00,1.00,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.93,All fields match
+platform_facebook_trial,platform_coverage,PASS,PASS,PASS,0.87,1.00,1.00,0.60,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,1.00,themes: Missing: ['Symptoms']; Extra: ['Diagnostics']
+platform_instagram_influencer,platform_coverage,FAIL,PASS,PASS,1.00,1.00,1.00,1.00,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,0.83,"flags: Expected: [], Actual: ['possible_PBH_misattribution']"
+platform_instagram_personal,platform_coverage,PASS,PASS,PASS,0.78,0.33,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.88,emotions: Missing: ['relief']; Extra: ['frustration']
+platform_reddit_borderline,platform_coverage,FAIL,PASS,PASS,0.67,1.00,0.50,0.50,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,FAIL,0.70,"bariatric_context: Expected: strong, Actual: weak; themes: Extra: ['Conditions/Diagnosis', 'Diagnostics']; intent: Extra: ['sharing_experience']"
+platform_reddit_relevant,platform_coverage,PASS,PASS,PASS,0.93,1.00,1.00,0.80,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.81,themes: Extra: ['Diet']
+platform_tiktok_hcp,platform_coverage,PASS,PASS,PASS,0.83,1.00,0.50,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,intent: Extra: ['news']
+platform_tiktok_patient,platform_coverage,PASS,PASS,PASS,0.89,1.00,0.67,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.85,intent: Missing: ['venting']
+edge_misspellings_abbreviations,edge_cases,PASS,PASS,PASS,0.78,1.00,0.50,0.83,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.85,themes: Extra: ['Diet']; intent: Extra: ['sharing_experience']
+edge_mixed_sentiment,edge_cases,PASS,PASS,PASS,0.78,0.67,0.67,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.83,emotions: Missing: ['anxiety']; intent: Missing: ['venting']
+edge_multiple_companies,edge_cases,PASS,PASS,PASS,0.50,0.00,0.50,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.93,"emotions: Expected: [], Actual: ['hope']; intent: Extra: ['sharing_experience']"
+edge_multiple_treatments,edge_cases,PASS,PASS,PASS,0.94,1.00,1.00,0.83,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.74,themes: Extra: ['Symptoms']
+edge_no_bariatric_context,edge_cases,PASS,PASS,PASS,0.83,1.00,0.50,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.93,intent: Extra: ['sharing_experience']
+edge_very_long_post,edge_cases,PASS,PASS,PASS,0.58,0.40,0.33,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.78,"emotions: Missing: ['frustration', 'sadness']; Extra: ['anxiety']; intent: Missing: ['giving_advice']; Extra: ['seeking_advice']"
+edge_very_short_post,edge_cases,PASS,PASS,PASS,1.00,1.00,1.00,1.00,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,All fields match
+edge_weak_bariatric_context,edge_cases,PASS,PASS,PASS,0.72,1.00,0.50,0.67,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.89,themes: Extra: ['Bariatric Surgery']; intent: Extra: ['sharing_experience']
+dict_1_negation,dictionary,PASS,PASS,PASS,0.83,1.00,1.00,0.50,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.55,"themes: Extra: ['Bariatric Surgery', 'Symptoms']"
+dict_2_hypothetical,dictionary,PASS,PASS,PASS,0.56,0.50,0.50,0.67,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.75,themes: Extra: ['Bariatric Surgery']; emotions: Missing: ['fear']; intent: Extra: ['sharing_experience']
+dict_3_exclusion_context,dictionary,PASS,PASS,PASS,0.83,0.50,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.97,emotions: Extra: ['relief']
+dict_4_past_tense,dictionary,PASS,PASS,PASS,1.00,1.00,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.90,All fields match
+dict_5_casual_language,dictionary,PASS,PASS,PASS,0.83,0.50,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,emotions: Extra: ['anxiety']
+dict_6_context_dependent,dictionary,PASS,PASS,FAIL,0.42,0.50,0.50,0.25,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.65,"themes: Extra: ['Bariatric Surgery', 'Diet', 'Symptoms']; emotions: Extra: ['relief']; intent: Extra: ['seeking_advice']"
+class_1_mixed_role,classification,PASS,PASS,PASS,0.50,0.00,0.50,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.96,"emotions: Missing: ['relief']; Extra: ['anxiety', 'hope']; intent: Extra: ['giving_advice']"
+class_2_caregiver,classification,PASS,PASS,PASS,0.64,0.33,1.00,0.60,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.66,"themes: Extra: ['Bariatric Surgery', 'Diet']; emotions: Missing: ['fear']; Extra: ['frustration']"
+class_3_researcher,classification,PASS,PASS,PASS,0.87,1.00,1.00,0.60,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.83,themes: Missing: ['Symptoms']; Extra: ['Diagnostics']
+class_4_offtopic,classification,PASS,PASS,PASS,0.50,0.50,0.50,0.50,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.86,themes: Extra: ['Diet']; emotions: Extra: ['hope']; intent: Extra: ['giving_advice']
+class_5_sarcasm,classification,PASS,PASS,PASS,0.56,0.50,0.50,0.67,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.80,themes: Extra: ['Bariatric Surgery']; emotions: Extra: ['anxiety']; intent: Extra: ['sharing_experience']
+class_6_clinical_neutral,classification,FAIL,PASS,PASS,0.50,0.00,0.50,1.00,FAIL,FAIL,FAIL,PASS,PASS,PASS,PASS,PASS,0.61,"flags: Expected: ['possible_PBH_misattribution'], Actual: []; emotions: Expected: [], Actual: ['anxiety']; intent: Extra: ['sharing_experience']"
+flag_1_crisis,flags,PASS,PASS,PASS,0.67,0.67,0.50,0.86,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.88,themes: Extra: ['Care Settings']; emotions: Extra: ['frustration']; intent: Extra: ['sharing_experience']
+flag_2_borderline_crisis,flags,PASS,PASS,PASS,0.61,0.67,0.50,0.67,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.60,themes: Extra: ['Bariatric Surgery']; emotions: Extra: ['anxiety']; intent: Extra: ['sharing_experience']
+flag_3_multiple_flags,flags,PASS,PASS,PASS,1.00,1.00,1.00,1.00,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,PASS,0.78,All fields match
+flag_4_false_positive_crisis,flags,PASS,PASS,PASS,0.69,0.33,1.00,0.75,FAIL,PASS,PASS,PASS,PASS,PASS,PASS,FAIL,0.80,"themes: Extra: ['Bariatric Surgery']; emotions: Extra: ['anxiety', 'hope']"
