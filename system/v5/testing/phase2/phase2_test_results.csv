@@ -1,0 +1,52 @@
+post_id,source,category,tier1_pass,tier2_pass,tier3_pass,overall_pass,critical_pass,flags_correct,relevance_correct,audience_correct,bariatric_context_correct,sentiment_correct,entity_extraction_quality,issues_found,recommended_fix
+31321,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31323,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31324,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31325,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31326,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31327,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31328,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31329,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31337,reddit.com,not_relevant_other,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,None,Update bariatric_context detection for bariatric subreddits
+31338,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31339,reddit.com,not_relevant_bariatric,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,bariatric_context should be 'strong' (from gastricbypass),Update bariatric_context detection for bariatric subreddits
+31359,reddit.com,not_relevant_bariatric,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,bariatric_context should be 'strong' (from bariatricsurgery),Update bariatric_context detection for bariatric subreddits
+31360,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31361,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31362,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31363,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31364,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31365,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31366,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31367,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31368,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31369,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31370,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31371,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31372,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31373,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31420,reddit.com,not_relevant_bariatric,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,bariatric_context should be 'strong' (from gastricbypass),Update bariatric_context detection for bariatric subreddits
+31421,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31422,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31423,reddit.com,not_relevant_bariatric,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,bariatric_context should be 'strong' (from bariatricsurgery),Update bariatric_context detection for bariatric subreddits
+31424,reddit.com,not_relevant_other,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,None,Update bariatric_context detection for bariatric subreddits
+31425,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31426,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31427,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31428,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31429,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31430,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31431,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31432,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31433,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31434,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31481,reddit.com,not_relevant_bariatric,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,bariatric_context should be 'strong' (from gastricbypass),Update bariatric_context detection for bariatric subreddits
+31482,reddit.com,not_relevant_bariatric,FAIL,PASS,PASS,FAIL,FAIL,PASS,PASS,PASS,FAIL,PASS,1.00,bariatric_context should be 'strong' (from gastricbypass),Update bariatric_context detection for bariatric subreddits
+31483,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31484,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31485,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31486,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31487,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31490,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31491,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,
+31492,reddit.com,not_relevant_other,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PASS,1.00,None,

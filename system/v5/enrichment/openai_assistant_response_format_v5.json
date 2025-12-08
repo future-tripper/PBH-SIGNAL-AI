@@ -1,0 +1,146 @@
+{
+  "name": "enriched_social_data",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "source",
+      "source_id",
+      "url",
+      "permalink",
+      "title",
+      "text",
+      "parent_source",
+      "subsource",
+      "author",
+      "country",
+      "published_at",
+      "language",
+      "metrics",
+      "topics",
+      "symptoms",
+      "treatments",
+      "conditions",
+      "companies",
+      "engagement_score",
+      "engagement_label",
+      "key_phrases",
+      "bariatric_context",
+      "relevance_label",
+      "relevance_confidence",
+      "relevance_reason",
+      "audience_label",
+      "audience_confidence",
+      "themes",
+      "sentiment_label",
+      "sentiment_confidence",
+      "sentiment_raw",
+      "emotions",
+      "intent",
+      "flags",
+      "debug_matches"
+    ],
+    "properties": {
+      "source": { "type": "string" },
+      "source_id": { "type": "string" },
+      "url": { "type": "string" },
+      "permalink": { "type": "string", "nullable": true },
+      "title": { "type": "string", "nullable": true },
+      "text": { "type": "string" },
+      "parent_source": { "type": "string", "nullable": true },
+      "subsource": { "type": "string", "nullable": true },
+
+      "author": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "handle", "gender", "age", "subscribers"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "handle": { "type": "string" },
+          "gender": { "type": "string", "nullable": true },
+          "age": { "type": "integer", "nullable": true },
+          "subscribers": { "type": "integer", "nullable": true }
+        }
+      },
+
+      "country": { "type": "string", "nullable": true },
+      "published_at": { "type": "string" },
+      "language": { "type": "string", "nullable": true },
+
+      "metrics": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["likes", "comments", "shares"],
+        "properties": {
+          "likes":    { "type": "integer", "nullable": true },
+          "comments": { "type": "integer", "nullable": true },
+          "shares":   { "type": "integer", "nullable": true }
+        }
+      },
+
+      "topics":     { "type": "array", "items": { "type": "string" }, "maxItems": 30 },
+      "symptoms":   { "type": "array", "items": { "type": "string" }, "maxItems": 20 },
+      "treatments": { "type": "array", "items": { "type": "string" }, "maxItems": 20 },
+      "conditions": { "type": "array", "items": { "type": "string" }, "maxItems": 20 },
+      "companies":  { "type": "array", "items": { "type": "string" }, "maxItems": 20 },
+
+      "engagement_score": { "type": "number", "description": "Calculate as: likes + (2 * comments) + (3 * shares)" },
+      "engagement_label": { "type": "string", "enum": ["low", "med", "high"], "description": "high if score >= 20, med if 10-19, low if < 10" },
+
+      "key_phrases": { "type": "array", "items": { "type": "string" }, "maxItems": 40, "description": "5-10 medically relevant phrases for word cloud. Categories: symptom+context, treatment+outcome, timing patterns, diagnostic terms, medical conditions. Canonicalized and deduplicated." },
+
+      "bariatric_context": { "type": "string", "enum": ["none", "weak", "strong"] },
+      "relevance_label": { "type": "string", "enum": ["relevant", "borderline", "not_relevant"] },
+      "relevance_confidence": { "type": "number" },
+      "relevance_reason": { "type": "string" },
+
+      "audience_label": { "type": "string", "enum": ["patient", "hcp", "industry", "media", "unknown"] },
+      "audience_confidence": { "type": "number" },
+
+      "themes": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["Symptoms","Treatments","Conditions/Diagnosis","Bariatric Surgery","Access & Coverage","Diagnostics","Diet","Care Settings"]
+        },
+        "maxItems": 8
+      },
+
+      "sentiment_label": { "type": "string", "enum": ["positive","neutral","negative","mixed"] },
+      "sentiment_confidence": { "type": "number" },
+      "sentiment_raw": { "type": "string", "nullable": true },
+
+      "emotions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["anger","fear","sadness","joy","frustration","anxiety","hope","relief"]
+        },
+        "maxItems": 8
+      },
+
+      "intent": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["seeking_advice","sharing_experience","giving_advice","news","venting"]
+        },
+        "maxItems": 3
+      },
+
+      "flags": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["possible_PBH_misattribution","crisis","adverse_event"]
+        },
+        "maxItems": 5,
+        "description": "adverse_event only if patient reports symptoms CAUSED BY or AFTER TAKING treatment, not for suggested/future treatments"
+      },
+
+      "debug_matches": { "type": "array", "items": { "type": "string" }, "maxItems": 40 }
+    }
+  }
+}
