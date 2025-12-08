@@ -138,16 +138,22 @@ Do NOT extract symptoms from hypothetical, hearsay, or suggestion contexts:
 - PBH_TREATMENTS: ["avexitide", "acarbose", "diazoxide", "octreotide"] - treatments specifically for PBH/hypoglycemia
 - GLP1_TREATMENTS: ["semaglutide", "tirzepatide", "dulaglutide", "liraglutide", "exenatide"] - weight loss/diabetes drugs relevant in bariatric context
 
+**Company Groups for Relevance:**
+- AMYLYX: companies includes "Amylyx" - Amylyx is the avexitide sponsor; any mention is PBH-related
+- COMPETITORS: ["Novo_Nordisk", "Eli_Lilly"] - relevant when combined with bariatric/PBH context
+
 **relevance_label** (TRIANGULATION LOGIC):
 - "relevant" (MOST RELEVANT - keep and prioritize):
   - conditions includes "PBH" OR
+  - companies includes "Amylyx" (avexitide is their only pipeline drug, so any Amylyx mention is PBH-related) OR
+  - (companies includes ANY of COMPETITORS AND (bariatric_context != "none" OR conditions includes ["PBH", "hypoglycemia", "reactive_hypoglycemia"])) OR
   - (bariatric_context="strong" AND symptoms.length ≥ 2) OR
   - treatments includes ANY of PBH_TREATMENTS: ["avexitide", "acarbose", "diazoxide", "octreotide"] OR
   - (bariatric_context="strong" AND conditions includes ["hypoglycemia", "reactive_hypoglycemia"]) OR
   - (bariatric_context="strong" AND treatments includes ANY of GLP1_TREATMENTS)
 
 - "borderline" (MEDIUM RELEVANT - keep for context):
-  - bariatric_context="strong" WITHOUT PBH/hypoglycemia indicators (general bariatric surgery discussion) OR
+  - bariatric_context="strong" WITHOUT PBH/hypoglycemia indicators (general bariatric surgery discussion without symptoms, hypoglycemia, or PBH treatments → borderline, NOT relevant) OR
   - (bariatric_context="weak" AND treatments includes PBH_TREATMENTS AND symptoms.length ≥ 2) OR
   - (bariatric_context="weak" AND symptoms.length ≥ 3) OR
   - (subsource="r/loseit" AND surgery mentions AND symptoms.length ≥ 2) OR
@@ -155,6 +161,7 @@ Do NOT extract symptoms from hypothetical, hearsay, or suggestion contexts:
 
 - "not_relevant" (LOW - filter out):
   - bariatric_context="none" AND no PBH_TREATMENTS AND no GLP1_TREATMENTS in bariatric context OR
+  - (conditions includes "reactive_hypoglycemia" AND bariatric_context="none") - reactive hypo without bariatric surgery is not PBH OR
   - conditions include ["T1D", "T2D", "PCOS"] without bariatric context OR
   - (treatments include ["metformin"] AND conditions include ["PCOS"]) OR
   - subsource in ["r/keto", "r/diabetes", "r/intermittentfasting"] with no bariatric context OR

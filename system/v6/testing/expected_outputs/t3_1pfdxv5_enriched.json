@@ -1,0 +1,76 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pfdxv5",
+  "url": "https://www.reddit.com/r/AskDocs/comments/1pfdxv5/im_growing_extremely_frustrated_with_the_nhs_as/",
+  "permalink": null,
+  "title": "i\u2019m growing extremely frustrated with the NHS as they won\u2019t help me post op\u2026what do i do?",
+  "text": "i\u2019m trans and 3.5 post bottom surgery. i\u2019ve been having issues and i went to the walk in centre. showed the nurse a huge list of the following symptoms:\n\n\u2022\tnight sweats\n\u2022\tdiarrhoea\n\u2022\tgas coming through vagina\n\u2022\tred/swollen vulva\n\u2022\textreme fatigue\n\u2022\tpain down right side of body\n\u2022\tyellow discharge\n\u2022\tnausea\n\u2022\tblurred vision\n\u2022\tintense brain fog\n\u2022\tfeeling faint\n\u2022\tbleeding from bum and painful lump on bum\n\u2022\tstabbing pains in vagina\n\u2022\tworried about rectovaginal fistula possibly causing infection and symptoms\n\nthat\u2019s exactly what i showed her. she looked at my vagina and my bum and then just said she\u2019s \u2019not concerned\u2019, that if she would she would refer me to a surgeon today, but that she\u2019s not, and sent me home. i also have stabbing pains in my vagina and bum.\n\nmy GP won\u2019t help, i\u2019m on a waiting list to see my surgeon but that\u2019s still months away. i\u2019m extremely stressed all day every day, i can\u2019t get anything done. i have uni work due in next week and i just can\u2019t focus on anything but the way my vagina feels. i have weird discharge again today and aaaa idk what to do :( no one wants to help me, i\u2019m gonna lost all my dilation progress because i can\u2019t dilate due to worry of a fistula and i just can\u2019t carry on like this for months.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21454",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 02:28:05",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "doctor_visit"
+  ],
+  "symptoms": [
+    "sweating",
+    "nausea",
+    "brain_fog",
+    "fainting"
+  ],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "post bottom surgery",
+    "night sweats",
+    "rectovaginal fistula",
+    "intense brain fog",
+    "weird discharge"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "The post discusses post-surgical complications unrelated to bariatric or PBH contexts.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "venting"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "symptoms_sweating_015",
+    "symptoms_nausea_020",
+    "symptoms_brain_fog_017",
+    "symptoms_fainting_019",
+    "symptoms_vision+changes_022",
+    "topics_doctor_visit_038"
+  ]
+}

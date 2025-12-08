@@ -1,0 +1,61 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pgpc2e",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pgpc2e/recovery_basket/",
+  "permalink": null,
+  "title": "Recovery Basket",
+  "text": "Hello, my friend is having bariatric surgery soon and i\u2019d like to put together a little recovery basket for her. What are some of the absolute essentials that helped you guys?? Thank you!!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21675",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-07 18:19:51",
+  "language": "en",
+  "metrics": {
+    "likes": 4,
+    "comments": 2,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 8,
+  "engagement_label": "low",
+  "key_phrases": [
+    "bariatric surgery",
+    "recovery basket",
+    "absolute essentials",
+    "helped you guys"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context but no PBH or hypoglycemia indicators.",
+  "audience_label": "unknown",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034"
+  ]
+}

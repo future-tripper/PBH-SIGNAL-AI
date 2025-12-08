@@ -1,0 +1,83 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pfdpxz",
+  "url": "https://www.reddit.com/r/AskDocs/comments/1pfdpxz/brain_mri_results_conflicting_but_neuro_says/",
+  "permalink": null,
+  "title": "Brain MRI results conflicting but neuro says nothing to worry about. Should I be concerned?",
+  "text": "43 Female. History of hemiplegic migraines, psoriatic arthritis, sjogrens, hEDS, and pckd. Recently numbness in legs/feet and arms is making it more prominent feature in life. Also saddle area numbness is steady for months. Bladder and bowel control issues as well as vision issues off and on- blurred and double vision that cannot be corrected with drops or glasses/contacts. \n\nBrain MRI says this: \n\nRedemonstration of few tiny scattered foci of elevated T2/FLAIR signal within the\nperiventricular and subcortical white matter which are nonspecific. Differential\nconsiderations include early minimal microvascular ischemic disease, colonic of\nmigraine, sequela of infectious/inflammatory process, or demyelinating illness. No\npathologic enhancement following the administration of contrast.\n\n\nMajor Expected intracranial flow voids are maintained. Globes are normal. The\ncalvarium is without abnormal signal.\nMucous retention cyst right frontal sinus. Mastoid air cells are well-aerated.\n\nImpression:\n1. No acute intracranial abnormality.\n2. Cerebellar tonsillar ectopia.\n3. A few scattered foci of elevated T2/FLAIR signal within the periventricular and\nsubcortical white matter, nonspecific with differential considerations as above.\n\nI have a monitored blood pressure of 90/60 to 100/70 at all times. I have been diagnosed with Reactive Hypoglycemia and proven not to be diabetic or to have an insulinoma. My blood sugar is low to normal at all times. I have POTS and a PFO but my heart has been tested otherwise to be in great health. My neurologist called to inform me that my brain MRI was great and that there is nothing to worry about. Is this a true statement or am I stressing over nothing? The two other MRIs have shown nothing but my arthritis.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21460",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 02:17:02",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "diagnostics_monitoring"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "brain MRI",
+    "cerebellar tonsillar ectopia",
+    "scattered foci of elevated T2/FLAIR signal",
+    "reactive hypoglycemia",
+    "numbness in legs and arms",
+    "blurred and double vision",
+    "POTS",
+    "sjogrens",
+    "psoriatic arthritis"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "No bariatric or PBH context detected; general medical discussion.",
+  "audience_label": "patient",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Symptoms",
+    "Diagnostics"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "symptoms_numbness_023",
+    "symptoms_vision+changes_022",
+    "symptoms_hypoglycemia_016",
+    "conditions_reactive_hypoglycemia_009",
+    "conditions_POTS_012",
+    "conditions_sjogrens_013",
+    "conditions_psoriatic_arthritis_014",
+    "conditions_hEDS_015",
+    "conditions_pckd_016",
+    "topics_diagnostics_monitoring_036"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1panjda",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1panjda/making_friends_with_my_tiny_new_stomach/",
+  "permalink": null,
+  "title": "Making friends with my tiny new stomach",
+  "text": "I'm about 60 days post-op RNY and I'm learning (or trying) to make peace with my teeny tiny pouch of a stomach.  (I called him \"Pee wee\").  I'm told that at 6 months I'll reach some level of normal/stability with this.  Right now, I'm having so many weird sensations that I can't always identify.  Sleeping is still hit or miss.  Every time I eat or drink I have a mild discomfort of some sort or another; nothing major but I've always been hyper-aware of abdominal glitches since my history of Barretts Esophagus kicked in 30 yrs ago.  Usually walking helps.  Every little pain sets off the questioning \"did I eat too much?\"  \"is this dumping syndrome or something stuck?\"  I'm in the process of tapering off of PPI's, since I was on them for so many years.  I really doubt it's reflux I'm feeling, but I can't rule it out.\n\nMaybe I should just chalk it up to normal post-op adjustments, but the curse of being a nurse is this madness I'm putting myself through.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "20863",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-11-30 17:11:19",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 1,
+  "engagement_label": "low",
+  "key_phrases": [
+    "60 days post-op RNY",
+    "teeny tiny pouch of a stomach",
+    "normal post-op adjustments",
+    "tapering off of PPI's",
+    "dumping syndrome"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with post-operative discussion but no PBH indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

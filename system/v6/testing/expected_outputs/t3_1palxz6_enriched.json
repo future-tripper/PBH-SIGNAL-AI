@@ -1,0 +1,68 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1palxz6",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1palxz6/protein_powder_whey_isolate/",
+  "permalink": null,
+  "title": "Protein powder - whey isolate?",
+  "text": "Hello, I had bariatric surgery (modified duodenal switch) on September 23rd 2025. The bariatric surgeon office is pushing their in house protein powder as the only acceptable option for protein shake intake. I know other protein powders exist that are whey isolate (that\u0019s what they say it has to be vs a whey protein only). Can anyone explain if I\u0019m safe to use other whey isolate protein powders? I feel like they\u0019re just trying to push their brand for sales. Doesn\u0019t feel good\u0019 thanks!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "20867",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-11-30 16:08:01",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 6,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 15,
+  "engagement_label": "medium",
+  "key_phrases": [
+    "bariatric surgery",
+    "modified duodenal switch",
+    "protein powder",
+    "whey isolate",
+    "protein shake intake",
+    "in house protein powder"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with dietary discussion but no PBH-specific indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

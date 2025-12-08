@@ -1,0 +1,79 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pfed9p",
+  "url": "https://www.reddit.com/r/AskDocs/comments/1pfed9p/post_anaesthesia_psychosisdelirium/",
+  "permalink": null,
+  "title": "Post anaesthesia psychosis/delirium.",
+  "text": "I was hoping to get some insight into something that happened to me after an operation in 2019, to satisfy my own curiosity, and to know if I should inform medical staff of it in the future.\n\nIn 2019, I was put under general anaesthetic to have my left ovary removed, due to multiple cysts on it, over several years prior. I have had surgeries under GA before, with no issues, or bad reactions to anaesthesia.\n\nI have always remembered waking up in recovery, after any previous surgeries, and being aware of being taken back to my hospital ward. After this surgery, however, (which had no complications), the first thing I recall is waking up in a private room, with my mother and several nurses present, and feeling a violent and overwhelming sense of panic.\n\nI have decades of experience of surgeries and procedures, and this wasn't simply waking up in pain and being distressed. It was like I'd lost my mind. From what I have been told, I wouldn't let anyone near me when I woke up on my original ward, and started trying to lash out at staff who got close to me, and yelling at them to get away from me. At that point, my next of kin was called, I was moved to a private room, and that's where my recollection begins.\n\nAll I can recall is that every time a staff member came in, or tried to calm me, I would back up the bed and try and cower from them. It was a feeling of terror I haven't been able to ever truly describe. According to my next of kin, I was begging for everyone to leave, would violently react if anyone tried to touch me, and was acting completely and utterly opposite to the person I am. I can only describe it as feeling like a caged animal, who didn't know where it was, and didn't trust anyone. I can only liken it to the aggressive behaviour/personality shifts that I've witnessed in dementia patients, or those with brain injuries.\n\nAfter several hours, I must have fallen asleep from sheer exhaustion, and all I recall is waking up the next morning, absolutely normal again. I was talking to staff politely and cheerfully, apologising profusely for what happened, and every staff member was shocked at the difference in me. What had been like a shift in mental status, was completely back to normal, some 24 hours after surgery.\n\nIt was never truly explained to me what had happened, and it has always left me unsettled. I have seen (from Dr. Google), that post-op delirium is something that exists, and I would be curious if any medical professionals have heard of or seen this before, and have any insight into causes, or whether it is entirely random, and whether (since it has happened once) it could happen again. I appreciate any input, as it still freaks me out to this day!\n\n43F, (37 at time of incident concerned), T2D, Sjogrens, Sphincter of Oddi Dysfunction, IBD, depression.\n\nMedications: Duloxetine, Hydroxychloroquine, Propanolol.\n\nOther: Don't smoke, drink, or take substances other than my prescribed meds.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21446",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 02:49:30",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "care_settings",
+    "surgery_complications"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "post-op delirium",
+    "general anaesthetic",
+    "violent panic",
+    "caged animal feeling",
+    "mental status shift",
+    "post-surgery recovery",
+    "medical curiosity",
+    "unexplained reaction",
+    "severe distress",
+    "normal behavior restoration"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "The post does not discuss bariatric surgery or related conditions.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "fear",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "symptoms_panic_XXX",
+    "symptoms_aggression_XXX",
+    "symptoms_confusion_XXX",
+    "symptoms_terror_XXX",
+    "conditions_T2D_XXX",
+    "conditions_Sjogrens_XXX",
+    "conditions_IBD_XXX",
+    "conditions_depression_XXX",
+    "topics_care_settings_051",
+    "topics_surgery_complications_040"
+  ]
+}

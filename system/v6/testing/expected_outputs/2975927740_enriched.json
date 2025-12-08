@@ -1,0 +1,69 @@
+{
+  "source": "bsky.app",
+  "source_id": "2975927740",
+  "url": "https://bsky.app/profile/gigiangel.bsky.social/post/3m7bje2v4j22r",
+  "permalink": null,
+  "title": null,
+  "text": "I think you can manage it. Just listen to your body cues and adjust your eating times. See if there is a pattern.\n\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC5469688/\nMedical Nutrition Therapy for Post-Bariatric Hypoglycemia: Practical Insights\nHypoglycemia is increasingly recognized as a complication of bariatric surgery. Although medications are often required, medical nutrition therapy remains the key cornerstone for successful prevention of hypoglycemia in patients with post-bariatric ...",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21442",
+    "name": "Unknown",
+    "handle": "gigiangel.bsky.social",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-05 22:18:45",
+  "language": "en",
+  "metrics": {
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "dietary_modification"
+  ],
+  "symptoms": [
+    "hypoglycemia"
+  ],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 0,
+  "engagement_label": "low",
+  "key_phrases": [
+    "medical nutrition therapy",
+    "post-bariatric hypoglycemia",
+    "adjust eating times",
+    "listen to body cues",
+    "hypoglycemia prevention"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "Strong bariatric context with explicit mention of PBH and hypoglycemia.",
+  "audience_label": "unknown",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Symptoms",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": "neutral",
+  "emotions": [],
+  "intent": [
+    "giving_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_dietary_modification_035",
+    "symptoms_hypoglycemia_016",
+    "conditions_PBH_008"
+  ]
+}

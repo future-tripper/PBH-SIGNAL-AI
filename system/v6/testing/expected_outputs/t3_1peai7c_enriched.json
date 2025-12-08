@@ -1,0 +1,77 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1peai7c",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1peai7c/bypass_and_complications/",
+  "permalink": null,
+  "title": "By-pass and complications",
+  "text": "Hello, this is my second post about my bypass. At first I was worried because I wasn\u0019t feeling full when I ate, and my dietitian made it worse by saying I was eating twice as much as her other patients, even though I was following my clinic\u0019s guidelines. Now there\u0019s a suspicion of a stricture because I often vomit and feel like food gets stuck. My surgeon wants to wait 2\u00133 more weeks before considering an endoscopy, and tomorrow will be one month since my surgery.\n\nI feel overwhelmed and emotionally exhausted. I just want to live a normal life like other people my age, but ever since the sleeve and now the bypass, I feel stuck in a bubble while everyone else moves forward. It weighs heavily on me. I\u0019ve also only lost one kilo in the last two weeks, and I\u0019m really not doing well. Has anyone else had repeated vomiting and that stuck feeling around 4 weeks post-op? Chewing well and eating very slowly helps, but my surgeon still hasn\u0019t ruled out a stricture.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21287",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-04 20:14:41",
+  "language": "en",
+  "metrics": {
+    "likes": 4,
+    "comments": 2,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "surgery_complications",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 8,
+  "engagement_label": "low",
+  "key_phrases": [
+    "bypass surgery",
+    "vomiting",
+    "food gets stuck",
+    "chewing well",
+    "eating very slowly",
+    "stricture suspicion",
+    "one month post-op",
+    "dietitian guidelines"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with post-surgery complications but no PBH-specific indicators",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "sadness"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_surgery_complications_040",
+    "topics_dietary_modification_035",
+    "symptoms_vomiting_020",
+    "symptoms_food_stuck_041",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

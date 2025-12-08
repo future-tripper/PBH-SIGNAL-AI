@@ -1,0 +1,75 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pe35m9",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pe35m9/want_to_be_a_supportive_spouse/",
+  "permalink": null,
+  "title": "Want to be a supportive spouse",
+  "text": "Hey everyone. My wife is having gastric sleeve surgery on Dec 14. She's currently finishing week 1 of her pre-op diet and struggling big time. She's weak, shaky, and exhausted despite meeting the calorie and protein macros her surgeon set. Is there anything I can do to help her? I hate seeing her be so miserable and regretting her choices. Thanks in advance!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21276",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-04 15:39:42",
+  "language": "en",
+  "metrics": {
+    "likes": 10,
+    "comments": 22,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [
+    "shakiness",
+    "weakness"
+  ],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 54,
+  "engagement_label": "high",
+  "key_phrases": [
+    "gastric sleeve surgery",
+    "pre-op diet",
+    "weak and shaky",
+    "calorie and protein macros",
+    "supportive spouse"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with symptoms but no PBH-specific indicators.",
+  "audience_label": "unknown",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Symptoms",
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "symptoms_shakiness_013",
+    "symptoms_weakness_023"
+  ]
+}

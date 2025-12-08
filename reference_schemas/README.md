@@ -143,6 +143,7 @@ relevance_label = "borderline" if:
 
 relevance_label = "not_relevant" if:
     - bariatric_context="none" AND no relevant treatments OR
+    - (conditions contains reactive_hypoglycemia AND bariatric_context="none") - reactive hypo without bariatric surgery is not PBH OR
     - off-topic medical content
 ```
 
@@ -164,6 +165,7 @@ engagement_label = "high" if score ≥ 20
 ### v6.0 (December 2025) - Expanded Relevance Logic
 - **Problem:** v5 marked 99%+ of posts as not_relevant
 - **Solution:** Expanded relevance to capture bariatric content
+- **Test Coverage:** 46 test cases (44 Reddit, 1 TikTok, 1 Bluesky)
 - **Key Changes:**
   - All PBH treatments trigger "relevant" (not just avexitide)
   - Bariatric context alone → "borderline" (was "not_relevant")
@@ -171,7 +173,7 @@ engagement_label = "high" if score ≥ 20
   - Added misspelling variations (acrobose, acarobose)
 
 ### v5.0 (November 2025) - Comprehensive Edge Cases
-- **Test Coverage:** 44 test cases across 6 categories
+- **Test Coverage:** 44 test cases across 6 categories (Reddit only)
 - **Performance:** Tier 1 93.2%, Tier 2 97.7%
 - **Features:** Event-based AE detection, enhanced flag logic
 

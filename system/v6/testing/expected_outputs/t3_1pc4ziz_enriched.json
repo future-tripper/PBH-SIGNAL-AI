@@ -1,0 +1,82 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pc4ziz",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pc4ziz/second_small_bowel_strangulation_and_emergency/",
+  "permalink": "/r/GastricBypass/comments/1pc4ziz/second_small_bowel_strangulation_and_emergency/",
+  "title": "Second small bowel strangulation and emergency surgery in less than 5 months",
+  "text": "I had an RNY gastric bypass back in 2002. After 23 years, I had a small bowel strangulation in July.  Went to the ER and had a CT scan and emergency surgery. My original RNY bypassed area had apparently fallen a bit causing a hernia thay my intestines lopped around and eventually got twisted on, cutting off blood flow. It was the absolute most painful thing I have ever experienced. All went okay after surgery. I did not lose any bowel. It all \"pinked up\" after being untwisted. I did have a 6\" midline open incision. Spent a week in the hospital after but recovery went very well.  I thought I had survived a \"once in a lifetime \" event. \n\nApparently not. In early November, just 4 months later, it happened again. Though this time instead of my intestines wrapping around a hernia from the RNY structure, it got caught on the scar tissue that formed after the surgery from July and developed a kink in the intestines that cut off blood flow again. This was less painful. For the first few hours, it felt like a regular old RNY \"dumping\" syndrome after eating something fatty like pizza. I had gone though that many times over the years - pain, pouring sweat, shaking. It was usually 4 hours on my hands and knees on the bathroom floor and some vomiting while waiting for it to pass. But this time it didn't pass. It got worse. After 5 hours, I figured it was something else and went to the ER. It was another strangulation.  Another CT scan and another surgery. This time, I lost a little over a foot of small intestines and came close to sepsis. I was given the strongest antibiotics they have via IV for days. I spent another week in the hospital.  This time, recovery is much slower and more painful. They went through the same 6\" midline incision. I have had  symptoms of bowel inflammation for a month now and can eat very little. I have lost 25 lbs - all muscle. I have weird little pains throughout my abdomen and mild nausea, but am able to eat a little and drink water and I do have bowel movements now, so things are moving along. But I don't get much sleep and trying to recover is still dominating my life.\n\nThe thing is, I feel like a ticking time bomb now. The surgeon said this was functionally different than the first strangulation. This one, while rare, can still happen to anyone who has had any  abdominal surgery and has internal scar tissue. But yes,  it can happen again. The only way to monitor it or tell if something is going wrong is another CT scan. You can only have so many of those in a year because of the amount of radiation. Basically, there is nothing I can do to prevent it from happening again at any time. I went from feeling so relieved and grateful at have survived the first one to now feeling like someone in a Final Destination movie, afraid that someday I won't make it to surgery in time. \n\nWhen a strangulation happens like this, the only treatment is emergency surgery to manually remove the blockage/twist. Since blood flow is cut off, the intestines can start dying within hours. If not treated fast enough, the intestines will die (as part of mine did this time) and eventually rupture, causing sepsis and death. I am afraid to travel or take a cruise or go anywhere more than an hour from a large hospital. \n\nHas anyone else had multiple small bowel obstruction/strangulations after gastric bypass? What happened? I am just scared.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21101",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-02 10:21:51",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "surgery_complications"
+  ],
+  "symptoms": [
+    "sweating",
+    "shakiness",
+    "nausea"
+  ],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "RNY gastric bypass",
+    "small bowel strangulation",
+    "emergency surgery",
+    "scar tissue",
+    "intestinal blockage",
+    "CT scan",
+    "sepsis",
+    "abdominal surgery",
+    "dumping syndrome",
+    "hospital recovery"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with surgery complications, but no PBH-specific indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Symptoms",
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "fear",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_surgery_complications_040",
+    "symptoms_pain_023",
+    "symptoms_sweating_015",
+    "symptoms_shakiness_013",
+    "symptoms_nausea_020"
+  ]
+}

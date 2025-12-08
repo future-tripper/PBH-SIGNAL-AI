@@ -94,9 +94,9 @@ Themes are derived from presence of specific dictionary tags:
 
 ### Engagement Scoring
 `engagement_score = likes + (2 * comments) + (3 * shares)`
-- High: ≥20
-- Medium: 10-19
-- Low: <10
+- `high`: ≥20
+- `medium`: 10-19 (note: use "medium" not "med")
+- `low`: <10
 
 ## Testing Protocol (v5)
 
@@ -301,15 +301,21 @@ Unlike Phase 1 (comparing against pre-defined expected outputs), Phase 2 require
   - PBH_TREATMENTS: ["avexitide", "acarbose", "diazoxide", "octreotide"] - all trigger "relevant"
   - GLP1_TREATMENTS: ["semaglutide", "tirzepatide", "dulaglutide", "liraglutide", "exenatide"] - trigger "relevant" when combined with bariatric context
 - **Updated Relevance Tiers:**
-  - **relevant**: PBH conditions, PBH treatments (any), strong bariatric + symptoms/hypoglycemia, strong bariatric + GLP-1s
-  - **borderline**: Strong bariatric context alone (general surgery discussions), weak context + symptoms
+  - **relevant**: PBH conditions, PBH treatments (any), strong bariatric + 2+ PBH symptoms, strong bariatric + hypoglycemia condition, strong bariatric + GLP-1s
+  - **borderline**: Strong bariatric context alone (general surgery discussions without PBH indicators)
   - **not_relevant**: No bariatric context, no relevant treatments, off-topic medical content
+- **Dictionary Labels (v6)** - Only these Labels are valid for extraction:
+  - **symptoms**: shakiness, dizziness, sweating, hypoglycemia, brain_fog, tachycardia, fainting, nausea, seizures, vision_changes, weakness
+  - **treatments**: avexitide, acarbose, semaglutide, tirzepatide, dulaglutide, liraglutide, exenatide, diazoxide, octreotide
+  - **conditions**: PBH, reactive_hypoglycemia, hypoglycemia, late_dumping, dumping_syndrome, idiopathic_postprandial_syndrome
+  - **companies**: Amylyx, Novo_Nordisk, Eli_Lilly, AstraZeneca, Boehringer_Ingelheim
 - **Dictionary Update:** Added "acrobose" and "acarobose" misspellings to acarbose variations
 - **Files:**
   - `system/v6/enrichment/openai_assistant_system_prompt_v6.md`
   - `system/v6/enrichment/openai_assistant_system_prompt_v6_with_dictionary.md`
   - `system/v6/enrichment/PBH_SIGNAL_DICTIONARY_v6.txt`
-- **Testing:** Real-world validation using 45 posts from production pipeline
+- **Testing:** Real-world validation using 46 posts from production pipeline
+  - Expected outputs validated against dictionary (2025-12-08)
   - See `system/v6/testing/` for full testing framework
 
 ## v6 Testing Protocol (Current)
@@ -332,68 +338,62 @@ v6 broadens what counts as relevant:
 ### Testing Approach
 Unlike v5's simulated test cases, v6 uses **real posts from production data**:
 
-1. **Extract Test Candidates** - Identified 45 posts from `data-everything.csv` that should change under v6 rules
-2. **Define Expected Outcomes** - Auto-generated `v6_expected_outcomes.json` with expected `relevance_label` for each post
+1. **Extract Test Candidates** - Identified 46 posts from `data-everything.csv` for v6 validation
+2. **Define Expected Outcomes** - Created and validated expected outputs against dictionary (2025-12-08)
 3. **Run Enrichment** - Process posts through OpenAI Chat Completions with v6 config
 4. **Score Results** - Compare actual vs expected, focusing on relevance accuracy
 
-### Test Categories (45 posts)
+### Test Categories (46 posts)
 
 | Category | Count | Expected v6 Relevance | v6 Rule |
 |----------|-------|----------------------|---------|
-| bariatric_context_only | 23 | borderline | Strong bariatric context without PBH indicators |
+| bariatric_context_only | 24 | borderline | Strong bariatric context without PBH indicators |
 | weak_bariatric | 12 | borderline | Weak bariatric context (post-op, since surgery) |
 | glp1_only | 7 | borderline | GLP-1 treatment without bariatric context |
 | pbh_mention | 3 | relevant | Explicit PBH/reactive hypoglycemia mention |
 
-### Testing Scripts
+### v6 File Structure
 
 ```
-system/v6/testing/
-├── csv_to_normalized.py        # Convert CSV → normalized JSON inputs
-├── generate_expected_outcomes.py # Create expected outcomes manifest
-├── run_tests_v6.py             # Run enrichment via Chat Completions API
-├── score_results_v6.py         # Score results against expectations
-├── normalized_inputs/          # 45 JSON test inputs (ready)
-├── v6_expected_outcomes.json   # Expected values (ready)
-└── enriched_outputs/           # Results after running tests
+system/v6/
+├── enrichment/                              # Core system files
+│   ├── PBH_SIGNAL_DICTIONARY_v6.txt        # Entity extraction rules
+│   ├── openai_assistant_system_prompt_v6.md
+│   ├── openai_assistant_system_prompt_v6_with_dictionary.md
+│   ├── openai_assistant_response_format_v6.json
+│   └── normalization_schema_v6.json
+└── testing/                                 # Testing infrastructure
+    ├── run_tests_v6.py                     # Run enrichment via OpenAI API
+    ├── compare_results_v6.py               # Compare actual vs expected
+    ├── requirements.txt
+    ├── normalized_inputs/                  # 46 test input JSON files
+    ├── expected_outputs/                   # 46 validated expected outputs (ground truth)
+    └── enriched_outputs/                   # Dev team's actual outputs go here
 ```
 
-### How to Run v6 Tests
+### Next Steps (as of 2025-12-08)
 
-```bash
-cd system/v6/testing
-
-# 1. Ensure .env has OPENAI_API_KEY (root .env is used)
-
-# 2. Run tests (~23 min at 30s/test)
-python run_tests_v6.py
-
-# 3. Score results
-python score_results_v6.py --csv
-```
+**WAITING ON DEV TEAM:**
+1. Dev team runs 46 test posts through n8n pipeline with v6 config
+2. They send enriched JSON files (named `{source_id}_enriched.json`)
+3. Put files in `system/v6/testing/enriched_outputs/`
+4. Run comparison:
+   ```bash
+   cd system/v6/testing
+   python compare_results_v6.py --csv
+   ```
 
 ### Success Criteria
 
 | Metric | Target | Description |
 |--------|--------|-------------|
-| relevance_label accuracy | ≥95% | Primary v6 validation metric |
-| bariatric_context populated | 100% | Must never be empty/NaN |
-| False negatives | 0 | No bariatric posts → not_relevant |
-
-### Scoring Logic
-The scoring script (`score_results_v6.py`) compares enriched outputs against `v6_expected_outcomes.json`:
-
-- **Primary:** Does `relevance_label` match expected? (exact match required)
-- **Secondary:** Is `bariatric_context` populated correctly? (strong/weak/none, never empty)
-- **Tertiary:** Are expected treatments extracted? (when applicable)
-
-We're NOT doing full field-by-field comparison - just validating the expanded relevance logic works correctly.
+| Tier 1 (Critical/Safety) | ≥90% | flags, relevance_label, bariatric_context |
+| Tier 2 (Core Product) | ≥80% | audience, sentiment, themes, entities, engagement |
+| Tier 3 (Enhancement) | tracked | emotions, intent, key_phrases (not blocking) |
 
 ### Key Files for Context Recovery
 
 If starting a new session, read these files to understand v6:
-1. `CLAUDE.md` - This file (overall project context + v6 testing plan)
-2. `reference_schemas/README.md` - v6 changes summary and relevance logic
-3. `system/v6/testing/V6_TESTING_ARCHITECTURE.md` - Detailed testing architecture
-4. `system/v6/testing/v6_expected_outcomes.json` - Expected values for 45 test posts
+1. `CLAUDE.md` - This file (project context + next steps)
+2. `system/v6/enrichment/PBH_SIGNAL_DICTIONARY_v6.txt` - Valid entity labels
+3. `system/v6/testing/expected_outputs/` - Ground truth for comparison

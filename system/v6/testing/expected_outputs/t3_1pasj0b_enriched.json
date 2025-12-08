@@ -1,0 +1,76 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pasj0b",
+  "url": "https://www.reddit.com/r/Hypoglycemia/comments/1pasj0b/some_questions_on_reactive_hypoglycemia/",
+  "permalink": null,
+  "title": "Some questions on reactive hypoglycemia",
+  "text": "Hello, I'm looking for some input for my mother who has been recently diagnosed with reactive hypoglycemia. She is unfortunately struggling to get solid support from her healthcare provider. I am looking to understand as much as I can to make sure we are making the most informed decisions possible.\n\n  \n**Some context:**\n\nShe is in her 70s and does not yet have any continuous glucose monitor (CGM), so she is routinely pricking her finger many times (10+) a day as she learns to manage her diet appropriately. She has some glucose tablets as well that she uses if her blood sugar drops below 80, which seems like is around where she starts to feel a little dizzy or light-headed.\n\nShe is trying to be very cautious about what she eats, but after meals with some (non-simple or refined) carbohydrates (limited to 1/4 cup/meal) she still has some blood sugar dips. \n\n  \n**Questions:**\n\n1. She is working with her doctor to try and understand the cause, but in the meantime is looking to get a CGM. From what I've gathered so far, Dexcom G6/G7 seems to be what we should be after. Is this the right way to go?\n2. Currently she is avoiding food about 4 hours before bed and seems to have positive results. I am getting mixed opinions on whether or not this is good. On one hand, a low glycemic index, slow digesting carb, seems like it would make sure blood sugar stays good throughout the night. On the other, until we have solid predictability, it sounds dangerous to eat anything. Does it sound safe for her to continue to have a significant fasting window before bed? I was not too hapy to find recently 3 hours after breakfast her blood sugar was down to \\~70. I did confirm with her what she ate, and it wasn't the best choice - some kind of healthy-oritented muffin that had a few ingredients considered \"medium\" glycemic index, and coffee w/ milk (that part should be OK?)\n3. My understanding is that glucose tablets **do not** affect insulin production and is safe to take them when it is low. And while sugary drinks may temporarily resolve low blood sugar, they will trigger another crash, specifically because this is reactive hypoglycemia. Does this sound accurate?\n4. Are thre any good resources for learning more about this topic that can help with making better decisions? I have a general understanding of the mechanisms behind reactive hypoglycemia but would be happy to learn more. Technical is OK. I am not a medical professional but I am in STEM and have research experience.\n\nThanks in advance for any input. Please feel free to ask any follow-up questions, I will do my best to answer when I can.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "20884",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-11-30 20:27:54",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "dietary_modification",
+    "diagnostics_monitoring"
+  ],
+  "symptoms": [
+    "dizziness"
+  ],
+  "treatments": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "reactive hypoglycemia",
+    "continuous glucose monitor",
+    "glucose tablets",
+    "blood sugar drops",
+    "low glycemic index",
+    "slow digesting carb",
+    "medium glycemic index",
+    "pricking her finger",
+    "diet management"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Reactive hypoglycemia without bariatric surgery context - not PBH-relevant.",
+  "audience_label": "unknown",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Symptoms",
+    "Diet",
+    "Diagnostics"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_reactive_hypoglycemia_009",
+    "symptoms_dizziness_014",
+    "topics_dietary_modification_035",
+    "topics_diagnostics_monitoring_036"
+  ]
+}

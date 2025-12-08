@@ -1,0 +1,67 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pc1dyc",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pc1dyc/pre_gastric_sleeve_anxiety/",
+  "permalink": null,
+  "title": "Pre gastric sleeve anxiety",
+  "text": "Hi I am having gastric sleeve on 12/15 and am starting to get very anxious and nervous about the surgery. Starting to doubt my self and I think it\u0019s just how I have gone to food for comfort for my whole life. Which after surgery will change that. Starting to worry that this is right for me. Would love support and any advice people have thank you!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21067",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-02 06:30:58",
+  "language": "en",
+  "metrics": {
+    "likes": 4,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 4,
+  "engagement_label": "low",
+  "key_phrases": [
+    "gastric sleeve",
+    "pre-surgery anxiety",
+    "food for comfort",
+    "surgery doubts",
+    "seeking advice"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with pre-surgery discussion but no PBH or hypoglycemia indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "mixed",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety",
+    "hope"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

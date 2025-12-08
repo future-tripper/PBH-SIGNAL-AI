@@ -1,0 +1,68 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1papsyx",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1papsyx/not_feeling_hungry_or_fullness/",
+  "permalink": null,
+  "title": "Not feeling hungry, or fullness.",
+  "text": "I\u2019m soon two weeks post op, for almost one week I have been on the mashed/soft stage. Yes first week is liquid, second and third is pure/soft/mashed. And then normal. But yeah, I can\u2019t feel hungry, either full. I just stop eating when i think I should. Anyone else had it like that? How long does this last? \ud83d\ude02",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "19072",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-11-30 18:39:39",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 2,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 7,
+  "engagement_label": "low",
+  "key_phrases": [
+    "two weeks post op",
+    "mashed/soft stage",
+    "liquid diet",
+    "pureed foods",
+    "not feeling hungry",
+    "not feeling fullness"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with discussion of post-operative dietary stages but no PBH-specific indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

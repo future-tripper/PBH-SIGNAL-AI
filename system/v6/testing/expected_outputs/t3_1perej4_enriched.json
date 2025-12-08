@@ -1,0 +1,72 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1perej4",
+  "url": "https://www.reddit.com/r/AskDocs/comments/1perej4/incorporating_healthy_foods_and_exercise_in_a/",
+  "permalink": null,
+  "title": "Incorporating healthy foods and exercise in a family that isn\u2019t very active",
+  "text": "My mom 50F has diabetes, PCOS, and a thyroid disease (not sure which specifically) had to go to the Urgent Care since she was experiencing severe pain and vomiting, it was a kidney stone and she\u2019s still in the hospital. Overall this experience made me worry since my extended family has had a medical history of different stuff like diabetes and cancer and I began to wonder what else can I do to prevent or at least help reduce risks of stuff such as kidney failure, more kidney stones and other complications that can happen due to diabetes. \n\nWhen I was around 12/13 I had to go to a dietitian because they found that my A1C was in prediabetes range but over the past few years I managed to keep it down. \n\nMy Dad 55M Also has diabetes and is taking ozempic and pills for his diabetes \n\nSo now I\u2019m just wondering what ways can I incorporate Vegetables, Fruits, grains, and other healthy and also exercise aswell in a longterm way instead of just something to eat when feeling like it? Since my family and I have always tried to eat healthy but we always find ourselves eating junk food back up again and it\u2019s scary considering how trips like this to the UR or ER can make us realize how we really need to get back on track on being healthy and have an active lifestyle that will help make a big difference on my mom, dad and me.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21377",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-05 10:09:07",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "semaglutide"
+  ],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "diabetes management",
+    "healthy eating habits",
+    "family health history",
+    "preventing complications",
+    "long-term lifestyle changes"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "The post discusses general health and diabetes management without bariatric or PBH context.",
+  "audience_label": "patient",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Treatments",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_dietary_modification_035",
+    "symptoms_vomiting_020",
+    "treatments_semaglutide_028",
+    "conditions_T2D_010",
+    "conditions_PCOS_010"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pftg9h",
+  "url": "https://i.redd.it/4atna8bp2m5g1.jpeg",
+  "permalink": null,
+  "title": "Skin removal upper body lift in 10 days!",
+  "text": "Hi y\u0000all! I\u0000m 3 yrs post RnY and I finally hit my goal weight and can have skin removal. I\u0000m doing the upper body first, the lower body next June and thighs next fall. I\u0000m very nervous, but SO ready for this new phase of my transformation. I was 286 at my heaviest and I\u0000m now 145. Don\u0000t give up! The work pays off!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21534",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 16:34:11",
+  "language": "en",
+  "metrics": {
+    "likes": 13,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 15,
+  "engagement_label": "medium",
+  "key_phrases": [
+    "3 yrs post RnY",
+    "skin removal",
+    "upper body lift",
+    "goal weight",
+    "new phase of transformation"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with personal transformation narrative but no PBH or hypoglycemia indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.9,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope",
+    "joy"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

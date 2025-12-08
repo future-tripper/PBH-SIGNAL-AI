@@ -1,0 +1,72 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pfkbca",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pfkbca/considering_revision_sleeve_to_sadis/",
+  "permalink": null,
+  "title": "Considering revision, sleeve to sadi-s",
+  "text": "I had gastric sleeve done in 2019. I started at 410lbs then got to 240lbs. I am now at 260lbs with arthritis, acid reflux, and neuropathy. My doctor thinks I should get a revision surgery and I saw that there is a newer procedure called sadi-s. I know its a toss up of how successful a revision can be and  the goal is to prevent the neuropathy from worsening and to reduce the acid reflux issues. My doctor discovered I am not deficient of any vitamins and not diabetic, the neuropathy is solely due to the excess weight. Has anyone ever gotten sadi-s? Or had improvement in Neuropathy symptoms after getting to a healthy weight?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21520",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 08:27:26",
+  "language": "en",
+  "metrics": {
+    "likes": 2,
+    "comments": 2,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "surgery_complications"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 6,
+  "engagement_label": "low",
+  "key_phrases": [
+    "gastric sleeve",
+    "sadi-s procedure",
+    "revision surgery",
+    "acid reflux",
+    "neuropathy symptoms",
+    "healthy weight"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with surgery discussion but no PBH indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope",
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_surgery_complications_040",
+    "symptoms_acid_reflux_015",
+    "symptoms_neuropathy_023",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

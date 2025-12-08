@@ -1,0 +1,69 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pbu0x7",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pbu0x7/soft_foods_feeling_like_a_greedy_gut/",
+  "permalink": null,
+  "title": "Soft foods - feeling like a greedy gut",
+  "text": "I\u0019m 2 weeks post op and started soft foods today and I feel like I want EVERYTHING!!!!! if I\u0019m cooking I want a tiny taste. I feel like that\u0019s dangerous. Am I right or is this normal at first? I am sticking to my portions and eating slow and waiting my 30s. I just feel like I want everything lol.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "15627",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-02 00:35:21",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 0,
+    "shares": 1
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 6,
+  "engagement_label": "low",
+  "key_phrases": [
+    "2 weeks post op",
+    "soft foods",
+    "sticking to portions",
+    "eating slow",
+    "waiting 30 seconds"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context (post-op discussion) but no PBH or hypoglycemia indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

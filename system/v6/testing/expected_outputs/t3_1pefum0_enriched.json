@@ -1,0 +1,65 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pefum0",
+  "url": "https://www.reddit.com/r/AskDocs/comments/1pefum0/38m_stitches_still_wet_10_days_after_vasectomy/",
+  "permalink": null,
+  "title": "38M / Stitches still wet 10 days after vasectomy",
+  "text": "I had a scalpel vasectomy done 10 days ago.\n\nMy left side is healing nicely. On the right side they needed to make the incision at the lower end of my nutsack. That part also rubs against my thigh. That\u2019s why I need to put a non-stick dressing over it. However the wound stays wet and oozes a bit of serous fluid and very little blood everyday still. Especially after sleeping. I change the dressing daily. Is it fine keeping it covered until fully healed? Right side is also very sensitive to touch. Left no so much.\n\nIs this okay, normal? Can I keep a dressing on the wound/stitches? Or should I call my urologist to be sure. No post-op visit was scheduled.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21306",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-04 23:51:09",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 1,
+    "shares": 0
+  },
+  "topics": [
+    "doctor_visit",
+    "surgery_complications"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 3,
+  "engagement_label": "low",
+  "key_phrases": [
+    "scalpel vasectomy",
+    "stitches still wet",
+    "serous fluid",
+    "non-stick dressing",
+    "post-op visit"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "The post discusses a vasectomy and healing concerns unrelated to bariatric surgery or PBH.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_doctor_visit_038",
+    "topics_surgery_complications_040",
+    "symptoms_sensitivity_023",
+    "symptoms_wound_discharge_024"
+  ]
+}

@@ -47,11 +47,16 @@ class V6TestRunner:
     def load_configuration(self):
         """Load OpenAI configuration and v6 enrichment files"""
 
-        # Load environment variables
+        # Load environment variables - search up to project root
         env_path = self.base_dir / ".env"
         if not env_path.exists():
-            # Try parent directories
-            for parent in [self.base_dir.parent, self.base_dir.parent.parent]:
+            # Try parent directories (testing -> v6 -> system -> project_root)
+            search_dirs = [
+                self.base_dir.parent,           # v6/
+                self.base_dir.parent.parent,    # system/
+                self.base_dir.parent.parent.parent  # project root
+            ]
+            for parent in search_dirs:
                 alt_env = parent / ".env"
                 if alt_env.exists():
                     env_path = alt_env
@@ -60,7 +65,7 @@ class V6TestRunner:
         if not env_path.exists():
             print(f"❌ Error: .env file not found")
             print(f"   Create .env with OPENAI_API_KEY=your-key")
-            print(f"   Searched: {self.base_dir}")
+            print(f"   Searched: {self.base_dir} and parent directories")
             sys.exit(1)
 
         load_dotenv(env_path)
@@ -93,16 +98,13 @@ class V6TestRunner:
             sys.exit(1)
 
         with open(schema_path, 'r') as f:
-            schema = json.load(f)
+            schema_file = json.load(f)
 
-        # Wrap schema for Chat Completions API
+        # The schema file already has name, strict, schema structure
+        # Wrap for Chat Completions API
         self.response_format = {
             "type": "json_schema",
-            "json_schema": {
-                "name": "enriched_post",
-                "strict": True,
-                "schema": schema
-            }
+            "json_schema": schema_file
         }
 
         print("✅ Configuration loaded successfully")

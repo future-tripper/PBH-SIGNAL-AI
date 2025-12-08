@@ -1,0 +1,66 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pamfo9",
+  "url": "https://www.reddit.com/gallery/1pamfo9",
+  "permalink": null,
+  "title": "Down 160 lbs and can\u2019t find a bra!",
+  "text": "I had gastric bypass on March 24, 2025. My starting weight was 367 and I am down to 207. I went from a size 28 to a 12 in pants and a 3xl to large in shirts. I am happy with where I\u2019m at right now, but I cannot find a bra! My breasts have lost all the volume but there\u2019s so much excess skin left. What are people doing for bras?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "20866",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-11-30 16:28:07",
+  "language": "en",
+  "metrics": {
+    "likes": 29,
+    "comments": 19,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 67,
+  "engagement_label": "high",
+  "key_phrases": [
+    "gastric bypass",
+    "March 24, 2025",
+    "size 28 to a 12",
+    "excess skin",
+    "bra issues"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with personal weight loss journey but no PBH or hypoglycemia indicators.",
+  "audience_label": "patient",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "hope"
+  ],
+  "intent": [
+    "sharing_experience",
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}
