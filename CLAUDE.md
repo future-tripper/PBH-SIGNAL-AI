@@ -16,12 +16,11 @@ The data pipeline consists of four key stages:
 
 ### Current Status
 
-**Ready for Dev Testing:** v5 Comprehensive Edge Case Coverage
+**Active Development:** v6 Expanded Relevance Logic (2025-12-08)
+- **Key Change:** Broader relevance to capture bariatric content (v5 marked 99%+ as not_relevant)
 - **Platforms:** 4-platform MVP (Reddit, TikTok, Facebook, Instagram)
-- **Test Coverage:** 44 comprehensive test cases across 6 categories
-- **Testing Phase:** Dev team runs automated test suite → TCD reviews real sample data
-- **Success Target:** ≥98% accuracy (maintaining v3 benchmark)
-- **Previous:** v4 MVP Platform Coverage (14 real production cases)
+- **Testing Phase:** Analyzing real pipeline data to validate expanded relevance
+- **Previous:** v5 comprehensive edge case coverage (44 test cases, 93-97% accuracy)
 
 ## Project Structure & Data Architecture
 
@@ -35,38 +34,26 @@ PBH-SIGNAL-AI/
 │   ├── PBH_SIGNAL_NORMALIZATION_SCHEMA.csv # Input format spec
 │   ├── PBH_SIGNAL_ENRICHMENT_SCHEMA.csv    # Output field definitions
 │   └── PBH_SIGNAL_DASHBOARD_FEATURES.csv   # Dashboard requirements
-├── system/                                   # Versioned systems (renamed from enrichment_system)
+├── system/                                   # Versioned systems
 │   ├── enrichment-system-v1/               # Baseline (80% accuracy)
 │   ├── enrichment-system-v2/               # Reddit-only (91% accuracy)
 │   ├── enrichment-system-v3/               # Multi-platform (98% accuracy)
 │   ├── enrichment-system-v4/               # 5-platform MVP (14 real test cases)
-│   └── v5/                                 # Comprehensive system (enrichment + chatbot) (CURRENT)
-│       ├── enrichment/                     # Enrichment subsystem
-│       │   ├── PBH_SIGNAL_DICTIONARY_v5.txt
-│       │   ├── openai_assistant_system_prompt_v5.md
-│       │   ├── openai_assistant_response_format_v5.json
-│       │   └── normalization_schema_v5.json
-│       ├── chatbot/                        # Chatbot subsystem
-│       │   └── chatbot_system_prompt_v5.md (placeholder)
-│       ├── enrichment-test-data-v5/        # 44 test cases (6 categories)
-│       │   ├── ae-test-cases/              # Adverse event detection (12 tests)
-│       │   ├── platform-coverage/          # Platform diversity (8 tests)
-│       │   ├── edge-cases/                 # Schema edge cases (8 tests)
-│       │   ├── dictionary-tests/           # Entity extraction robustness (6 tests)
-│       │   ├── classification-tests/       # Audience/sentiment nuance (6 tests)
-│       │   ├── flag-tests/                 # Crisis/misattribution flags (4 tests)
-│       │   └── expected-outputs/           # Golden standard outputs (organized by category)
-│       └── v5-test-package/                # Testing infrastructure
-│           ├── phase1_test_results.csv     # Detailed test tracking CSV
-│           ├── phase1_claude_prompt.md     # Claude Code comparison instructions
-│           ├── phase2_review_template.csv  # Real sample review tracking
-│           ├── TESTING_GUIDE.md            # Complete 3-phase testing workflow
-│           ├── README.md                   # Quick reference
-│           └── automation/                 # Python automation scripts (Responses API)
-└── [Root Level - Active Files]              # Current working versions
-    ├── PBH_SIGNAL_DICTIONARY.txt           # Entity extraction rules
-    ├── openai_assistant_system_prompt.md   # AI instructions
-    └── openai_assistant_response_format.json # Output schema
+│   ├── v5/                                 # Comprehensive edge case coverage (44 test cases)
+│   │   ├── enrichment/                     # v5 enrichment subsystem
+│   │   ├── chatbot/                        # Chatbot subsystem (placeholder)
+│   │   ├── enrichment-test-data-v5/        # 44 test cases (6 categories)
+│   │   └── testing/                        # Testing infrastructure
+│   └── v6/                                 # CURRENT - Expanded relevance logic
+│       ├── enrichment/                     # v6 enrichment subsystem
+│       │   ├── PBH_SIGNAL_DICTIONARY_v6.txt
+│       │   ├── openai_assistant_system_prompt_v6.md
+│       │   ├── openai_assistant_system_prompt_v6_with_dictionary.md
+│       │   ├── openai_assistant_response_format_v6.json
+│       │   └── normalization_schema_v6.json
+│       ├── chatbot/                        # Chatbot subsystem (placeholder)
+│       └── testing/                        # Testing (TBD)
+└── [Root Level - Active Files]              # Current working versions (deprecated - use versioned folders)
 ```
 
 ### Active Development Files
@@ -113,14 +100,34 @@ Themes are derived from presence of specific dictionary tags:
 
 ## Testing Protocol (v5)
 
-### Current Testing Status (2025-11-21):
-**Approach:** Automated Responses API testing (system/v5/v5-test-package/automation/)
-- ✅ Vector store created: vs_6920c1b62b2081919d3b8d32637d6c80
-- ✅ Dictionary uploaded: PBH_SIGNAL_DICTIONARY_v5.txt
-- ⚠️ Fixing: Responses API tool_resources parameter issue
-- 📋 TODO: Run 44 tests, compare outputs, populate phase1_test_results.csv
+### Current Testing Status (2025-12-04):
 
-**Key Change (2025-11-21):** Event-based AE detection - no dictionary symptoms required
+**Phase 1 (Simulated Data): ✅ COMPLETE**
+- System version: v5.3.4
+- Results: Tier 1 (Critical/Safety) 93.2%, Tier 2 (Core Product) 97.7%
+- Test coverage: 44 test cases across 6 categories
+- Archived: `system/v5/completed-test-runs/2025-11-24-v5.3.4/`
+
+**Phase 2 (Real-World Data): ⏸️ BLOCKED - Waiting on Dev Team**
+- Data received: 172 rows from dev team (2025-12-04)
+- Cleaned: 51 v5-compliant rows (removed 116 unenriched + 5 invalid schema)
+- **Issue:** All 51 rows are `not_relevant` + missing key fields (`bariatric_context`)
+- **Report sent:** `system/v5/testing/phase2/v5_Data_Issues_Report_FINAL.docx`
+- **Next steps:**
+  1. Review and improve chatbot prompt (guardrails, citations, consistency)
+  2. When dev team sends fixed data, re-run Phase 2 to validate real-world enrichment
+
+**Phase 2 Approach:**
+Unlike Phase 1 (comparing against pre-defined expected outputs), Phase 2 requires:
+1. Reading raw post content (title + text)
+2. Evaluating if enrichment is correct based on content analysis
+3. Tracking pass/fail for each critical field
+4. Identifying patterns and issues for system refinement
+
+**Key Files:**
+- Evaluation guide: `system/v5/testing/phase2/phase2_evaluation_prompt.md`
+- Results tracking: `system/v5/testing/phase2/phase2_test_results.csv`
+- Report generator: `system/v5/testing/shared/generate_report.py`
 
 ### Three-Phase Testing Workflow
 
@@ -286,3 +293,19 @@ Themes are derived from presence of specific dictionary tags:
 - **Future:** Chatbot subsystem placeholder ready for development
 
 **Note on Tiers:** Not all fields are equally important. Patient safety fields (flags, relevance) require highest accuracy. Subjective fields (themes, emotions) are nice-to-have but don't block production.
+
+### v6: Expanded Relevance Logic (Current - 2025-12-08)
+- **Key Change:** Broader relevance criteria to capture more bariatric-related content
+- **Problem Solved:** v5 marked 99%+ of posts as "not_relevant" because relevance required PBH/hypoglycemia
+- **New Treatment Groups for Relevance:**
+  - PBH_TREATMENTS: ["avexitide", "acarbose", "diazoxide", "octreotide"] - all trigger "relevant"
+  - GLP1_TREATMENTS: ["semaglutide", "tirzepatide", "dulaglutide", "liraglutide", "exenatide"] - trigger "relevant" when combined with bariatric context
+- **Updated Relevance Tiers:**
+  - **relevant**: PBH conditions, PBH treatments (any), strong bariatric + symptoms/hypoglycemia, strong bariatric + GLP-1s
+  - **borderline**: Strong bariatric context alone (general surgery discussions), weak context + symptoms
+  - **not_relevant**: No bariatric context, no relevant treatments, off-topic medical content
+- **Dictionary Update:** Added "acrobose" and "acarobose" misspellings to acarbose variations
+- **Files:**
+  - `system/v6/enrichment/openai_assistant_system_prompt_v6.md`
+  - `system/v6/enrichment/openai_assistant_system_prompt_v6_with_dictionary.md`
+  - `system/v6/enrichment/PBH_SIGNAL_DICTIONARY_v6.txt`

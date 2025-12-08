@@ -1,0 +1,21 @@
+Field,Type,Description,Example,Required
+source,string,Platform of origin (channel name),reddit,TRUE
+source_id,string,Unique post/record ID from the platform,t3_abc123,TRUE
+url,string,Canonical URL to the record,https://reddit.com/r/BariatricSurgery/comments/abc123,TRUE
+title,string|null,Title if available (posts only),Struggling after surgery,FALSE
+text,string,Main text content (title+body/caption combined),I feel shaky after meals and get sugar crashes…,TRUE
+parent_source,string|null,"Hierarchical source category (e.g., ""social"" for YouScan multi-platform posts)",social,FALSE
+subsource,string|null,"Sub-channel identifier (e.g., subreddit name, Facebook page, TikTok hashtag)",BariatricSurgery,FALSE
+author.id,string,Platform-specific author ID,t2_xyz789,TRUE
+author.name,string,Display name or full name,John Smith,TRUE
+author.handle,string,Handle or username (as displayed),u/patient123,TRUE
+author.gender,string|null,"Gender if available from platform (YouScan approximates for Instagram, Facebook, TikTok)",male,FALSE
+author.age,integer|null,"Age if available from platform (YouScan approximates for Instagram, Facebook, TikTok)",34,FALSE
+author.subscribers,integer|null,"Follower/subscriber count if available (TikTok, Instagram, YouTube)",1250,FALSE
+country,string|null,ISO 3166-1 alpha-2 country code if available from platform,US,FALSE
+language,string,ISO 639-1 language code if provided by source,en,TRUE
+metrics.likes,integer,Like/upvote/favorite count,52,TRUE
+metrics.comments,integer,Comment/reply count,12,TRUE
+metrics.shares,integer|null,Share/repost/retweet count when available,3,FALSE
+sentiment,string|null,"Source-provided sentiment if available (e.g., from YouScan vendor export)",neutral,FALSE
+published_at,datetime,Creation time in UTC (ISO8601 format),2025-08-25T14:32:00Z,TRUE
