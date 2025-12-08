@@ -309,3 +309,91 @@ Unlike Phase 1 (comparing against pre-defined expected outputs), Phase 2 require
   - `system/v6/enrichment/openai_assistant_system_prompt_v6.md`
   - `system/v6/enrichment/openai_assistant_system_prompt_v6_with_dictionary.md`
   - `system/v6/enrichment/PBH_SIGNAL_DICTIONARY_v6.txt`
+- **Testing:** Real-world validation using 45 posts from production pipeline
+  - See `system/v6/testing/` for full testing framework
+
+## v6 Testing Protocol (Current)
+
+### Problem Statement
+v5 marked 99%+ of posts as `not_relevant` because relevance required explicit PBH/hypoglycemia mentions. Analysis of 1,000 real pipeline posts showed:
+- Only 6 posts marked "relevant" (0.6%)
+- 39 posts with clear bariatric keywords marked "not_relevant" (false negatives)
+- Posts mentioning PBH treatments (acarbose, diazoxide) not triggering relevance
+
+### Solution: Expanded Relevance Logic
+v6 broadens what counts as relevant:
+
+| Trigger | v5 Result | v6 Result |
+|---------|-----------|-----------|
+| PBH treatments (acarbose, diazoxide, octreotide) | borderline (with weak context) | **relevant** |
+| GLP-1s + bariatric context | not_relevant | **relevant** |
+| Bariatric context alone (no PBH indicators) | not_relevant | **borderline** |
+
+### Testing Approach
+Unlike v5's simulated test cases, v6 uses **real posts from production data**:
+
+1. **Extract Test Candidates** - Identified 45 posts from `data-everything.csv` that should change under v6 rules
+2. **Define Expected Outcomes** - Auto-generated `v6_expected_outcomes.json` with expected `relevance_label` for each post
+3. **Run Enrichment** - Process posts through OpenAI Chat Completions with v6 config
+4. **Score Results** - Compare actual vs expected, focusing on relevance accuracy
+
+### Test Categories (45 posts)
+
+| Category | Count | Expected v6 Relevance | v6 Rule |
+|----------|-------|----------------------|---------|
+| bariatric_context_only | 23 | borderline | Strong bariatric context without PBH indicators |
+| weak_bariatric | 12 | borderline | Weak bariatric context (post-op, since surgery) |
+| glp1_only | 7 | borderline | GLP-1 treatment without bariatric context |
+| pbh_mention | 3 | relevant | Explicit PBH/reactive hypoglycemia mention |
+
+### Testing Scripts
+
+```
+system/v6/testing/
+├── csv_to_normalized.py        # Convert CSV → normalized JSON inputs
+├── generate_expected_outcomes.py # Create expected outcomes manifest
+├── run_tests_v6.py             # Run enrichment via Chat Completions API
+├── score_results_v6.py         # Score results against expectations
+├── normalized_inputs/          # 45 JSON test inputs (ready)
+├── v6_expected_outcomes.json   # Expected values (ready)
+└── enriched_outputs/           # Results after running tests
+```
+
+### How to Run v6 Tests
+
+```bash
+cd system/v6/testing
+
+# 1. Ensure .env has OPENAI_API_KEY (root .env is used)
+
+# 2. Run tests (~23 min at 30s/test)
+python run_tests_v6.py
+
+# 3. Score results
+python score_results_v6.py --csv
+```
+
+### Success Criteria
+
+| Metric | Target | Description |
+|--------|--------|-------------|
+| relevance_label accuracy | ≥95% | Primary v6 validation metric |
+| bariatric_context populated | 100% | Must never be empty/NaN |
+| False negatives | 0 | No bariatric posts → not_relevant |
+
+### Scoring Logic
+The scoring script (`score_results_v6.py`) compares enriched outputs against `v6_expected_outcomes.json`:
+
+- **Primary:** Does `relevance_label` match expected? (exact match required)
+- **Secondary:** Is `bariatric_context` populated correctly? (strong/weak/none, never empty)
+- **Tertiary:** Are expected treatments extracted? (when applicable)
+
+We're NOT doing full field-by-field comparison - just validating the expanded relevance logic works correctly.
+
+### Key Files for Context Recovery
+
+If starting a new session, read these files to understand v6:
+1. `CLAUDE.md` - This file (overall project context + v6 testing plan)
+2. `reference_schemas/README.md` - v6 changes summary and relevance logic
+3. `system/v6/testing/V6_TESTING_ARCHITECTURE.md` - Detailed testing architecture
+4. `system/v6/testing/v6_expected_outcomes.json` - Expected values for 45 test posts
