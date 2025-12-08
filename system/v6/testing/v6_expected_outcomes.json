@@ -1,0 +1,437 @@
+{
+  "version": "6.0",
+  "generated_at": "2025-12-08T11:33:42.490761",
+  "total_tests": 45,
+  "category_breakdown": {
+    "glp1_only": 7,
+    "bariatric_context_only": 23,
+    "pbh_mention": 3,
+    "weak_bariatric": 12
+  },
+  "expected_results": {
+    "relevant": 3,
+    "borderline": 42,
+    "not_relevant": 0
+  },
+  "test_posts": [
+    {
+      "source_id": "t3_1ph3z91",
+      "title_preview": "6% A1C? It\u2019s been five long years!",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "semaglutide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1ph44gy",
+      "title_preview": "Rate of Weightloss",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pgthw4",
+      "title_preview": "Reactive hypoglycemia symptoms with CGM data \u2014 loo",
+      "expected_relevance_label": "relevant",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "pbh_mention",
+      "v6_rule": "PBH/reactive hypoglycemia explicitly mentioned \u2192 relevant"
+    },
+    {
+      "source_id": "t3_1pgpc2e",
+      "title_preview": "Recovery Basket",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pgeln8",
+      "title_preview": "I cheated",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pg89yi",
+      "title_preview": "Preparing for a Sleeve-to-Bypass Conversion. What\u2019",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pg15o0",
+      "title_preview": "Baby diagnosed with  hypoinsulinemia.. big differe",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pfsby4",
+      "title_preview": "I resprain my ankle once a year, and this time the",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "tirzepatide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1pfs62g",
+      "title_preview": "Finding  fellow long timers 10+yrs",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pftder",
+      "title_preview": "Out of options",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pftg9h",
+      "title_preview": "Skin removal upper body lift in 10 days!",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pfkbca",
+      "title_preview": "Considering revision, sleeve to sadi-s",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pfcqzp",
+      "title_preview": "Alternatives to gpl-1 medications for weight loss",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "semaglutide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1pfdpxz",
+      "title_preview": "Brain MRI results conflicting but neuro says nothi",
+      "expected_relevance_label": "relevant",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "pbh_mention",
+      "v6_rule": "PBH/reactive hypoglycemia explicitly mentioned \u2192 relevant"
+    },
+    {
+      "source_id": "t3_1pfdxv5",
+      "title_preview": "i\u2019m growing extremely frustrated with the NHS as t",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pfed9p",
+      "title_preview": "Post anaesthesia psychosis/delirium.",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pfcnog",
+      "title_preview": "ADHD and mental health...vent",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pf94d0",
+      "title_preview": "Tell me i'm freaking out for no reason",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pf39lb",
+      "title_preview": "How can I support my friend?",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1peu5jr",
+      "title_preview": "Vaping - The good, bad, and ugly after gastric byp",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1peuv6r",
+      "title_preview": "Advice for recovery and life after bypass",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pewi65",
+      "title_preview": "Protein shakes - bad reactions??",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1perej4",
+      "title_preview": "Incorporating healthy foods and exercise in a fami",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "semaglutide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1pesjh6",
+      "title_preview": "Akathisia is going to kill me and I'm desperate",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "semaglutide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1ped943",
+      "title_preview": "Can anyone help explain these neck ultrasound resu",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "tirzepatide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1pefum0",
+      "title_preview": "38M / Stitches still wet 10 days after vasectomy",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pef21o",
+      "title_preview": "Which route would you recommend?",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "none",
+      "expected_treatments": [
+        "semaglutide"
+      ],
+      "test_category": "glp1_only",
+      "v6_rule": "GLP-1 treatment without bariatric context \u2192 borderline (needs review)"
+    },
+    {
+      "source_id": "t3_1pe7lpk",
+      "title_preview": "Weight gain after leave hospital from surgery",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1peai7c",
+      "title_preview": "By-pass and complications",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pe35m9",
+      "title_preview": "Want to be a supportive spouse",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pcy7kt",
+      "title_preview": "2 months after orchiopexy,(testicular torsion), sl",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pck1el",
+      "title_preview": "Stomach sounds",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pcjm3z",
+      "title_preview": "hello , i need an answer please , \ud83d\ude4f\ud83c\udffb\ud83d\ude4f\ud83c\udffb",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pc4ziz",
+      "title_preview": "Second small bowel strangulation and emergency sur",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pc1dyc",
+      "title_preview": "Pre gastric sleeve anxiety",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pbu0x7",
+      "title_preview": "Soft foods - feeling like a greedy gut",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pbwfsl",
+      "title_preview": "T-Minus  (insert accurate answer here) says til WL",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pbjjux",
+      "title_preview": "Ugh",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pb2s1k",
+      "title_preview": "December Gastric Bypass Buddy Search",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pasj0b",
+      "title_preview": "Some questions on reactive hypoglycemia",
+      "expected_relevance_label": "relevant",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "pbh_mention",
+      "v6_rule": "PBH/reactive hypoglycemia explicitly mentioned \u2192 relevant"
+    },
+    {
+      "source_id": "t3_1papsyx",
+      "title_preview": "Not feeling hungry, or fullness.",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "weak",
+      "expected_treatments": [],
+      "test_category": "weak_bariatric",
+      "v6_rule": "Weak bariatric context \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pakdxz",
+      "title_preview": "Stuck and needing advice",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1palxz6",
+      "title_preview": "Protein powder - whey isolate?",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1pamfo9",
+      "title_preview": "Down 160 lbs and can\u2019t find a bra!",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    },
+    {
+      "source_id": "t3_1panjda",
+      "title_preview": "Making friends with my tiny new stomach",
+      "expected_relevance_label": "borderline",
+      "expected_bariatric_context": "strong",
+      "expected_treatments": [],
+      "test_category": "bariatric_context_only",
+      "v6_rule": "Strong bariatric context without PBH indicators \u2192 borderline"
+    }
+  ]
+}
