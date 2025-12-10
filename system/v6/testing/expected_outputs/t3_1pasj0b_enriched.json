@@ -28,7 +28,8 @@
     "diagnostics_monitoring"
   ],
   "symptoms": [
-    "dizziness"
+    "dizziness",
+    "hypoglycemia"
   ],
   "treatments": [],
   "conditions": [
@@ -52,12 +53,13 @@
   "relevance_label": "not_relevant",
   "relevance_confidence": 0.8,
   "relevance_reason": "Reactive hypoglycemia without bariatric surgery context - not PBH-relevant.",
-  "audience_label": "unknown",
+  "audience_label": "patient",
   "audience_confidence": 0.5,
   "themes": [
     "Symptoms",
     "Diet",
-    "Diagnostics"
+    "Diagnostics",
+    "Conditions/Diagnosis"
   ],
   "sentiment_label": "neutral",
   "sentiment_confidence": 0.8,

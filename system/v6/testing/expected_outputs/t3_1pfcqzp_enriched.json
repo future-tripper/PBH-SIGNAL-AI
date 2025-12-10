@@ -31,9 +31,7 @@
     "semaglutide"
   ],
   "conditions": [],
-  "companies": [
-    "Novo_Nordisk"
-  ],
+  "companies": [],
   "engagement_score": 3,
   "engagement_label": "low",
   "key_phrases": [
@@ -63,8 +61,7 @@
   ],
   "flags": [],
   "debug_matches": [
-    "treatments_semaglutide_028",
-    "companies_Novo_Nordisk_004",
-    "topics_dietary_modification_035"
+    "topics_doctor_visit_038",
+    "treatments_semaglutide_028"
   ]
 }

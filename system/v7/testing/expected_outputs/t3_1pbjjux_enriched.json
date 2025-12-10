@@ -1,0 +1,71 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pbjjux",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pbjjux/ugh/",
+  "permalink": null,
+  "title": "Ugh",
+  "text": "I\u0019m 25 days postop, on soft foods and actually able to eat really well. I\u0019m down 16lbs, it was 19lbs but somehow I\u0019ve gained 3lbs?! No idea how. I\u0019m hitting protein, hitting water, eating around 700 calories and still avoiding carbs (the only carby thing I eat so far are canned peas and that\u0019s for the fiber) what is going on \u0001\nd\nde29\nd\nde29",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "12242",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-01 17:51:21",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 0,
+    "shares": 1
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 4,
+  "engagement_label": "low",
+  "key_phrases": [
+    "25 days postop",
+    "soft foods",
+    "eating really well",
+    "down 16lbs",
+    "gained 3lbs",
+    "hitting protein",
+    "hitting water",
+    "avoiding carbs",
+    "canned peas",
+    "fiber"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context (post-op discussion) but no PBH or hypoglycemia indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

@@ -23,10 +23,14 @@
     "comments": 0,
     "shares": 0
   },
-  "topics": [],
+  "topics": [
+    "diagnostics_monitoring"
+  ],
   "symptoms": [],
   "treatments": [],
-  "conditions": [],
+  "conditions": [
+    "reactive_hypoglycemia"
+  ],
   "companies": [],
   "engagement_score": 1,
   "engagement_label": "low",
@@ -37,12 +41,18 @@
   "relevance_reason": "No specific bariatric or PBH-related content identified.",
   "audience_label": "unknown",
   "audience_confidence": 0.5,
-  "themes": [],
+  "themes": [
+    "Diagnostics",
+    "Conditions/Diagnosis"
+  ],
   "sentiment_label": "neutral",
   "sentiment_confidence": 0.7,
   "sentiment_raw": null,
   "emotions": [],
   "intent": [],
   "flags": [],
-  "debug_matches": []
+  "debug_matches": [
+    "topics_diagnostics_monitoring_036",
+    "conditions_reactive_hypoglycemia_009"
+  ]
 }

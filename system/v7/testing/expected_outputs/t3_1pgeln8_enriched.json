@@ -1,0 +1,75 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pgeln8",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pgeln8/i_cheated/",
+  "permalink": null,
+  "title": "I cheated",
+  "text": "I'm not proud to say I severely cheated by skipping to the final stage 8 days into post op. I ate a few pieces of chicken and a pepper or two my fiance had made and after reading all the horrible stories, I forced myself to throw up what I could, which was just the chicken. I'm terrified I could have harmed myself (thankfully I don't feel any uncomfortable feelings in my body aside from anxiety and regret). How will I know? Is it immediate or does it take some time to appear? I have been a little on the gassy side and have been burping a bit. I'm not looking to get shamed, I just would like some support through this. I'm struggling tremendously and have already cried about it two nights in a row. This addiction is killing me emotionally. I haven't even had my post op appointment yet, I will on Monday. I feel horribly guilty and I'm worried it's going to happen again.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21656",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-07 09:47:30",
+  "language": "en",
+  "metrics": {
+    "likes": 0,
+    "comments": 7,
+    "shares": 1
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "doctor_visit"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 17,
+  "engagement_label": "medium",
+  "key_phrases": [
+    "post-op appointment",
+    "skipping to the final stage",
+    "terrified I could have harmed myself",
+    "gassy side",
+    "cried about it two nights in a row"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with emotional distress but no PBH-specific indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet",
+    "Care Settings"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.85,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety",
+    "sadness",
+    "frustration"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "topics_doctor_visit_038",
+    "symptoms_nausea_020",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

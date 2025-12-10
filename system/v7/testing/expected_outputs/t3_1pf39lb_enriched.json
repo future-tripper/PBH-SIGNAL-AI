@@ -1,0 +1,72 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pf39lb",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pf39lb/how_can_i_support_my_friend/",
+  "permalink": null,
+  "title": "How can I support my friend?",
+  "text": "My friend had a gastric bypass a year ago and she has lost a ton of weight (obviously a given) however she has now lost more than she should have. We work together and I notice that she barely eats anything at all and I\u0019m quite concerned. \n\nWe had a chat today which she initiated because I generally chose not to comment on people\u0019s bodies and she\u0019s basically said that her team advised at her last check in that if she lost more they would need to tube feed her. Since then she\u0019s gone on to lose another stone and recons she is only eating 500-600 kcals a day. Her reasoning is that she just doesn\u0019t feel hungry anymore and food gives no pleasure, in the past she has mentioned that she hates the feeling of food being stuck which puts her off eating. \n\nI don\u0019t really know how to support her, I asked what I could do and she said nothing. I\u0019ve offered to bring food in for her or remind her to regularly eat but she said it won\u0019t help. She said she knows what she needs to do and has been advised to drink her calories (milkshakes) do things like eat full fat items but putting that into motion is difficult. \n\nI want to support her but I have no idea how. Does anyone have any ideas?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21429",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-05 18:50:36",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 3,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification",
+    "meal_tolerance"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 7,
+  "engagement_label": "low",
+  "key_phrases": [
+    "gastric bypass",
+    "lost more than she should",
+    "barely eats",
+    "feeling of food being stuck",
+    "advised to drink calories",
+    "difficult to put into motion"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with discussion of post-surgery challenges but no PBH-specific indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety",
+    "frustration"
+  ],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "topics_meal_tolerance_041",
+    "symptoms_meal_tolerance_023"
+  ]
+}

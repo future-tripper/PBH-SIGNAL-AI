@@ -1,0 +1,64 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pe7lpk",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pe7lpk/weight_gain_after_leave_hospital_from_surgery/",
+  "permalink": null,
+  "title": "Weight gain after leave hospital from surgery",
+  "text": "I went in to have gastric bypass surgery on Tuesday.  Today I was discharged. First m first thing i wanted to do when I got home was take a shower and weigh myself.  Im up 9 pounds from what I was before I went to the hospital. It's this normal? Anyone else experience this?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21289",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-04 18:24:38",
+  "language": "en",
+  "metrics": {
+    "likes": 2,
+    "comments": 7,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 16,
+  "engagement_label": "medium",
+  "key_phrases": [
+    "gastric bypass surgery",
+    "weight gain after surgery",
+    "discharged from hospital",
+    "weigh myself",
+    "up 9 pounds"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with post-surgery discussion but no PBH or hypoglycemia indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

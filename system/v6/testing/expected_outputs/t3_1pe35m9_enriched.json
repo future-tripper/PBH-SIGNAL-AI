@@ -44,7 +44,7 @@
     "supportive spouse"
   ],
   "bariatric_context": "strong",
-  "relevance_label": "relevant",
+  "relevance_label": "borderline",
   "relevance_confidence": 0.8,
   "relevance_reason": "Strong bariatric context with symptoms but no PBH-specific indicators.",
   "audience_label": "unknown",

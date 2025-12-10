@@ -1,0 +1,62 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pfsby4",
+  "url": "https://www.reddit.com/r/AskDocs/comments/1pfsby4/i_resprain_my_ankle_once_a_year_and_this_time_the/",
+  "permalink": null,
+  "title": "I resprain my ankle once a year, and this time the pain is still here",
+  "text": "26F, 300lbs. Prescription 12.5mg zepbound, 30mg XR adderall. Diagnosed hypermobile Ehler Danlos in 2019. \n\nTwo knee surgeries on my L knee (Sprained L ankle), 2012 and 2017 for removing cartilage and anchoring my knee cap to prevent dislocation. \n\nI sprained my L ankle pretty badly about 4-5 years ago stepping on a small pinecone. That time it was pretty bad and I resprained it during that healing process. Since then Ive resprained it about once a year from doing mundane things, like walking on my sidewalk in winter or jogging 30ft with my dog. Every time I sprain it I can walk on it almost immediately after, and while stiff and a little painful, that gows away within half a week or so.\n\nIn mid October I sprained it again by stepping out of my front door with my dogs. Just stepped on it wrong. I was able to put weight on it within about 15min and did the RICE protocol. Major pain stopped within the day,  and majority of swelling went down within 3. My ankle still has a swollen lump in front of the ankle bone (between my pinky toe and lateral malleolus), is stiff, and achy. \n\nI've heard repeated sprains make later ones easier to happen, so does this just sound like normal respraining of an ankle? Or is it worth getting it seen.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21567",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 15:45:55",
+  "language": "en",
+  "metrics": {
+    "likes": 2,
+    "comments": 4,
+    "shares": 0
+  },
+  "topics": [],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 10,
+  "engagement_label": "medium",
+  "key_phrases": [
+    "repeated ankle sprains",
+    "RICE protocol",
+    "swollen lump",
+    "Ehlers-Danlos syndrome",
+    "ankle stiffness"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "No bariatric or PBH-related context identified.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_Ehlers-Danlos_syndrome_XXX",
+    "symptoms_swelling_XXX",
+    "symptoms_stiffness_XXX",
+    "symptoms_pain_XXX"
+  ]
+}

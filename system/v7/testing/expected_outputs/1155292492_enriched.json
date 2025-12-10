@@ -1,0 +1,62 @@
+{
+  "source": "tiktok.com",
+  "source_id": "1155292492",
+  "url": "https://www.tiktok.com/@mamataysrecipes/video/7579427643821493559?comment_id=7580201302783116063",
+  "permalink": null,
+  "title": "The ups and downs of learning to love your body at so many drastic stages.",
+  "text": "Severe post bariatric hypoglycemia",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21600",
+    "name": "Unknown",
+    "handle": "mamataysrecipes",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": "us",
+  "published_at": "2025-12-05 02:52:56",
+  "language": "en",
+  "metrics": {
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "PBH"
+  ],
+  "companies": [],
+  "engagement_score": 0,
+  "engagement_label": "low",
+  "key_phrases": [
+    "severe post bariatric hypoglycemia"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "relevant",
+  "relevance_confidence": 0.9,
+  "relevance_reason": "Explicit mention of PBH, indicating strong bariatric context.",
+  "audience_label": "unknown",
+  "audience_confidence": 0.5,
+  "themes": [
+    "Bariatric Surgery",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": "neutral",
+  "emotions": [],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "conditions_PBH_008",
+    "topics_bariatric_surgery_034"
+  ]
+}

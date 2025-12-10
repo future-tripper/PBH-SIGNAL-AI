@@ -16,64 +16,77 @@ The data pipeline consists of four key stages:
 
 ### Current Status
 
-**Active Development:** v6 Expanded Relevance Logic (2025-12-08)
-- **Key Change:** Broader relevance to capture bariatric content (v5 marked 99%+ as not_relevant)
-- **Platforms:** 4-platform MVP (Reddit, TikTok, Facebook, Instagram)
-- **Testing Phase:** Analyzing real pipeline data to validate expanded relevance
-- **Previous:** v5 comprehensive edge case coverage (44 test cases, 93-97% accuracy)
+**Active Development:** Chatbot System Prompt (2025-12-10)
+
+**v6.1 Enrichment:** ✅ DEPLOYED
+- Tier 1: 100%, Tier 2: 83.7%
+- Files: `system/v6/enrichment/openai_assistant_system_prompt_v6.1_with_dictionary.md` + `openai_assistant_response_format_v6.1.json`
+
+**v7 Enrichment:** ✅ READY (for future deployment)
+- Tier 1: 100%, Tier 2: 80.4%
+- Key change: `audience_label` "patient" → "community" (captures caregivers)
+- Files: `system/v7/enrichment/`
+- Full details: `system/v7/V7_IMPLEMENTATION_PLAN.md`
+
+**Chatbot:** IN PROGRESS
+- Status: Setup complete, waiting for initial system prompt
+- Files: `chatbot/`
+- Full details: `chatbot/CHATBOT.md`
+
+**Platforms:** 4-platform MVP (Reddit, TikTok, Facebook, Instagram)
 
 ## Project Structure & Data Architecture
 
 ### File Structure
 ```
 PBH-SIGNAL-AI/
-├── project_docs/                             # Documentation & tracking
-│   ├── ENRICHMENT_TEST_RESULTS.csv         # Test results tracker
-│   └── TEST_TRACKER_GUIDE.md               # Testing documentation
-├── reference_schemas/                        # Static CSV references
-│   ├── PBH_SIGNAL_NORMALIZATION_SCHEMA.csv # Input format spec
-│   ├── PBH_SIGNAL_ENRICHMENT_SCHEMA.csv    # Output field definitions
-│   └── PBH_SIGNAL_DASHBOARD_FEATURES.csv   # Dashboard requirements
-├── system/                                   # Versioned systems
-│   ├── enrichment-system-v1/               # Baseline (80% accuracy)
-│   ├── enrichment-system-v2/               # Reddit-only (91% accuracy)
-│   ├── enrichment-system-v3/               # Multi-platform (98% accuracy)
-│   ├── enrichment-system-v4/               # 5-platform MVP (14 real test cases)
-│   ├── v5/                                 # Comprehensive edge case coverage (44 test cases)
-│   │   ├── enrichment/                     # v5 enrichment subsystem
-│   │   ├── chatbot/                        # Chatbot subsystem (placeholder)
-│   │   ├── enrichment-test-data-v5/        # 44 test cases (6 categories)
-│   │   └── testing/                        # Testing infrastructure
-│   └── v6/                                 # CURRENT - Expanded relevance logic
-│       ├── enrichment/                     # v6 enrichment subsystem
-│       │   ├── PBH_SIGNAL_DICTIONARY_v6.txt
-│       │   ├── openai_assistant_system_prompt_v6.md
-│       │   ├── openai_assistant_system_prompt_v6_with_dictionary.md
-│       │   ├── openai_assistant_response_format_v6.json
-│       │   └── normalization_schema_v6.json
-│       ├── chatbot/                        # Chatbot subsystem (placeholder)
-│       └── testing/                        # Testing (TBD)
-└── [Root Level - Active Files]              # Current working versions (deprecated - use versioned folders)
+├── CLAUDE.md                                 # This file - project context
+├── chatbot/                                  # IN PROGRESS - chatbot system
+│   ├── CHATBOT.md                           # Status and iteration notes
+│   ├── chatbot_system_prompt_v1.md          # Current prompt (TBD)
+│   ├── testing/                             # Test prompts and issues
+│   │   ├── test_prompts.md
+│   │   └── ISSUES.md
+│   └── archive/                             # Old prompt versions
+├── reference_schemas/                        # Static CSV references (don't edit)
+├── system/                                   # Enrichment system versions
+│   ├── v5/                                  # Previous version (44 simulated test cases)
+│   ├── v6/                                  # DEPLOYED - v6.1 is in production
+│   │   ├── enrichment/
+│   │   │   ├── openai_assistant_system_prompt_v6.1_with_dictionary.md  # ✅ DEPLOYED
+│   │   │   └── openai_assistant_response_format_v6.1.json              # ✅ DEPLOYED
+│   │   └── testing/                         # 46 real-world test cases
+│   └── v7/                                  # READY - for future deployment
+│       ├── V7_IMPLEMENTATION_PLAN.md        # Status, diffs, remaining issues
+│       ├── enrichment/
+│       │   ├── openai_assistant_system_prompt_v7_with_dictionary.md
+│       │   └── openai_assistant_response_format_v7.json
+│       └── testing/
+└── [older versions archived]
 ```
 
-### Active Development Files
+### Active Development Files (v6.1)
 
-**Core Enrichment System (Root Level - Editable):**
-1. **Dictionary** (`PBH_SIGNAL_DICTIONARY.txt`): Taxonomy-structured entity extraction rules:
-   - **Category**: Target output field (audience_anchor, companies, conditions, symptoms, treatments, topics)
-   - **Label**: Exact term to extract (e.g., "PBH", "Amylyx", "shakiness", "avexitide")  
-   - **Variations**: Pattern examples for semantic recognition (not exhaustive)
-   - **Exclude**: Negative context terms that suppress extraction
-   - **Note**: Additional context or description
+**Deliverables for Dev Team:**
+1. **Prompt:** `system/v6/enrichment/openai_assistant_system_prompt_v6.1_with_dictionary.md`
+   - Includes embedded dictionary
+   - Theme derivation guards
+   - Expanded relevance logic for bariatric content
 
-2. **System Prompt** (`openai_assistant_system_prompt.md`): Optimized instructions for OpenAI Assistant
-3. **Response Schema** (`openai_assistant_response_format.json`): Structured JSON output format
+2. **Schema:** `system/v6/enrichment/openai_assistant_response_format_v6.1.json`
+   - Enum constraints on entity arrays
+   - `engagement_label`: "low", "medium", "high" (not "med")
 
-### Version Control Strategy
-- **Root files**: Current working versions (edit these during testing)
-- **enrichment_system/vX/**: Stable snapshots when major improvements achieved
-- **reference_schemas/**: Static CSV references (don't edit)
-- **test_data/**: Test cases for validation
+3. **API Request Template:** `system/v6/enrichment/openai_api_request_template_v6.1.json`
+   - Complete request payload with prompt + schema embedded
+   - Ready for n8n/pipeline integration
+
+### Model Configuration (v6.1)
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| **Model** | `gpt-4o` | OpenAI model |
+| **Temperature** | `0.3` | Balances consistency with flexibility |
+| **Response Format** | `json_schema` | Structured outputs with `strict: true` for enum enforcement |
 
 ## Key Business Rules
 
@@ -98,124 +111,6 @@ Themes are derived from presence of specific dictionary tags:
 - `medium`: 10-19 (note: use "medium" not "med")
 - `low`: <10
 
-## Testing Protocol (v5)
-
-### Current Testing Status (2025-12-04):
-
-**Phase 1 (Simulated Data): ✅ COMPLETE**
-- System version: v5.3.4
-- Results: Tier 1 (Critical/Safety) 93.2%, Tier 2 (Core Product) 97.7%
-- Test coverage: 44 test cases across 6 categories
-- Archived: `system/v5/completed-test-runs/2025-11-24-v5.3.4/`
-
-**Phase 2 (Real-World Data): ⏸️ BLOCKED - Waiting on Dev Team**
-- Data received: 172 rows from dev team (2025-12-04)
-- Cleaned: 51 v5-compliant rows (removed 116 unenriched + 5 invalid schema)
-- **Issue:** All 51 rows are `not_relevant` + missing key fields (`bariatric_context`)
-- **Report sent:** `system/v5/testing/phase2/v5_Data_Issues_Report_FINAL.docx`
-- **Next steps:**
-  1. Review and improve chatbot prompt (guardrails, citations, consistency)
-  2. When dev team sends fixed data, re-run Phase 2 to validate real-world enrichment
-
-**Phase 2 Approach:**
-Unlike Phase 1 (comparing against pre-defined expected outputs), Phase 2 requires:
-1. Reading raw post content (title + text)
-2. Evaluating if enrichment is correct based on content analysis
-3. Tracking pass/fail for each critical field
-4. Identifying patterns and issues for system refinement
-
-**Key Files:**
-- Evaluation guide: `system/v5/testing/phase2/phase2_evaluation_prompt.md`
-- Results tracking: `system/v5/testing/phase2/phase2_test_results.csv`
-- Report generator: `system/v5/testing/shared/generate_report.py`
-
-### Three-Phase Testing Workflow
-
-**Phase 1: AI-Assisted Test Validation (Dev Team + Claude Code)**
-1. **Run Tests:** Dev team feeds 44 test inputs through their enrichment pipeline
-   - Uses v5 configuration (prompt, dictionary, schema from `enrichment/` folder)
-   - Saves enriched outputs to `v5-test-package/actual_outputs/`
-   - One JSON file per test case
-
-2. **Compare with Claude Code:** Use AI assistant for field-by-field comparison
-   - Follow instructions in `phase1_claude_prompt.md`
-   - Compare actual outputs vs expected outputs (golden standards in `expected-outputs/`)
-   - Populate `phase1_test_results.csv` with detailed tracking:
-     - Pass/Fail per test and per component (dictionary, relevance, sentiment, audience, AE flagging, crisis)
-     - Key issues found in plain English
-     - Recommended fixes with specific file/section references
-     - Next actions for iteration
-
-3. **Diagnose and Iterate:** Claude Code identifies patterns and recommends fixes
-   - Reference CLAUDE.md for v5 system context
-   - Update dictionary, prompt, or schema as recommended
-   - Re-run tests until ≥95% pass rate achieved
-
-4. **Report to TCD:** Email/Teams completed `phase1_test_results.csv`
-   - Overall pass rate (target: ≥95%, 42+/44 tests)
-   - Field accuracy (target: ≥98%)
-   - Critical test status (all AE and crisis tests must pass)
-   - Iterations completed and fixes applied
-
-**Phase 2: Real Sample Data Review (TCD Team)**
-1. **Sample Collection:** Dev team provides real platform data samples
-   - CSV format (enriched posts, easy to review in spreadsheet)
-   - Diverse content types (patient posts, HCP content, off-topic, etc.)
-   - Share via email/Teams
-
-2. **TCD Review:** Validate enrichment quality on real-world data
-   - Review CSV for accuracy: relevance, sentiment, entities, flags
-   - Track issues using phase2_review_template.csv
-   - Share findings with dev team for diagnosis
-
-3. **Iteration:** Refine v5 system based on real data findings
-   - Update dictionary, prompt, or schema as needed
-   - Re-test with automated suite
-   - Repeat until production-ready
-
-**Phase 3: Front-End/Dashboard Validation (TCD + Dev Teams)**
-1. **Dashboard Testing:** Verify all dashboard modules with real enriched data
-   - Data visualizations, filters, High Impact Posts
-   - Post relevance matches enrichment (spot check)
-
-2. **Chatbot Testing:** Validate chatbot functionality
-   - Query understanding and data accuracy
-   - Source citations and edge case handling
-   - System prompt: TBD (in development)
-   - Test scenarios: TBD (will be defined)
-
-3. **Production Sign-off:** Confirm system ready for production deployment
-   - All dashboard features working correctly
-   - Chatbot responding appropriately
-   - No critical bugs or data issues
-
-### Test Coverage (44 Cases)
-
-**AE Test Cases (12):** Adverse event detection across severity levels, causal language, and negation
-**Platform Coverage (8):** All 4 platforms with diverse content types (real data from v4)
-**Edge Cases (8):** Null fields, missing data, unusual formats, schema boundary conditions
-**Dictionary Tests (6):** Negation, hypothetical, exclusions, past tense, casual language, context-dependent terms
-**Classification Tests (6):** Mixed roles, caregivers, researchers, off-topic, sarcasm, clinical neutral tone
-**Flag Tests (4):** Crisis detection, borderline cases, multiple flags, false positives
-
-### Success Criteria
-
-**Phase 1 (Test Suite):**
-- Pass Rate: ≥95% (42+/44 tests passing)
-- Field Accuracy: ≥98% (matches v3 benchmark)
-- Critical Tests: All AE flagging and crisis detection tests must pass (patient safety)
-- Event-Based AE: No dictionary symptoms required (updated 2025-11-21)
-
-**Phase 2 (Real Samples):**
-- High confidence in production readiness after reviewing 20-50 real posts
-- No critical issues (missed AE flags, wrong relevance classifications)
-- Minor issues addressed or documented as acceptable
-
-**Phase 3 (Dashboard/Chatbot):**
-- All dashboard modules working correctly with enriched data
-- Chatbot responding accurately to test queries
-- No critical bugs blocking production deployment
-
 ## Implementation Notes
 
 ### Data Processing Pipeline
@@ -237,64 +132,20 @@ Unlike Phase 1 (comparing against pre-defined expected outputs), Phase 2 require
 - Preserve source URLs for all records
 - Handle exclusion contexts in dictionary matching (e.g., "novo restaurant" != Novo Nordisk)
 
-## System Versions
+## System Version History
 
-### v1: Baseline (80% accuracy)
-- Initial dictionary and prompt structure
-- Basic entity extraction and classification
-- 8/10 Reddit test cases passing
+| Version | Focus | Accuracy | Key Achievement |
+|---------|-------|----------|-----------------|
+| v1 | Baseline | 80% | Initial dictionary and prompt structure |
+| v2 | Reddit-Optimized | 91% | Triangulation logic, exclusion rules |
+| v3 | Multi-Platform | 98% | Reddit + TikTok, platform-agnostic relevance |
+| v4 | Full MVP | - | 4 platforms, real production data, schema enhancements |
+| v5 | Edge Cases | 93-97% | 44 test cases, AE detection, tier-based evaluation |
+| **v6.1** | **Expanded Relevance** | **Tier1: 100%, Tier2: 83.7%** | **CURRENT - Real-world validation, broader relevance** |
 
-### v2: Reddit-Optimized (91% accuracy) 
-- Triangulation logic for relevance scoring
-- Personal vs professional context detection
-- Explicit exclusion rules (r/keto, r/diabetes)
-- 10/11 Reddit test cases passing
+**Note on Tiers:** Tier 1 = Critical/Safety fields (≥90% required). Tier 2 = Core product (≥80% required). Tier 3 = Enhancements (tracked but not blocking).
 
-### v3: Multi-Platform Production (98% accuracy)
-- **Platforms:** Reddit + TikTok fully supported
-- **Test Results:** 19/19 cases passing (11 Reddit, 8 TikTok)
-- **Key Features:**
-  - Platform-agnostic relevance logic
-  - Enhanced false positive prevention
-  - Unified schema for all platforms
-  - Sophisticated edge case handling
-
-### v4: Full MVP Platform Coverage
-- **Platforms:** 4-platform MVP (Reddit, TikTok, Facebook, Instagram)
-- **Test Cases:** 14 real production examples from actual data sources
-- **Schema Enhancement:**
-  - Nested author object with demographics (gender, age, subscribers)
-  - Geographic tracking (country codes)
-  - Hierarchical content structure (parent_source, subsource)
-  - Platform-specific metrics handling
-- **Real Clinical Data:** Facebook examples include actual Amylyx PBH trial recruitment
-- **Testing Approach:** Manual case-by-case validation against expected enrichment outputs
-- **Result:** Validated platform coverage and schema enhancements
-
-### v5: Comprehensive Edge Case Coverage (Ready for Dev Testing)
-- **Test Coverage:** 44 test cases across 6 categories (28 from v4 + 16 new edge cases)
-- **Categories:**
-  - AE Test Cases (12): Adverse event detection with severity, causation, negation
-  - Platform Coverage (8): All 4 MVP platforms with diverse content
-  - Edge Cases (8): Null handling, missing data, schema boundaries
-  - Dictionary Tests (6): Negation, hypothetical, exclusions, casual language, context-dependent
-  - Classification Tests (6): Mixed roles, caregivers, researchers, sarcasm, off-topic
-  - Flag Tests (4): Crisis detection, borderline, multiple flags, false positives
-- **Key Features:**
-  - Dictionary robustness (suppression rules, context-dependent extraction)
-  - Classification nuance (sarcasm, clinical neutral, caregiver perspective)
-  - Flag edge cases (crisis vs dark humor, multiple flag scenarios)
-  - Real-world messiness (emoji, slang, casual language)
-- **Testing Approach:** Automated test suite (run_tests.py + compare.py)
-- **Structure:** Organized into enrichment/ and chatbot/ subsystems for scalability
-- **Deliverable:** v5-test-package (lean, references parent enrichment/ folder)
-- **Workflow:** Two-phase (automated suite → real sample review)
-- **Evaluation:** Tier-based testing (Tier 1: Critical/Safety fields need ≥90%, Tier 2: Core product ≥80%, Tier 3: Enhancements tracked but not critical)
-- **Future:** Chatbot subsystem placeholder ready for development
-
-**Note on Tiers:** Not all fields are equally important. Patient safety fields (flags, relevance) require highest accuracy. Subjective fields (themes, emotions) are nice-to-have but don't block production.
-
-### v6: Expanded Relevance Logic (Current - 2025-12-08)
+### v6/v6.1: Expanded Relevance Logic (Current)
 - **Key Change:** Broader relevance criteria to capture more bariatric-related content
 - **Problem Solved:** v5 marked 99%+ of posts as "not_relevant" because relevance required PBH/hypoglycemia
 - **New Treatment Groups for Relevance:**
@@ -304,96 +155,61 @@ Unlike Phase 1 (comparing against pre-defined expected outputs), Phase 2 require
   - **relevant**: PBH conditions, PBH treatments (any), strong bariatric + 2+ PBH symptoms, strong bariatric + hypoglycemia condition, strong bariatric + GLP-1s
   - **borderline**: Strong bariatric context alone (general surgery discussions without PBH indicators)
   - **not_relevant**: No bariatric context, no relevant treatments, off-topic medical content
-- **Dictionary Labels (v6)** - Only these Labels are valid for extraction:
+- **Dictionary Labels (v6.1)** - Valid extraction labels:
   - **symptoms**: shakiness, dizziness, sweating, hypoglycemia, brain_fog, tachycardia, fainting, nausea, seizures, vision_changes, weakness
   - **treatments**: avexitide, acarbose, semaglutide, tirzepatide, dulaglutide, liraglutide, exenatide, diazoxide, octreotide
-  - **conditions**: PBH, reactive_hypoglycemia, hypoglycemia, late_dumping, dumping_syndrome, idiopathic_postprandial_syndrome
+  - **conditions**: PBH, reactive_hypoglycemia, hypoglycemia, late_dumping, idiopathic_postprandial_syndrome
   - **companies**: Amylyx, Novo_Nordisk, Eli_Lilly, AstraZeneca, Boehringer_Ingelheim
-- **Dictionary Update:** Added "acrobose" and "acarobose" misspellings to acarbose variations
-- **Files:**
-  - `system/v6/enrichment/openai_assistant_system_prompt_v6.md`
-  - `system/v6/enrichment/openai_assistant_system_prompt_v6_with_dictionary.md`
-  - `system/v6/enrichment/PBH_SIGNAL_DICTIONARY_v6.txt`
-- **Testing:** Real-world validation using 46 posts from production pipeline
-  - Expected outputs validated against dictionary (2025-12-08)
-  - See `system/v6/testing/` for full testing framework
+- **Testing:** 46 real posts from production pipeline validated against expected outputs
 
-## v6 Testing Protocol (Current)
+## v6.1 Testing Results (COMPLETE ✅)
 
-### Problem Statement
-v5 marked 99%+ of posts as `not_relevant` because relevance required explicit PBH/hypoglycemia mentions. Analysis of 1,000 real pipeline posts showed:
-- Only 6 posts marked "relevant" (0.6%)
-- 39 posts with clear bariatric keywords marked "not_relevant" (false negatives)
-- Posts mentioning PBH treatments (acarbose, diazoxide) not triggering relevance
+**Final Results (2025-12-09):**
+- Tier 1 (Critical): **100.0%** ✅ (target ≥90%)
+- Tier 2 (Core): **83.7%** ✅ (target ≥80%)
+- Test Cases: 46 real posts from production pipeline
 
-### Solution: Expanded Relevance Logic
-v6 broadens what counts as relevant:
+**v6 vs v6.1 Key Differences:**
+| Component | v6 | v6.1 (Current) |
+|-----------|-----|------|
+| engagement_label | `"low", "med", "high"` | `"low", "medium", "high"` |
+| Entity arrays | No enum constraints | Enum constraints on topics, symptoms, treatments, conditions, companies |
+| Prompt | Base with dictionary | + Theme derivation guard + dietary_modification expansion |
 
-| Trigger | v5 Result | v6 Result |
-|---------|-----------|-----------|
-| PBH treatments (acarbose, diazoxide, octreotide) | borderline (with weak context) | **relevant** |
-| GLP-1s + bariatric context | not_relevant | **relevant** |
-| Bariatric context alone (no PBH indicators) | not_relevant | **borderline** |
+### v7 Backlog
 
-### Testing Approach
-Unlike v5's simulated test cases, v6 uses **real posts from production data**:
+Known issues documented for future development:
 
-1. **Extract Test Candidates** - Identified 46 posts from `data-everything.csv` for v6 validation
-2. **Define Expected Outcomes** - Created and validated expected outputs against dictionary (2025-12-08)
-3. **Run Enrichment** - Process posts through OpenAI Chat Completions with v6 config
-4. **Score Results** - Compare actual vs expected, focusing on relevance accuracy
+| Issue | Type | Priority |
+|-------|------|----------|
+| Rename "patient" to "community" for audience_label | Schema | High |
+| Themes array allows duplicates | Schema | High |
+| Hypoglycemia over-extraction from diabetes context | Prompt | Medium |
+| "Dumping syndrome" vs "late_dumping" confusion | Prompt | Medium |
+| Doctor visit under-extraction | Prompt | Medium |
+| Emotion under-extraction (conservative inference) | Prompt | Medium |
+| Engagement score calculation error | API Bug | High |
 
-### Test Categories (46 posts)
+**Full details:** `system/v7/V7_BACKLOG.md`
 
-| Category | Count | Expected v6 Relevance | v6 Rule |
-|----------|-------|----------------------|---------|
-| bariatric_context_only | 24 | borderline | Strong bariatric context without PBH indicators |
-| weak_bariatric | 12 | borderline | Weak bariatric context (post-op, since surgery) |
-| glp1_only | 7 | borderline | GLP-1 treatment without bariatric context |
-| pbh_mention | 3 | relevant | Explicit PBH/reactive hypoglycemia mention |
+### Next Steps
 
-### v6 File Structure
+1. ✅ ~~v6.1 enrichment testing~~ - COMPLETE
+2. 🔜 Chatbot system prompt development and testing
+3. 🔜 Dashboard/front-end validation with enriched data
 
+### How to Run Tests
+
+```bash
+cd system/v6/testing
+python run_api_test.py --mode v6.1 --all   # Run enrichment via OpenAI API
+python compare_v6_only.py                   # Compare results against expected outputs
 ```
-system/v6/
-├── enrichment/                              # Core system files
-│   ├── PBH_SIGNAL_DICTIONARY_v6.txt        # Entity extraction rules
-│   ├── openai_assistant_system_prompt_v6.md
-│   ├── openai_assistant_system_prompt_v6_with_dictionary.md
-│   ├── openai_assistant_response_format_v6.json
-│   └── normalization_schema_v6.json
-└── testing/                                 # Testing infrastructure
-    ├── run_tests_v6.py                     # Run enrichment via OpenAI API
-    ├── compare_results_v6.py               # Compare actual vs expected
-    ├── requirements.txt
-    ├── normalized_inputs/                  # 46 test input JSON files
-    ├── expected_outputs/                   # 46 validated expected outputs (ground truth)
-    └── enriched_outputs/                   # Dev team's actual outputs go here
-```
-
-### Next Steps (as of 2025-12-08)
-
-**WAITING ON DEV TEAM:**
-1. Dev team runs 46 test posts through n8n pipeline with v6 config
-2. They send enriched JSON files (named `{source_id}_enriched.json`)
-3. Put files in `system/v6/testing/enriched_outputs/`
-4. Run comparison:
-   ```bash
-   cd system/v6/testing
-   python compare_results_v6.py --csv
-   ```
-
-### Success Criteria
-
-| Metric | Target | Description |
-|--------|--------|-------------|
-| Tier 1 (Critical/Safety) | ≥90% | flags, relevance_label, bariatric_context |
-| Tier 2 (Core Product) | ≥80% | audience, sentiment, themes, entities, engagement |
-| Tier 3 (Enhancement) | tracked | emotions, intent, key_phrases (not blocking) |
 
 ### Key Files for Context Recovery
 
-If starting a new session, read these files to understand v6:
-1. `CLAUDE.md` - This file (project context + next steps)
-2. `system/v6/enrichment/PBH_SIGNAL_DICTIONARY_v6.txt` - Valid entity labels
+If starting a new session, read these files:
+1. `CLAUDE.md` - This file (project context + current status)
+2. `system/v7/V7_BACKLOG.md` - Known issues for v7 development
 3. `system/v6/testing/expected_outputs/` - Ground truth for comparison
+4. `system/v6/enrichment/` - Prompt and schema files (v6.1 is current)

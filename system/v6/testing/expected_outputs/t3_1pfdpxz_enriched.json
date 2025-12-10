@@ -23,11 +23,9 @@
     "comments": 1,
     "shares": 0
   },
-  "topics": [
-    "diagnostics_monitoring"
-  ],
+  "topics": [],
   "symptoms": [
-    "hypoglycemia"
+    "vision_changes"
   ],
   "treatments": [],
   "conditions": [
@@ -55,9 +53,9 @@
   "audience_confidence": 0.8,
   "themes": [
     "Symptoms",
-    "Diagnostics"
+    "Conditions/Diagnosis"
   ],
-  "sentiment_label": "neutral",
+  "sentiment_label": "negative",
   "sentiment_confidence": 0.7,
   "sentiment_raw": null,
   "emotions": [
@@ -69,15 +67,8 @@
   ],
   "flags": [],
   "debug_matches": [
-    "symptoms_numbness_023",
-    "symptoms_vision+changes_022",
-    "symptoms_hypoglycemia_016",
-    "conditions_reactive_hypoglycemia_009",
-    "conditions_POTS_012",
-    "conditions_sjogrens_013",
-    "conditions_psoriatic_arthritis_014",
-    "conditions_hEDS_015",
-    "conditions_pckd_016",
-    "topics_diagnostics_monitoring_036"
+    "symptoms_vision_changes_022",
+    "symptoms_weakness_023",
+    "conditions_reactive_hypoglycemia_009"
   ]
 }

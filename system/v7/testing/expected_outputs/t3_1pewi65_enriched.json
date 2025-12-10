@@ -1,0 +1,66 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pewi65",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pewi65/protein_shakes_bad_reactions/",
+  "permalink": null,
+  "title": "Protein shakes - bad reactions??",
+  "text": "Anyone ever try a protein shake that made them ill? Oh my god, I'm trying a new shake today and it feels like my stomach is tearing up or something.  \n\n2 years post RNY so why is this happening, I've never had this kind of reaction to food. \n\nIt's starting to pass now but like... what the hell???",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21416",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-05 14:29:30",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 3,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 9,
+  "engagement_label": "low",
+  "key_phrases": [
+    "protein shake",
+    "bad reactions",
+    "2 years post RNY",
+    "reaction to food",
+    "stomach is tearing up"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with no direct PBH or hypoglycemia indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "negative",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "frustration"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

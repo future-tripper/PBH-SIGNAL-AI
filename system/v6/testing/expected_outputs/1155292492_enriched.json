@@ -44,7 +44,8 @@
   "audience_label": "unknown",
   "audience_confidence": 0.5,
   "themes": [
-    "Bariatric Surgery"
+    "Bariatric Surgery",
+    "Conditions/Diagnosis"
   ],
   "sentiment_label": "neutral",
   "sentiment_confidence": 0.8,

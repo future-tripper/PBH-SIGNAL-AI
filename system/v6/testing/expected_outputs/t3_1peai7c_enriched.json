@@ -25,10 +25,12 @@
   },
   "topics": [
     "bariatric_surgery",
-    "surgery_complications",
-    "dietary_modification"
+    "surgery_complications"
   ],
-  "symptoms": [],
+  "symptoms": [
+    "nausea",
+    "weakness"
+  ],
   "treatments": [],
   "conditions": [],
   "companies": [],
@@ -52,7 +54,7 @@
   "audience_confidence": 0.9,
   "themes": [
     "Bariatric Surgery",
-    "Diet"
+    "Symptoms"
   ],
   "sentiment_label": "negative",
   "sentiment_confidence": 0.85,

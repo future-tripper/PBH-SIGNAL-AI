@@ -24,11 +24,10 @@
     "shares": 0
   },
   "topics": [
+    "bariatric_surgery",
     "dietary_modification"
   ],
-  "symptoms": [
-    "hypoglycemia"
-  ],
+  "symptoms": ["hypoglycemia"],
   "treatments": [],
   "conditions": [
     "PBH"
@@ -51,7 +50,9 @@
   "audience_confidence": 0.5,
   "themes": [
     "Symptoms",
-    "Diet"
+    "Bariatric Surgery",
+    "Diet",
+    "Conditions/Diagnosis"
   ],
   "sentiment_label": "neutral",
   "sentiment_confidence": 0.8,
@@ -62,8 +63,8 @@
   ],
   "flags": [],
   "debug_matches": [
+    "topics_bariatric_surgery_034",
     "topics_dietary_modification_035",
-    "symptoms_hypoglycemia_016",
     "conditions_PBH_008"
   ]
 }

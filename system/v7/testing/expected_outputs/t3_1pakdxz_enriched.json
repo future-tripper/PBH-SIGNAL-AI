@@ -1,0 +1,70 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pakdxz",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pakdxz/stuck_and_needing_advice/",
+  "permalink": null,
+  "title": "Stuck and needing advice",
+  "text": "I had a VSG one year ago and am down 60 pounds! My doctor\u0019s goal was 100 pounds down total, but that last 40 seems so far away at this point. \nI\u0019m very proud of the progress I\u0019ve made! And I\u0019ve been stuck at 225 for 6 months. I\u0019ve talked to my medical team and their advice is always the same \u001cjust keep eating protein and drinking water,\u001d which I am doing! I\u0019ve been exercising more and specifically lifting more weights! \nHas anyone else had a long stall? Did anything break it?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "20868",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-11-30 15:03:34",
+  "language": "en",
+  "metrics": {
+    "likes": 0,
+    "comments": 3,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 6,
+  "engagement_label": "low",
+  "key_phrases": [
+    "VSG one year ago",
+    "down 60 pounds",
+    "doctor's goal",
+    "stuck at 225",
+    "eating protein",
+    "drinking water",
+    "lifting more weights",
+    "long stall"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context (VSG surgery) but no PBH or hypoglycemia indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

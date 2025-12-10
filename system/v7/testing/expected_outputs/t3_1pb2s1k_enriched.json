@@ -1,0 +1,62 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pb2s1k",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pb2s1k/december_gastric_bypass_buddy_search/",
+  "permalink": null,
+  "title": "December Gastric Bypass Buddy Search",
+  "text": "If you're looking for a buddy to go through the surgery with, post the following information:\n\n* Surgery Date\n* Your gender\n* If you have a preferred gender to match with\n* General Age Range (if you're under 18, please be cautious)\n* Any other information you'd like to include (weight, goal weight, other goals)\n\nIf you're post-surgery, and you'd like a buddy, post the same information, but change to how many days/months/years out from surgery you are.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "7102",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-01 04:00:44",
+  "language": "en",
+  "metrics": {
+    "likes": 2,
+    "comments": 5,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 12,
+  "engagement_label": "medium",
+  "key_phrases": [
+    "gastric bypass",
+    "surgery date",
+    "post-surgery buddy",
+    "goal weight",
+    "general age range"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with community engagement but no PBH-specific indicators.",
+  "audience_label": "unknown",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034"
+  ]
+}

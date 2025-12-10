@@ -58,3 +58,13 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Test Data (contains real social posts - do not commit)
+**/api_test_outputs/
+**/normalized_inputs/
+**/v5-regression-test-data/
+**/*real_posts*.csv
+**/*pipeline*.csv
+
+# Chatbot test results (may contain real data)
+chatbot/testing/phase1_results.md

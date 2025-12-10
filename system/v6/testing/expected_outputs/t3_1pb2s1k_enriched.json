@@ -43,7 +43,7 @@
   "relevance_label": "borderline",
   "relevance_confidence": 0.7,
   "relevance_reason": "Strong bariatric context with community engagement but no PBH-specific indicators.",
-  "audience_label": "patient",
+  "audience_label": "unknown",
   "audience_confidence": 0.8,
   "themes": [
     "Bariatric Surgery"

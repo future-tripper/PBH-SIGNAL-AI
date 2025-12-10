@@ -52,7 +52,7 @@
   "themes": [
     "Bariatric Surgery"
   ],
-  "sentiment_label": "neutral",
+  "sentiment_label": "mixed",
   "sentiment_confidence": 0.7,
   "sentiment_raw": null,
   "emotions": [

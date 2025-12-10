@@ -23,14 +23,13 @@
     "comments": 1,
     "shares": 0
   },
-  "topics": [
-    "doctor_visit"
-  ],
+  "topics": [],
   "symptoms": [
-    "sweating",
     "nausea",
     "brain_fog",
-    "fainting"
+    "fainting",
+    "vision_changes",
+    "weakness"
   ],
   "treatments": [],
   "conditions": [],

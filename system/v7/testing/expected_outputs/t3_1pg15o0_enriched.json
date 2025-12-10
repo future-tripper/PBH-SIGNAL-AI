@@ -1,0 +1,69 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pg15o0",
+  "url": "https://www.reddit.com/r/Hypoglycemia/comments/1pg15o0/baby_diagnosed_with_hypoinsulinemia_big/",
+  "permalink": null,
+  "title": "Baby diagnosed with  hypoinsulinemia.. big difference between heel prick result and finger result.",
+  "text": "Hi! My baby was recently diagnosed with hypoinsulinemia after he had bowel surgery and I don\u0019t believe he is truly hypoglycemic or as the endo team says he is hypoinsulinemia. He is a cardiac baby with a rare heart defect and has pretty wonky perfusion due to his circulation and he was post op when they did testing. For instance he had a heel prick test result of 46 right after he was fed and it led them to freaking out so I requested a finger prick result and it was 2 minutes later and it was 76.. they want to base everything off of heel prick reading results but I don\u0019t believe it\u0019s accurate due to his circulatory perfusion etc. which area would be most accurate for testing blood sugars? Heel or finger? Thank you for any insight I am a nervous new mom with a medically complex baby and seeking any insight from those with personal experience with low blood sugars etc!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21599",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-06 21:55:39",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 2,
+    "shares": 0
+  },
+  "topics": [
+    "diagnostics_monitoring"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [
+    "hypoglycemia"
+  ],
+  "companies": [],
+  "engagement_score": 5,
+  "engagement_label": "low",
+  "key_phrases": [
+    "hypoinsulinemia diagnosis",
+    "heel prick test",
+    "finger prick result",
+    "testing blood sugars",
+    "medically complex baby"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "The post discusses hypoinsulinemia and blood sugar testing in a non-bariatric context.",
+  "audience_label": "community",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Diagnostics",
+    "Conditions/Diagnosis"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [
+    "anxiety"
+  ],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "symptoms_hypoglycemia_016",
+    "topics_diagnostics_monitoring_036"
+  ]
+}

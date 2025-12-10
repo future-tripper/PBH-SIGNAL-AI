@@ -24,8 +24,7 @@
     "shares": 0
   },
   "topics": [
-    "bariatric_surgery",
-    "weight_regain"
+    "bariatric_surgery"
   ],
   "symptoms": [],
   "treatments": [],
@@ -60,7 +59,6 @@
   "flags": [],
   "debug_matches": [
     "topics_bariatric_surgery_034",
-    "topics_weight_regain_042",
     "audience_anchor_patient_anchor_001"
   ]
 }

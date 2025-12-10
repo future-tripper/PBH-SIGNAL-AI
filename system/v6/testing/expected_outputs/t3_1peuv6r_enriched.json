@@ -24,7 +24,8 @@
     "shares": 0
   },
   "topics": [
-    "bariatric_surgery"
+    "bariatric_surgery",
+    "dietary_modification"
   ],
   "symptoms": [],
   "treatments": [],
@@ -46,7 +47,8 @@
   "audience_label": "unknown",
   "audience_confidence": 0.5,
   "themes": [
-    "Bariatric Surgery"
+    "Bariatric Surgery",
+    "Diet"
   ],
   "sentiment_label": "positive",
   "sentiment_confidence": 0.8,
@@ -60,6 +62,7 @@
   ],
   "flags": [],
   "debug_matches": [
-    "topics_bariatric_surgery_034"
+    "topics_bariatric_surgery_034",
+    "topics_dietary_modification_035"
   ]
 }

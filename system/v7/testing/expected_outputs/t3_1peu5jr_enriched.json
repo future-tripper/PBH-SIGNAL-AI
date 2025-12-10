@@ -1,0 +1,64 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1peu5jr",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1peu5jr/vaping_the_good_bad_and_ugly_after_gastric_bypass/",
+  "permalink": null,
+  "title": "Vaping - The good, bad, and ugly after gastric bypass?",
+  "text": "Folks, I\u0019m 100 days post Lap OAGB. Lost 66 pounds or 30 kilos in the time period. I used to smoke, but quit it 2 months before the surgery. There are days I feel like restarting cigarette smoking but when I read about possible issues, I don\u0019t go for it. But I want to have something similar to smoking but way safer. Given that I\u0019m 100 days post surgery recovering and losing weight, can I take up vaping? Is vaping better than smoking? What probable or possible risks are there in vaping after gastric bypass?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21419",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-05 12:45:49",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 10,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 23,
+  "engagement_label": "high",
+  "key_phrases": [
+    "100 days post Lap OAGB",
+    "lost 66 pounds",
+    "quit smoking",
+    "vaping after gastric bypass",
+    "probable risks of vaping"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context but no direct PBH or hypoglycemia discussion.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

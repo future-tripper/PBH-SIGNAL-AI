@@ -27,9 +27,7 @@
     "bariatric_surgery",
     "dietary_modification"
   ],
-  "symptoms": [
-    "nausea"
-  ],
+  "symptoms": [],
   "treatments": [],
   "conditions": [],
   "companies": [],
@@ -49,7 +47,6 @@
   "audience_label": "patient",
   "audience_confidence": 0.9,
   "themes": [
-    "Symptoms",
     "Bariatric Surgery",
     "Diet"
   ],
@@ -69,8 +66,8 @@
   "debug_matches": [
     "topics_bariatric_surgery_034",
     "topics_dietary_modification_035",
+    "topics_doctor_visit_038",
     "symptoms_nausea_020",
-    "symptoms_anxiety_017",
     "audience_anchor_patient_anchor_001"
   ]
 }

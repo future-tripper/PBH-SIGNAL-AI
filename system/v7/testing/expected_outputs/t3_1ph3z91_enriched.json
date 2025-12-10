@@ -1,0 +1,76 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1ph3z91",
+  "url": "https://i.redd.it/pzf2j1a8yw5g1.jpeg",
+  "permalink": null,
+  "title": "6% A1C? It\u2019s been five long years!",
+  "text": "I always dread going for lab work at Kaiser Permanente because it\u2019s so crowded and long waits. But seeing this 6% result is so relieving. Last time I was at six or below was when I was put on an aggressive medication plan using insulin for six months, after being discharged from the hospital with DKA for type 2.  Currently I\u2019m on Metformin ER and Ozempic.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21799",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-08 05:08:43",
+  "language": "en",
+  "metrics": {
+    "likes": 5,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "diagnostics_monitoring"
+  ],
+  "symptoms": [],
+  "treatments": [
+    "semaglutide"
+  ],
+  "conditions": [],
+  "companies": [
+    "Novo_Nordisk"
+  ],
+  "engagement_score": 5,
+  "engagement_label": "low",
+  "key_phrases": [
+    "6% A1C",
+    "lab work",
+    "Kaiser Permanente",
+    "aggressive medication plan",
+    "discharged from the hospital",
+    "DKA for type 2",
+    "Metformin ER",
+    "Ozempic"
+  ],
+  "bariatric_context": "none",
+  "relevance_label": "not_relevant",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "No bariatric context or PBH indicators present.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Treatments",
+    "Diagnostics"
+  ],
+  "sentiment_label": "positive",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [
+    "relief"
+  ],
+  "intent": [
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_diagnostics_monitoring_036",
+    "treatments_metformin_025",
+    "treatments_semaglutide_028",
+    "conditions_T2D_010",
+    "companies_Novo_Nordisk_004"
+  ]
+}

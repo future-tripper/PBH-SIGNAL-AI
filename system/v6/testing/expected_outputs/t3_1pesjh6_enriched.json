@@ -23,10 +23,10 @@
     "comments": 2,
     "shares": 0
   },
-  "topics": [
-    "medication_side_effects"
+  "topics": [],
+  "symptoms": [
+    "weakness"
   ],
-  "symptoms": [],
   "treatments": [
     "semaglutide"
   ],
@@ -48,6 +48,7 @@
   "audience_label": "patient",
   "audience_confidence": 0.9,
   "themes": [
+    "Symptoms",
     "Treatments"
   ],
   "sentiment_label": "negative",

@@ -1,0 +1,63 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pg89yi",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1pg89yi/preparing_for_a_sleevetobypass_conversion_whats/",
+  "permalink": null,
+  "title": "Preparing for a Sleeve-to-Bypass Conversion. What\u2019s the Pre-Op Process Like?",
+  "text": "Hi everyone,  \nI\u2019m planning a conversion from a gastric sleeve to a gastric bypass and trying to get a clear picture of what the pre-op process looks like. I know it\u2019s usually more involved than the first surgery, so I want to be as prepared as possible.\n\nIf you\u2019ve gone through this type of revision, I\u2019d love to hear about your experience:\n\n* How long did your pre-op process take?\n* Was it more complicated or different from your first surgery?\n* Are there things you wish you had known before starting the process?\n* Any tips for making it easier or smoother?\n\nAny advice, stories, or insights are really appreciated \ud83d\udc95 Thanks so much!",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "12714",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-07 03:34:25",
+  "language": "en",
+  "metrics": {
+    "likes": 4,
+    "comments": 0,
+    "shares": 1
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 7,
+  "engagement_label": "low",
+  "key_phrases": [
+    "gastric sleeve to gastric bypass",
+    "pre-op process",
+    "revision surgery",
+    "preparing for surgery",
+    "advice for smoother process"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with surgery revision discussion but no PBH-specific indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

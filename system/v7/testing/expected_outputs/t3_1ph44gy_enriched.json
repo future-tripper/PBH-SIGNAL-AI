@@ -1,0 +1,64 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1ph44gy",
+  "url": "https://www.reddit.com/r/BariatricSurgery/comments/1ph44gy/rate_of_weightloss/",
+  "permalink": null,
+  "title": "Rate of Weightloss",
+  "text": "Hi all! I am just under 5 months post op VSG. I am curious to compare my average weekly/monthly loss with others at this stage. My surgery weight was 235 and my current weight is 186 (49 pounds down in 4.5 months). I feel like my rate of loss has drastically decreased already where some weeks I lose nothing and other weeks I might lose 3-4 pounds. What\u0019s the norm for everyone else?",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "21793",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-08 05:16:18",
+  "language": "en",
+  "metrics": {
+    "likes": 3,
+    "comments": 2,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 7,
+  "engagement_label": "low",
+  "key_phrases": [
+    "5 months post op VSG",
+    "average weekly/monthly loss",
+    "surgery weight was 235",
+    "current weight is 186",
+    "rate of loss has drastically decreased"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.8,
+  "relevance_reason": "Strong bariatric context with focus on weight loss post-surgery but no PBH indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.9,
+  "themes": [
+    "Bariatric Surgery"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.7,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}

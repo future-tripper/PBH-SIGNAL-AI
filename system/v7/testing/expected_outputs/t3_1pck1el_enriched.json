@@ -1,0 +1,66 @@
+{
+  "source": "reddit.com",
+  "source_id": "t3_1pck1el",
+  "url": "https://www.reddit.com/r/GastricBypass/comments/1pck1el/stomach_sounds/",
+  "permalink": null,
+  "title": "Stomach sounds",
+  "text": "I\u2019ve noticed my stomach has become more sensitive lately. It has been making sounds and now it\u2019s while I\u2019m eating too. I have been taking small bites and sips and it\u2019s still happening. I just want to know if anyone has experienced this? I\u2019ve reached out to my care team but they said there is no cause for concern. I do have occasional pain along with it. I\u2019ve never had this before and I\u2019m 1 year post op.",
+  "parent_source": null,
+  "subsource": null,
+  "author": {
+    "id": "19567",
+    "name": "Unknown",
+    "handle": "unknown",
+    "gender": null,
+    "age": null,
+    "subscribers": null
+  },
+  "country": null,
+  "published_at": "2025-12-02 20:48:05",
+  "language": "en",
+  "metrics": {
+    "likes": 1,
+    "comments": 0,
+    "shares": 0
+  },
+  "topics": [
+    "bariatric_surgery",
+    "dietary_modification"
+  ],
+  "symptoms": [],
+  "treatments": [],
+  "conditions": [],
+  "companies": [],
+  "engagement_score": 1,
+  "engagement_label": "low",
+  "key_phrases": [
+    "stomach sensitivity",
+    "post-op",
+    "small bites",
+    "care team",
+    "occasional pain"
+  ],
+  "bariatric_context": "strong",
+  "relevance_label": "borderline",
+  "relevance_confidence": 0.7,
+  "relevance_reason": "Strong bariatric context with post-operative discussion but no PBH or hypoglycemia indicators.",
+  "audience_label": "community",
+  "audience_confidence": 0.8,
+  "themes": [
+    "Bariatric Surgery",
+    "Diet"
+  ],
+  "sentiment_label": "neutral",
+  "sentiment_confidence": 0.8,
+  "sentiment_raw": null,
+  "emotions": [],
+  "intent": [
+    "seeking_advice",
+    "sharing_experience"
+  ],
+  "flags": [],
+  "debug_matches": [
+    "topics_bariatric_surgery_034",
+    "audience_anchor_patient_anchor_001"
+  ]
+}
