@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """
-PBH SIGNAL v6 - API Test Script for 3 Configurations
+PBH SIGNAL v6 - API Test Script
 
-Tests enrichment by calling OpenAI API with different prompt/schema combinations:
-- Test 1: v6 prompt + v6 schema
-- Test 2: v6.1 prompt + v6 schema
-- Test 3: v6.1 prompt + v6.1 schema
+Tests enrichment by calling OpenAI API with different configurations.
 
 Usage:
+    # Standard test modes (prompt/schema combinations)
     python run_api_test.py --test 1 --all    # v6 prompt + v6 schema
     python run_api_test.py --test 2 --all    # v6.1 prompt + v6 schema
     python run_api_test.py --test 3 --all    # v6.1 prompt + v6.1 schema
-    python run_api_test.py --test 1 --source-id t3_1pcy7kt  # Test specific post
+
+    # Model comparison mode (uses v6.1 prompt + v6.1 schema)
+    python run_api_test.py --mode model_test --model gpt-4o --all
+    python run_api_test.py --mode model_test --model gpt-4o-2024-11-20 --all
+    python run_api_test.py --mode model_test --model gpt-4o --temp 0.3 --all
+
+    # Test specific post
+    python run_api_test.py --test 3 --source-id t3_1pcy7kt
 """
 
 import json
@@ -97,11 +102,12 @@ def load_normalized_inputs(count: int = None, source_id: str = None, run_all: bo
     return inputs
 
 
-def call_openai_with_schema(client: OpenAI, system_prompt: str, normalized_input: dict, schema: dict) -> dict:
+def call_openai_with_schema(client: OpenAI, system_prompt: str, normalized_input: dict, schema: dict,
+                            model: str = "gpt-4o-2024-11-20", temperature: float = 0.1) -> dict:
     """Call OpenAI with structured output schema"""
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": f"Process this normalized post and return enriched JSON:\n\n{json.dumps(normalized_input, indent=2)}"}
@@ -110,22 +116,33 @@ def call_openai_with_schema(client: OpenAI, system_prompt: str, normalized_input
             "type": "json_schema",
             "json_schema": schema
         },
-        temperature=0.1
+        temperature=temperature
     )
 
     return json.loads(response.choices[0].message.content)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Test v6 enrichment with different prompt/schema configurations")
-    parser.add_argument("--test", type=int, choices=[1, 2, 3], required=True,
+    parser = argparse.ArgumentParser(description="Test v6 enrichment with different configurations")
+    parser.add_argument("--test", type=int, choices=[1, 2, 3],
                         help="Test configuration: 1=v6+v6, 2=v6.1+v6, 3=v6.1+v6.1")
+    parser.add_argument("--mode", type=str, choices=["model_test"],
+                        help="Special test mode: model_test uses v6.1 prompt+schema with custom model/temp")
+    parser.add_argument("--model", type=str, default="gpt-4o-2024-11-20",
+                        help="Model to use (default: gpt-4o-2024-11-20)")
+    parser.add_argument("--temp", type=float, default=0.1,
+                        help="Temperature (default: 0.1)")
     parser.add_argument("--count", type=int, help="Number of posts to test")
     parser.add_argument("--all", action="store_true", help="Test all posts")
     parser.add_argument("--source-id", type=str, help="Test specific source_id")
+    parser.add_argument("--force", action="store_true", help="Force re-run even if outputs exist")
     args = parser.parse_args()
 
     # Validate args
+    if not args.test and not args.mode:
+        print("❌ Must specify --test or --mode")
+        sys.exit(1)
+
     if not args.count and not args.all and not args.source_id:
         print("❌ Must specify --count, --all, or --source-id")
         sys.exit(1)
@@ -138,12 +155,33 @@ def main():
 
     client = OpenAI(api_key=api_key)
 
-    # Get test config
-    config = TEST_CONFIGS[args.test]
+    # Determine configuration
+    if args.mode == "model_test":
+        # Model test mode: use v6.1 prompt + v6.1 schema with custom model/temp
+        model_short = args.model.replace("gpt-", "").replace("-2024-11-20", "-dated")
+        temp_str = str(args.temp).replace(".", "")
+        config = {
+            "name": f"model_{model_short}_temp{temp_str}",
+            "prompt": "openai_assistant_system_prompt_v6.1_with_dictionary.md",
+            "schema": "openai_assistant_response_format_v6.1.json",
+            "description": f"{args.model} @ temp {args.temp}"
+        }
+        model = args.model
+        temperature = args.temp
+    else:
+        # Standard test mode
+        config = TEST_CONFIGS[args.test]
+        model = "gpt-4o-2024-11-20"  # Default for standard tests
+        temperature = 0.1
 
     print(f"\n{'='*70}")
-    print(f"  TEST {args.test}: {config['description']}")
+    if args.mode == "model_test":
+        print(f"  MODEL TEST: {config['description']}")
+    else:
+        print(f"  TEST {args.test}: {config['description']}")
     print(f"{'='*70}")
+    print(f"  Model: {model}")
+    print(f"  Temperature: {temperature}")
     print(f"  Prompt: {config['prompt']}")
     print(f"  Schema: {config['schema']}")
 
@@ -175,8 +213,8 @@ def main():
         source_id = normalized_input.get("source_id", f"unknown_{i}")
         output_file = mode_output_dir / f"{source_id}_enriched.json"
 
-        # Skip if already exists
-        if output_file.exists():
+        # Skip if already exists (unless --force)
+        if output_file.exists() and not args.force:
             print(f"[{i+1}/{len(inputs)}] {source_id} - skipped (exists)")
             results["success"] += 1
             continue
@@ -184,7 +222,8 @@ def main():
         print(f"[{i+1}/{len(inputs)}] {source_id}...", end=" ", flush=True)
 
         try:
-            enriched = call_openai_with_schema(client, system_prompt, normalized_input, schema)
+            enriched = call_openai_with_schema(client, system_prompt, normalized_input, schema,
+                                               model=model, temperature=temperature)
 
             # Merge input fields with enriched output
             full_output = {**normalized_input, **enriched}
@@ -201,8 +240,10 @@ def main():
 
     # Summary
     print(f"\n{'='*70}")
-    print(f"SUMMARY: Test {args.test} - {config['description']}")
+    print(f"SUMMARY: {config['description']}")
     print(f"{'='*70}")
+    print(f"Model: {model}")
+    print(f"Temp:  {temperature}")
     print(f"Total:   {results['total']}")
     print(f"Success: {results['success']} ✅")
     print(f"Errors:  {results['errors']} ❌")

@@ -16,11 +16,14 @@ The data pipeline consists of four key stages:
 
 ### Current Status
 
-**Active Development:** Chatbot System Prompt (2025-12-10)
+**Active Development:** Chatbot in Algolia (2025-12-11)
 
-**v6.1 Enrichment:** ✅ DEPLOYED
-- Tier 1: 100%, Tier 2: 83.7%
+**v6.1 Enrichment:** ✅ PRODUCTION READY (2025-12-11)
+- **Model:** `gpt-4o @ temp 0.1` (non-dated)
+- **Pipeline validated:** Dev ran 46 test cases with new config
+- **Results:** Tier 1: 100%, Tier 2: passing (emotions field validated as acceptable)
 - Files: `system/v6/enrichment/openai_assistant_system_prompt_v6.1_with_dictionary.md` + `openai_assistant_response_format_v6.1.json`
+- Database should now have correct enrichment data
 
 **v7 Enrichment:** ✅ READY (for future deployment)
 - Tier 1: 100%, Tier 2: 80.4%
@@ -28,10 +31,39 @@ The data pipeline consists of four key stages:
 - Files: `system/v7/enrichment/`
 - Full details: `system/v7/V7_IMPLEMENTATION_PLAN.md`
 
-**Chatbot:** IN PROGRESS
-- Status: Setup complete, waiting for initial system prompt
-- Files: `chatbot/`
-- Full details: `chatbot/CHATBOT.md`
+**Chatbot:** READY FOR FULL TESTING (2025-12-11)
+
+### Status
+v6.1 enrichment is production ready. Database should now have correct enrichment fields. Ready for full chatbot testing.
+
+### Previous Root Causes (Now Fixed)
+1. **Algolia queries:** Model was sending `facet_filters: null` (keyword-only) - addressed in v2.3 prompt
+2. **Broken data:** Enrichment fields were empty/wrong - NOW FIXED with v6.1 production deployment
+
+### Chatbot Testing (Full)
+Data is now fixed. Run full T1-T8 test suite and record in `v2.3_model_comparison.csv`
+
+See `chatbot/testing/v2.3_test_plan.md` for full instructions.
+
+### Key Files
+| File | Purpose |
+|------|---------|
+| `chatbot/algolia_search_config.md` | Tool description for Algolia UI |
+| `chatbot/chatbot_system_prompt_v2.3-5-mini.md` | System prompt with facet_filters guidance |
+| `chatbot/testing/v2.3_test_plan.md` | Testing instructions |
+| `chatbot/testing/v2.3_model_comparison.csv` | Test results |
+
+### Test Queries (T1-T8)
+| # | Prompt |
+|---|--------|
+| T1 | What language do people use when describing their post-meal crashes? |
+| T2 | Are there posts from people who might have PBH but don't know it? |
+| T3 | Are people talking about acarbose? What's the sentiment? |
+| T4 | Are HCPs showing up in the conversation? What are they saying? |
+| T5 | What are the biggest frustrations people express about managing PBH? |
+| T6 | What do people say when they finally get diagnosed? |
+| T7 | Is anyone mentioning clinical trials or new treatments coming? |
+| T8 | What's driving the most engagement in PBH discussions? |
 
 **Platforms:** 4-platform MVP (Reddit, TikTok, Facebook, Instagram)
 
@@ -84,9 +116,26 @@ PBH-SIGNAL-AI/
 ### Model Configuration (v6.1)
 | Parameter | Value | Notes |
 |-----------|-------|-------|
-| **Model** | `gpt-4o` | OpenAI model |
-| **Temperature** | `0.3` | Balances consistency with flexibility |
+| **Model** | `gpt-4o` | Non-dated model (best accuracy) |
+| **Temperature** | `0.1` | Low for consistency |
 | **Response Format** | `json_schema` | Structured outputs with `strict: true` for enum enforcement |
+
+#### Model Selection (2025-12-10)
+Comprehensive testing across 6 model configurations on 46 real-world test cases:
+
+| Model | Temp | Tier 1 | Tier 2 | Notes |
+|-------|------|--------|--------|-------|
+| **gpt-4o** | **0.1** | **100%** ✅ | **68.9%** | **SELECTED - Best overall** |
+| gpt-4o | 0.3 | 100% | 59.1% | Higher temp reduces accuracy |
+| gpt-4o-2024-11-20 | 0.1 | 91.3% | 39.1% | Dated model underperforms |
+| gpt-4.1 | 0.1 | 96.0% | 52.0% | Newer but less accurate |
+| gpt-4.1-mini | 0.1 | 75.6% | 31.1% | Too aggressive extraction |
+| gpt-5-mini | 1.0 | 86.4% | 18.2% | Reasoning model, poor fit |
+
+**Key findings:**
+- Non-dated `gpt-4o` outperforms pinned `gpt-4o-2024-11-20`
+- Lower temperature (0.1) produces more consistent results
+- Tier 2 issues (themes, topics, sentiment) require prompt improvements, not model changes
 
 ## Key Business Rules
 
