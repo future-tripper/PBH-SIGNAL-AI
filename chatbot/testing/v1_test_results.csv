@@ -1,0 +1,1 @@
+conversation_id,turn_number,prompt,timestamp,model,filter_used,filter_correct,data_returned,context_retained,insight_quality,strategic_relevance,citations,hallucination,failure_root_cause,prompt_gap_identified,notes

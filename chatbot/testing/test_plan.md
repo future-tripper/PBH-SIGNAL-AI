@@ -1,6 +1,22 @@
-# v3 Chatbot Testing
+# Chatbot Testing (v1 vs v2)
 
-**Last Updated:** 2025-12-11
+**Last Updated:** 2025-12-12
+
+---
+
+## Testing Strategy
+
+**Versions:**
+| Version | Description |
+|---------|-------------|
+| **v1** | Dev's operational prompt (query mechanics, field usage, index routing, detailed behaviors) |
+| **v2** | v1 + slim strategic context (Amylyx, Avexitide, DSE goals, PwPBH terminology) |
+
+**Model Progression:** 4.1-mini → 4.1 → 5-nano → 5-mini (escalate if needed)
+
+**Results Files:**
+- `v1_test_results.csv` - v1 prompt results
+- `v2_test_results.csv` - v2 prompt results
 
 ---
 
@@ -20,14 +36,16 @@ PBH social posts (all relevant/borderline). Use facet_filters: symptoms, conditi
 
 ### Step 2: Update System Prompt
 
-1. Copy full content of `chatbot/chatbot_system_prompt_v3.md`
+1. Copy full content of:
+   - `chatbot/chatbot_system_prompt_v1.md` (for v1 testing)
+   - `chatbot/chatbot_system_prompt_v2.md` (for v2 testing)
 2. Paste into Instructions box (replace existing)
 3. Save changes
 
 ### Step 3: Start Fresh Session
 
 1. Start a **new conversation** (not just clear chat)
-2. Select model: **5-mini** (or try 4.1)
+2. Select model per progression: **4.1-mini** → 4.1 → 5-nano → 5-mini
 
 ---
 
@@ -254,18 +272,18 @@ Testing isn't just "did it work?" — we need to understand **WHY** things work 
 When something fails, identify which bucket:
 
 - `none` — Success
-- `prompt_gap` — v3 missing knowledge (e.g., didn't know how to analyze language)
+- `prompt_gap` — Prompt missing knowledge (e.g., didn't know how to analyze language)
 - `functional` — Filter/syntax issue (facet_filters null or wrong)
 - `data_limitation` — Info not in database (e.g., author details missing)
 - `model_reasoning` — Model failure (e.g., hallucinated despite good data)
 
-**Note on facet_filters:** Previous v2.x testing observed `facet_filters: null` issues, but this was never tested with v1. Watch for filter issues during testing, but don't assume they'll occur—v1/v3 may handle this differently.
+**Note on facet_filters:** Previous testing observed `facet_filters: null` issues. Watch for filter issues during testing.
 
 ---
 
 ## CSV Recording
 
-Record results in `v3_test_results.csv` with these columns:
+Record results in respective CSV (`v1_test_results.csv` or `v2_test_results.csv`) with these columns:
 
 **Identification:**
 - `conversation_id`: C1-C9
@@ -340,16 +358,8 @@ For each turn:
 
 | File | Purpose |
 |------|---------|
-| `chatbot/chatbot_system_prompt_v3.md` | Current prompt |
-| `chatbot/chatbot_system_prompt_v1.md` | Dev's original (reference) |
-| `chatbot/testing/v3_test_plan.md` | This file |
-
----
-
-## Version History
-
-| Version | Prompts | Notes |
-|---------|---------|-------|
-| v1 | - | Dev's original, untested |
-| v2.x | T1-T8 | Single prompts; facet_filters:null issue observed here |
-| **v3** | **C1-C12** | v1 + slim business context |
+| `chatbot/chatbot_system_prompt_v1.md` | Dev's operational prompt |
+| `chatbot/chatbot_system_prompt_v2.md` | v1 + strategic context |
+| `chatbot/testing/test_plan.md` | This file |
+| `chatbot/testing/v1_test_results.csv` | v1 test results |
+| `chatbot/testing/v2_test_results.csv` | v2 test results |

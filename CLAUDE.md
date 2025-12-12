@@ -16,54 +16,37 @@ The data pipeline consists of four key stages:
 
 ### Current Status
 
-**Active Development:** Chatbot in Algolia (2025-12-11)
+**DEPLOYED (2025-12-12)**
 
-**v6.1 Enrichment:** ✅ PRODUCTION READY (2025-12-11)
+**v6.1 Enrichment:** ✅ DEPLOYED
 - **Model:** `gpt-4o @ temp 0.1` (non-dated)
-- **Pipeline validated:** Dev ran 46 test cases with new config
-- **Results:** Tier 1: 100%, Tier 2: passing (emotions field validated as acceptable)
+- **Final validation:** 100 posts from production pipeline spot-checked
+- **Results:** Schema validation passed, 9/10 manual reviews correct
 - Files: `system/v6/enrichment/openai_assistant_system_prompt_v6.1_with_dictionary.md` + `openai_assistant_response_format_v6.1.json`
-- Database should now have correct enrichment data
 
-**v7 Enrichment:** ✅ READY (for future deployment)
+**Chatbot v1:** ✅ DEPLOYED
+- File: `chatbot/chatbot_system_prompt_v1.md`
+- Basic chatbot functionality with Algolia search
+
+**v7 Enrichment:** READY (for future deployment)
 - Tier 1: 100%, Tier 2: 80.4%
 - Key change: `audience_label` "patient" → "community" (captures caregivers)
 - Files: `system/v7/enrichment/`
 - Full details: `system/v7/V7_IMPLEMENTATION_PLAN.md`
 
-**Chatbot:** READY FOR FULL TESTING (2025-12-11)
-
-### Status
-v6.1 enrichment is production ready. Database should now have correct enrichment fields. Ready for full chatbot testing.
-
-### Previous Root Causes (Now Fixed)
-1. **Algolia queries:** Model was sending `facet_filters: null` (keyword-only) - addressed in v2.3 prompt
-2. **Broken data:** Enrichment fields were empty/wrong - NOW FIXED with v6.1 production deployment
-
-### Chatbot Testing (Full)
-Data is now fixed. Run full T1-T8 test suite and record in `v2.3_model_comparison.csv`
-
-See `chatbot/testing/v2.3_test_plan.md` for full instructions.
+### Next Round: Chatbot v2
+The next development cycle will focus on **chatbot v2** with enhanced business and strategic awareness:
+- Deeper understanding of Amylyx as a company
+- Avexitide product knowledge and positioning
+- Amylyx marketing strategies and business needs
+- More strategic insights for pharma marketers
 
 ### Key Files
 | File | Purpose |
 |------|---------|
+| `chatbot/chatbot_system_prompt_v1.md` | Deployed chatbot prompt |
 | `chatbot/algolia_search_config.md` | Tool description for Algolia UI |
-| `chatbot/chatbot_system_prompt_v2.3-5-mini.md` | System prompt with facet_filters guidance |
-| `chatbot/testing/v2.3_test_plan.md` | Testing instructions |
-| `chatbot/testing/v2.3_model_comparison.csv` | Test results |
-
-### Test Queries (T1-T8)
-| # | Prompt |
-|---|--------|
-| T1 | What language do people use when describing their post-meal crashes? |
-| T2 | Are there posts from people who might have PBH but don't know it? |
-| T3 | Are people talking about acarbose? What's the sentiment? |
-| T4 | Are HCPs showing up in the conversation? What are they saying? |
-| T5 | What are the biggest frustrations people express about managing PBH? |
-| T6 | What do people say when they finally get diagnosed? |
-| T7 | Is anyone mentioning clinical trials or new treatments coming? |
-| T8 | What's driving the most engagement in PBH discussions? |
+| `system/v6/enrichment/` | v6.1 enrichment prompt + schema (deployed) |
 
 **Platforms:** 4-platform MVP (Reddit, TikTok, Facebook, Instagram)
 
@@ -244,8 +227,10 @@ Known issues documented for future development:
 ### Next Steps
 
 1. ✅ ~~v6.1 enrichment testing~~ - COMPLETE
-2. 🔜 Chatbot system prompt development and testing
-3. 🔜 Dashboard/front-end validation with enriched data
+2. ✅ ~~Chatbot v1 deployment~~ - DEPLOYED (2025-12-12)
+3. 🔜 **Chatbot v2** - Enhanced strategic/business awareness (Amylyx, Avexitide, marketing needs)
+4. 🔜 Dashboard/front-end validation with enriched data
+5. 🔜 v7 enrichment deployment (audience_label: "patient" → "community")
 
 ### How to Run Tests
 
